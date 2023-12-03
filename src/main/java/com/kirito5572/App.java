@@ -98,6 +98,7 @@ public class App {
             build_os = "windows 11";
             build_jdk = "JAVA 17";
         }
+        System.out.println(getVersion());
         if (getVersion().contains("STABLE") || getVersion().contains("stable")) {
             appMode = APP_STABLE;
             logger.info("   SSSSSSSSSSSSSSS TTTTTTTTTTTTTTTTTTTTTTT         AAA               BBBBBBBBBBBBBBBBB   LLLLLLLLLLL             EEEEEEEEEEEEEEEEEEEEEE");
