@@ -245,8 +245,6 @@ public class LoggerListener extends ListenerAdapter {
 
             Member member = event.getGuild().getMemberById(messagePackage.authorId);
 
-            assert member != null;
-            
             Date date = new Date();
             String time = format.format(date);
             EmbedBuilder builder = EmbedUtils.getDefaultEmbed()
@@ -267,8 +265,13 @@ public class LoggerListener extends ListenerAdapter {
                 e.printStackTrace();
                 builder.addField("수정후 내용", "1024자 이상이라서 표현할 수 없습니다.", false);
             }
-            builder.addField("수정 시간", time, false)
-                    .setFooter(member.getEffectiveName() + "(" + member.getEffectiveName() + ")", member.getUser().getAvatarUrl());
+            builder.addField("수정 시간", time, false);
+            if(member != null) {
+                builder.setFooter(member.getEffectiveName() + "(" + member.getEffectiveName() + ")", member.getUser().getAvatarUrl());
+            } else {
+                builder.setFooter("알수 없는 유저");
+            }
+
             this.loggerPackage.messageLoggingSend(builder, event.getGuild());
 
         }
@@ -1235,20 +1238,13 @@ public class LoggerListener extends ListenerAdapter {
         Guild guild = event.getGuild();
         if (isConfigEnable(guild.getId(), ConfigPackage.MEMBER_LOGGING_ENABLE)) {
             Date date = new Date();
-            StringBuilder stringBuilder = new StringBuilder();
-
-            for (Role role : Objects.requireNonNull(event.getMember()).getRoles()) {
-                stringBuilder.append(role.getName()).append("\n");
-            }
             String time = format.format(date);
             EmbedBuilder builder = EmbedUtils.getDefaultEmbed()
                     .setTitle("유저 퇴장")
-                    .setDescription(event.getMember().getAsMention() + "유저가 서버에서 나갔습니다.")
+                    .setDescription(event.getUser().getAsMention() + "유저가 서버에서 나갔습니다.")
                     .setColor(Color.RED)
-                    .addField("유저명", event.getMember().getEffectiveName() + "(" + event.getMember().getUser().getName() + ") ", false)
-                    .addField("유저 가입일", event.getMember().getTimeCreated().format(DateTimeFormatter.ISO_LOCAL_DATE_TIME.withZone(ZoneId.systemDefault())), false)
-                    .addField("유저 서버 입장일", event.getMember().getTimeJoined().format(DateTimeFormatter.ISO_LOCAL_DATE_TIME.withZone(ZoneId.systemDefault())), false)
-                    .addField("역할", stringBuilder.toString(), false)
+                    .addField("유저명", event.getUser().getEffectiveName() + "(" + event.getUser().getName() + ") ", false)
+                    .addField("유저 가입일", event.getUser().getTimeCreated().format(DateTimeFormatter.ISO_LOCAL_DATE_TIME.withZone(ZoneId.systemDefault())), false)
                     .addField("퇴장 시간", time, false);
             loggerPackage.memberLoggingSend(builder, guild);
         }
