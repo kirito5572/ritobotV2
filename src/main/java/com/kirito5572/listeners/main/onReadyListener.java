@@ -23,7 +23,7 @@ public class onReadyListener extends ListenerAdapter {
     public void onReady(@NotNull ReadyEvent event) {
         super.onReady(event);
         if(App.appMode == App.APP_ALPHA) {
-            Objects.requireNonNull(event.getJDA().getPresence()).setActivity(Activity.watching("알파 테스트에 오신것을 환영합니다."));
+            Objects.requireNonNull(event.getJDA().getPresence()).setActivity(Activity.playing("알파 테스트에 오신것을 환영합니다."));
         } else if(App.appMode == App.APP_BETA) {
             autoActivityChangeModule(event);
         } else if(App.appMode == App.APP_STABLE) {
@@ -42,21 +42,21 @@ public class onReadyListener extends ListenerAdapter {
                 switch (i) {
                     case 0,2,4,6,8 -> {
                         if(App.appMode == App.APP_STABLE) {
-                            presence.setActivity(Activity.watching("리토봇 V2"));
+                            presence.setActivity(Activity.playing("리토봇 V2"));
                         } else if(App.appMode == App.APP_BETA) {
-                            presence.setActivity(Activity.watching("리토봇 V2 베타"));
+                            presence.setActivity(Activity.playing("리토봇 V2 베타"));
                         }
                     }
-                    case 1 -> presence.setActivity(Activity.listening(App.getVersion()));
+                    case 1 -> presence.setActivity(Activity.playing(App.getVersion()));
                     case 3 -> {
                         if(App.appMode == App.APP_STABLE) {
                             presence.setActivity(Activity.playing("오류 발생시 제작자에게 문의해주세요."));
                         } else if(App.appMode == App.APP_BETA) {
-                            presence.setActivity(Activity.competing("베타 소프트웨어로 불안정 할 수 있습니다"));
+                            presence.setActivity(Activity.playing("베타 소프트웨어로 불안정 할 수 있습니다"));
                         }
                     }
-                    case 5 -> presence.setActivity(Activity.streaming("kirito5572 제작","https://github.com/kirito5572"));
-                    case 7 -> presence.setActivity(Activity.competing("베타 소프트웨어로 불안정 할 수 있습니다"));
+                    case 5 -> presence.setActivity(Activity.playing("kirito5572 제작"));
+                    case 7 -> presence.setActivity(Activity.playing("베타 소프트웨어로 불안정 할 수 있습니다"));
                     case 9 -> presence.setActivity(Activity.playing("오류 발생시 제작자에게 문의해주세요."));
                 }
                 i++;

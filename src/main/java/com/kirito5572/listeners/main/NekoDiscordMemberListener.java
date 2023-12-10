@@ -9,7 +9,6 @@ import org.jetbrains.annotations.NotNull;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.Objects;
 import java.util.Random;
 
 public class NekoDiscordMemberListener extends ListenerAdapter {
@@ -40,9 +39,9 @@ public class NekoDiscordMemberListener extends ListenerAdapter {
             if(event.getMessage().getContentRaw().startsWith("!join")) {
                 Role role = guild.getRoleById(nekoDiscordTeamRoleId[random.nextInt(10)]);
                 assert role != null;
-                guild.addRoleToMember(Objects.requireNonNull(event.getMember()), role).queue(voids ->{
+                guild.addRoleToMember(event.getAuthor(), role).queue(voids ->{
                     try {
-                        event.getMember().getUser().openPrivateChannel().queue(privateChannel -> privateChannel.sendMessage("랜덤으로 팀이 배정되었습니다. 배정된 팀은 **\"" + role.getName() + "\"**").queue());
+                        event.getAuthor().openPrivateChannel().queue(privateChannel -> privateChannel.sendMessage("랜덤으로 팀이 배정되었습니다. 배정된 팀은 **\"" + role.getName() + "\"**").queue());
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
