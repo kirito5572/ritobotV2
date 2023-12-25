@@ -8,7 +8,7 @@ plugins {
 
 mainClassName = "com.kirito5572.App"
 group = "com.kirito5572"
-version = "2.0-beta1"
+version = "2.0-beta2"
 
 repositories {
     mavenCentral()
@@ -66,8 +66,8 @@ dependencies {
     //legacy
     //https://github.com/sedmelluq/lavaplayer
     implementation group: 'com.sedmelluq', name: 'lavaplayer', version: '1.3.77'
-    //https://central.sonatype.com/artifact/mysql/mysql-connector-java?smo=true
-    implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.33'
+    //https://central.sonatype.com/artifact/com.mysql/mysql-connector-j
+    implementation group: 'com.mysql', name: 'mysql-connector-j', version: '8.2.0'
     //https://m2.duncte123.dev/#/releases/me/duncte123/botCommons
     implementation group: 'me.duncte123', name: 'botCommons', version: '3.0.16'
     //https://github.com/google/gson/releases
@@ -81,10 +81,10 @@ dependencies {
     //https://central.sonatype.com/artifact/com.amazonaws/aws-java-sdk-bom?smo=true
     implementation platform('com.amazonaws:aws-java-sdk-bom:1.12.603')
     implementation 'com.amazonaws:aws-java-sdk-s3'
-    implementation platform('com.google.cloud:libraries-bom:26.2.0')
+    implementation platform('com.google.cloud:libraries-bom:26.29.0')
     implementation 'com.google.cloud:google-cloud-translate'
     //https://search.maven.org/artifact/commons-validator/commons-validator
-    implementation 'commons-validator:commons-validator:1.7'
+    implementation group: 'commons-validator', name: 'commons-validator', version: '1.8.0'
 }
 
 tasks.test {

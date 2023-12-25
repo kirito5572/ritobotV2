@@ -9,6 +9,7 @@ import com.kirito5572.commands.main.game.RockPaperScissorsCommand;
 import com.kirito5572.commands.main.game.RussianRouletteCommand;
 import com.kirito5572.commands.main.moderator.*;
 import com.kirito5572.commands.main.owneronly.BotIpInfoCommand;
+import com.kirito5572.commands.main.owneronly.BotOwnerNoticeCommand;
 import com.kirito5572.commands.main.owneronly.EvalCommand;
 import com.kirito5572.commands.main.owneronly.GetGuildInfoCommand;
 import com.kirito5572.commands.music.*;
@@ -269,6 +270,13 @@ public class CommandManager {
                     .addOption(OptionType.INTEGER, "볼륨", "10~100사이로 입력", true));
             this.commandHandle.put(command.getInvoke(), command);
         }
+        command = new BotOwnerNoticeCommand(configPackage);
+        this.commands.put(command.getInvoke(), Commands.slash(command.getInvoke(), command.getHelp())
+                .setDefaultPermissions(DefaultMemberPermissions.enabledFor(Permission.ADMINISTRATOR))
+                .addOption(OptionType.USER, "title", "공지 제목", true)
+                .addOption(OptionType.USER, "main", "공지 내용", true)
+                .addOption(OptionType.USER, "footer", "주석", false));
+        this.commandHandle.put(command.getInvoke(), command);
     }
 
     private void updateCommand() {

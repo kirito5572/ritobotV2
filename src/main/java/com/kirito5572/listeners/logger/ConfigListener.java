@@ -132,7 +132,7 @@ public class ConfigListener extends ListenerAdapter {
         switch (event.getComponentId()) {
             //음악 기능
             case "MusicCommandEnable" -> {
-                if(!configPackage.getConfigData(event.getGuild().getId()).musicEnable) {
+                if (!configPackage.getConfigData(event.getGuild().getId()).musicEnable) {
                     try {
                         configPackage.updateConfig(event.getGuild().getId(), ConfigPackage.MUSIC_ENABLE, true);
                         commandManager.updateCommand(event.getGuild().getId());
@@ -148,7 +148,7 @@ public class ConfigListener extends ListenerAdapter {
                 }
             }
             case "MusicCommandDisable" -> {
-                if(configPackage.getConfigData(event.getGuild().getId()).musicEnable) {
+                if (configPackage.getConfigData(event.getGuild().getId()).musicEnable) {
                     try {
                         configPackage.updateConfig(event.getGuild().getId(), ConfigPackage.MUSIC_ENABLE, false);
                         commandManager.updateCommand(event.getGuild().getId());
@@ -173,7 +173,7 @@ public class ConfigListener extends ListenerAdapter {
                     event.reply("메세지 필터링 기능은 현재 개발중입니다.").setEphemeral(true).queue(v -> v.deleteOriginal().queueAfter(10, TimeUnit.SECONDS));
             //로깅(메세지 관련)
             case "MessageLoggerEnable" -> {
-                if(!configPackage.getConfigData(event.getGuild().getId()).textLoggingEnable) {
+                if (!configPackage.getConfigData(event.getGuild().getId()).textLoggingEnable) {
                     try {
                         configPackage.updateConfig(event.getGuild().getId(), ConfigPackage.TEXT_LOGGING_ENABLE, true);
                         configPackage.updateConfig(event.getGuild().getId(), ConfigPackage.TEXT_LOGGING_CHANNEL, event.getChannelId());
@@ -190,7 +190,7 @@ public class ConfigListener extends ListenerAdapter {
                 }
             }
             case "MessageLoggerDisable" -> {
-                if(configPackage.getConfigData(event.getGuild().getId()).textLoggingEnable) {
+                if (configPackage.getConfigData(event.getGuild().getId()).textLoggingEnable) {
                     try {
                         configPackage.updateConfig(event.getGuild().getId(), ConfigPackage.TEXT_LOGGING_ENABLE, false);
                         configPackage.updateConfig(event.getGuild().getId(), ConfigPackage.TEXT_LOGGING_CHANNEL, "0");
@@ -207,9 +207,9 @@ public class ConfigListener extends ListenerAdapter {
                 }
             }
             case "MessageLoggerChannelChange" -> {
-                if(configPackage.getConfigData(event.getGuild().getId()).textLoggingEnable) {
+                if (configPackage.getConfigData(event.getGuild().getId()).textLoggingEnable) {
                     String nowChannelId = configPackage.getConfigData(event.getGuild().getId()).textLoggingChannel;
-                    if(nowChannelId.equals(event.getChannelId())) {
+                    if (nowChannelId.equals(event.getChannelId())) {
                         event.getMessage().delete().queue();
                         event.reply("이미 현재 채널이 로그 채널로 등록되어있습니다.").queue(v -> v.deleteOriginal().queueAfter(10, TimeUnit.SECONDS));
                     } else {
@@ -229,7 +229,7 @@ public class ConfigListener extends ListenerAdapter {
             }
             //로깅(채널 관련)
             case "ChannelLoggerEnable" -> {
-                if(!configPackage.getConfigData(event.getGuild().getId()).channelLoggingEnable) {
+                if (!configPackage.getConfigData(event.getGuild().getId()).channelLoggingEnable) {
                     try {
                         configPackage.updateConfig(event.getGuild().getId(), ConfigPackage.CHANNEL_LOGGING_ENABLE, true);
                         configPackage.updateConfig(event.getGuild().getId(), ConfigPackage.CHANNEL_LOGGING_CHANNEL, event.getChannelId());
@@ -246,7 +246,7 @@ public class ConfigListener extends ListenerAdapter {
                 }
             }
             case "ChannelLoggerDisable" -> {
-                if(configPackage.getConfigData(event.getGuild().getId()).channelLoggingEnable) {
+                if (configPackage.getConfigData(event.getGuild().getId()).channelLoggingEnable) {
                     try {
                         configPackage.updateConfig(event.getGuild().getId(), ConfigPackage.CHANNEL_LOGGING_ENABLE, false);
                         configPackage.updateConfig(event.getGuild().getId(), ConfigPackage.CHANNEL_LOGGING_CHANNEL, "0");
@@ -263,9 +263,9 @@ public class ConfigListener extends ListenerAdapter {
                 }
             }
             case "ChannelLoggerChannelChange" -> {
-                if (configPackage.getConfigData(event.getGuild().getId()).channelLoggingEnable){
+                if (configPackage.getConfigData(event.getGuild().getId()).channelLoggingEnable) {
                     String nowChannelId = configPackage.getConfigData(event.getGuild().getId()).channelLoggingChannel;
-                    if(nowChannelId.equals(event.getChannelId())) {
+                    if (nowChannelId.equals(event.getChannelId())) {
                         event.getMessage().delete().queue();
                         event.reply("이미 현재 채널이 로그 채널로 등록되어있습니다.").queue(v -> v.deleteOriginal().queueAfter(10, TimeUnit.SECONDS));
                     } else {
@@ -285,7 +285,7 @@ public class ConfigListener extends ListenerAdapter {
             }
             //로깅(유저 관련)
             case "MemberLoggerEnable" -> {
-                if(!configPackage.getConfigData(event.getGuild().getId()).memberLoggingEnable) {
+                if (!configPackage.getConfigData(event.getGuild().getId()).memberLoggingEnable) {
                     try {
                         configPackage.updateConfig(event.getGuild().getId(), ConfigPackage.MEMBER_LOGGING_ENABLE, true);
                         configPackage.updateConfig(event.getGuild().getId(), ConfigPackage.MEMBER_LOGGING_CHANNEL, event.getChannelId());
@@ -302,7 +302,7 @@ public class ConfigListener extends ListenerAdapter {
                 }
             }
             case "MemberLoggerDisable" -> {
-                if(configPackage.getConfigData(event.getGuild().getId()).memberLoggingEnable) {
+                if (configPackage.getConfigData(event.getGuild().getId()).memberLoggingEnable) {
                     try {
                         configPackage.updateConfig(event.getGuild().getId(), ConfigPackage.MEMBER_LOGGING_ENABLE, false);
                         configPackage.updateConfig(event.getGuild().getId(), ConfigPackage.MEMBER_LOGGING_CHANNEL, "0");
@@ -319,9 +319,9 @@ public class ConfigListener extends ListenerAdapter {
                 }
             }
             case "MemberLoggerChannelChange" -> {
-                if(configPackage.getConfigData(event.getGuild().getId()).memberLoggingEnable) {
+                if (configPackage.getConfigData(event.getGuild().getId()).memberLoggingEnable) {
                     String nowChannelId = configPackage.getConfigData(event.getGuild().getId()).memberLoggingChannel;
-                    if(nowChannelId.equals(event.getChannelId())) {
+                    if (nowChannelId.equals(event.getChannelId())) {
                         event.getMessage().delete().queue();
                         event.reply("이미 현재 채널이 로그 채널로 등록되어있습니다.").queue(v -> v.deleteOriginal().queueAfter(10, TimeUnit.SECONDS));
                     } else {
@@ -341,7 +341,7 @@ public class ConfigListener extends ListenerAdapter {
             }
             //로깅(서버 관련)
             case "GuildLoggerEnable" -> {
-                if(!configPackage.getConfigData(event.getGuild().getId()).guildLoggingEnable) {
+                if (!configPackage.getConfigData(event.getGuild().getId()).guildLoggingEnable) {
                     try {
                         configPackage.updateConfig(event.getGuild().getId(), ConfigPackage.GUILD_LOGGING_ENABLE, true);
                         configPackage.updateConfig(event.getGuild().getId(), ConfigPackage.GUILD_LOGGING_CHANNEL, event.getChannelId());
@@ -358,7 +358,7 @@ public class ConfigListener extends ListenerAdapter {
                 }
             }
             case "GuildLoggerDisable" -> {
-                if(configPackage.getConfigData(event.getGuild().getId()).guildLoggingEnable) {
+                if (configPackage.getConfigData(event.getGuild().getId()).guildLoggingEnable) {
                     try {
                         configPackage.updateConfig(event.getGuild().getId(), ConfigPackage.GUILD_LOGGING_ENABLE, false);
                         configPackage.updateConfig(event.getGuild().getId(), ConfigPackage.GUILD_LOGGING_CHANNEL, "0");
@@ -375,7 +375,7 @@ public class ConfigListener extends ListenerAdapter {
                 }
             }
             case "GuildLoggerChannelChange" -> {
-                if(configPackage.getConfigData(event.getGuild().getId()).guildLoggingEnable) {
+                if (configPackage.getConfigData(event.getGuild().getId()).guildLoggingEnable) {
                     String nowChannelId = configPackage.getConfigData(event.getGuild().getId()).guildLoggingChannel;
                     if (nowChannelId.equals(event.getChannelId())) {
                         event.getMessage().delete().queue();
@@ -397,7 +397,7 @@ public class ConfigListener extends ListenerAdapter {
             }
             //lewd 명령어
             case "LewdCommandEnable" -> {
-                if(!configPackage.getConfigData(event.getGuild().getId()).lewdCommandEnable) {
+                if (!configPackage.getConfigData(event.getGuild().getId()).lewdCommandEnable) {
                     try {
                         configPackage.updateConfig(event.getGuild().getId(), ConfigPackage.LEWD_COMMAND_ENABLE, true);
                         configPackage.updateConfig(event.getGuild().getId(), ConfigPackage.LEWD_OUTPUT_CHANNEL, event.getChannelId());
@@ -414,7 +414,7 @@ public class ConfigListener extends ListenerAdapter {
                 }
             }
             case "LewdCommandDisable" -> {
-                if(configPackage.getConfigData(event.getGuild().getId()).lewdCommandEnable) {
+                if (configPackage.getConfigData(event.getGuild().getId()).lewdCommandEnable) {
                     try {
                         configPackage.updateConfig(event.getGuild().getId(), ConfigPackage.LEWD_COMMAND_ENABLE, false);
                         configPackage.updateConfig(event.getGuild().getId(), ConfigPackage.LEWD_OUTPUT_CHANNEL, "0");
@@ -431,9 +431,9 @@ public class ConfigListener extends ListenerAdapter {
                 }
             }
             case "LewdLoggerChannelChange" -> {
-                if(configPackage.getConfigData(event.getGuild().getId()).lewdCommandEnable) {
+                if (configPackage.getConfigData(event.getGuild().getId()).lewdCommandEnable) {
                     String nowChannelId = configPackage.getConfigData(event.getGuild().getId()).lewdOutputChannel;
-                    if(nowChannelId.equals(event.getChannelId())) {
+                    if (nowChannelId.equals(event.getChannelId())) {
                         event.getMessage().delete().queue();
                         event.reply("이미 현재 채널이 로그 채널로 등록되어있습니다.").queue(v -> v.deleteOriginal().queueAfter(10, TimeUnit.SECONDS));
                     } else {
@@ -452,9 +452,61 @@ public class ConfigListener extends ListenerAdapter {
                 }
             }
             //링크 제한
-            case "LinkFilterEnable", "LinkFilterDisable", "LinkFilterChannelChange" ->
-                    event.reply("링크 필터링 기능은 현재 개발중입니다.").setEphemeral(true).queue(v -> v.deleteOriginal().queueAfter(10, TimeUnit.SECONDS));
-
+            case "LinkFilterEnable" -> {
+                if (!configPackage.getConfigData(event.getGuild().getId()).linkFilterEnable) {
+                    try {
+                        configPackage.updateConfig(event.getGuild().getId(), ConfigPackage.LINK_FILTER_ENABLE, true);
+                        configPackage.updateConfig(event.getGuild().getId(), ConfigPackage.LINK_FILTER_CHANNEL, event.getChannelId());
+                        commandManager.updateCommand(event.getGuild().getId());
+                        event.getMessage().delete().queue();
+                        event.reply("설정이 완료되었습니다. 로그는 명령어가 실행된 채널로 지정되었습니다.").queue(v -> v.deleteOriginal().queueAfter(10, TimeUnit.SECONDS));
+                    } catch (SQLException e) {
+                        event.getMessage().delete().queue();
+                        event.reply("설정중 오류가 발생했습니다.").queue(v -> v.deleteOriginal().queueAfter(10, TimeUnit.SECONDS));
+                    }
+                } else {
+                    event.getMessage().delete().queue();
+                    event.reply("이미 링크 차단 기능이 활성화 되어있습니다.").queue(v -> v.deleteOriginal().queueAfter(10, TimeUnit.SECONDS));
+                }
+            }
+            case "LinkFilterDisable" -> {
+                if (configPackage.getConfigData(event.getGuild().getId()).linkFilterEnable) {
+                    try {
+                        configPackage.updateConfig(event.getGuild().getId(), ConfigPackage.LINK_FILTER_ENABLE, false);
+                        configPackage.updateConfig(event.getGuild().getId(), ConfigPackage.LINK_FILTER_CHANNEL, "0");
+                        commandManager.updateCommand(event.getGuild().getId());
+                        event.getMessage().delete().queue();
+                        event.reply("설정이 완료되었습니다.").queue(v -> v.deleteOriginal().queueAfter(10, TimeUnit.SECONDS));
+                    } catch (SQLException e) {
+                        event.getMessage().delete().queue();
+                        event.reply("설정중 오류가 발생했습니다.").queue(v -> v.deleteOriginal().queueAfter(10, TimeUnit.SECONDS));
+                    }
+                } else {
+                    event.getMessage().delete().queue();
+                    event.reply("이미 링크 차단 기능이 비활성화 되어있습니다.").queue(v -> v.deleteOriginal().queueAfter(10, TimeUnit.SECONDS));
+                }
+            }
+            case "LinkFilterChannelChange" -> {
+                if (configPackage.getConfigData(event.getGuild().getId()).linkFilterEnable) {
+                    String nowChannelId = configPackage.getConfigData(event.getGuild().getId()).linkFilterOutputChannel;
+                    if (nowChannelId.equals(event.getChannelId())) {
+                        event.getMessage().delete().queue();
+                        event.reply("이미 현재 채널이 로그 채널로 등록되어있습니다.").queue(v -> v.deleteOriginal().queueAfter(10, TimeUnit.SECONDS));
+                    } else {
+                        try {
+                            configPackage.updateConfig(event.getGuild().getId(), ConfigPackage.LINK_FILTER_CHANNEL, event.getChannelId());
+                            event.getMessage().delete().queue();
+                            event.reply("현재 채널로 설정이 완료되었습니다.").queue();
+                        } catch (SQLException e) {
+                            event.getMessage().delete().queue();
+                            event.reply("설정중 오류가 발생했습니다.").queue(v -> v.deleteOriginal().queueAfter(10, TimeUnit.SECONDS));
+                        }
+                    }
+                } else {
+                    event.getMessage().delete().queue();
+                    event.reply("링크 차단 기능이 비활성화 되어있습니다").queue();
+                }
+            }
             //전체 공지 수신
             case "NoticeEnable" -> {
                 if(!configPackage.getConfigData(event.getGuild().getId()).noticeEnable) {

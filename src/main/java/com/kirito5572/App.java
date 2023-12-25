@@ -203,15 +203,16 @@ public class App {
         LoggerListener loggerListener = new LoggerListener(loggerPackage, configPackage, mySqlConnector, awsConnector);
         ConfigListener configListener = new ConfigListener(loggerPackage, configPackage, mySqlConnector, manager);
         NekoDiscordMemberListener nekoDiscordMemberListener = new NekoDiscordMemberListener();
-        logger.info("기능 정상 시작, 연결 대기중....");
+        LinkFilterListener linkFilterListener = new LinkFilterListener(configPackage);
+        logger.info("개별 기능부 정상 시작, 연결 대기중....");
 
         jda.addEventListener(onReadyListener, listener, memberCountListener, messagePinListener,
                 airCommandListener, weatherCommandListener, loggerListener, configListener,
-                nekoDiscordMemberListener);
+                nekoDiscordMemberListener, linkFilterListener);
 
         jda.awaitReady();
 
-        logger.info("각 기능 연결 완료, 부팅 완료");
+        logger.info("연결 완료, 부팅 완료");
     }
 
     public static @NotNull String openFileData(@NotNull String Data) {

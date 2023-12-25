@@ -14,25 +14,25 @@ public class ConfigPackage {
     private final MySqlConnector mySqlConnector;
     private final Map<String, Config_Data> configDataMap = new HashMap<>();
     public static final int GUILD_ID = 1; //TODO 설정 명령어 아직 안만듬
-    public static final int MUSIC_ENABLE = 2; //시작시 적용 완료 TODO 중간 업데이트시 적용 필요
+    public static final int MUSIC_ENABLE = 2;
     public static final int FILTER_ENABLE = 3; //TODO 필터 기능 아직 안만듬
-    public static final int TEXT_LOGGING_ENABLE = 4; //TODO 로그 아직 미구현
-    public static final int CHANNEL_LOGGING_ENABLE = 5; //TODO 로그 아직 미구현
-    public static final int MEMBER_LOGGING_ENABLE = 6; //TODO 로그 아직 미구현
-    public static final int GUILD_LOGGING_ENABLE = 19; //TODO 로그 아직 미구현
-    public static final int LEWD_COMMAND_ENABLE = 7; //시작시 적용 완료 TODO 중간 업데이트시 적용 필요
-    public static final int LINK_FILTER_ENABLE = 8; //TODO 필터 기능 아직 안만듬
+    public static final int TEXT_LOGGING_ENABLE = 4;
+    public static final int CHANNEL_LOGGING_ENABLE = 5;
+    public static final int MEMBER_LOGGING_ENABLE = 6;
+    public static final int GUILD_LOGGING_ENABLE = 19;
+    public static final int LEWD_COMMAND_ENABLE = 7; //TODO 해당되는 명령어 아직 없음
+    public static final int LINK_FILTER_ENABLE = 8;
     public static final int NOTICE_ENABLE = 9; //TODO 공지 기능 아직 안만듬
-    public static final int SAY_ENABLE = 10; //시작시 적용 완료 TODO 중간 업데이트시 적용 필요
+    public static final int SAY_ENABLE = 10;
     public static final int FILTER_OUTPUT_CHANNEL = 11; //TODO 필터 기능 아직 안만듬
-    public static final int TEXT_LOGGING_CHANNEL = 12; //TODO 로그 아직 미구현
-    public static final int CHANNEL_LOGGING_CHANNEL = 13; //TODO 로그 아직 미구현
-    public static final int MEMBER_LOGGING_CHANNEL = 14; //TODO 로그 아직 미구현
+    public static final int TEXT_LOGGING_CHANNEL = 12;
+    public static final int CHANNEL_LOGGING_CHANNEL = 13;
+    public static final int MEMBER_LOGGING_CHANNEL = 14;
     public static final int GUILD_LOGGING_CHANNEL = 20;
     public static final int LEWD_OUTPUT_CHANNEL = 15; //TODO 해당되는 명령어 아직 없음
-    public static final int LINK_FILTER_CHANNEL = 16; //TODO 필터 기능 아직 안만듬
+    public static final int LINK_FILTER_CHANNEL = 16; //TODO 필터 후 채널로 전송되는 부분만 만들면 됨
     public static final int NOTICE_CHANNEL = 17; //TODO 공지 기능 아직 안만듬
-    public static final int SAY_OUTPUT_CHANNEL = 18; //TODO 만들어야함!
+    public static final int SAY_OUTPUT_CHANNEL = 18;
 
     public ConfigPackage(MySqlConnector mySqlConnector) {
         this.mySqlConnector = mySqlConnector;

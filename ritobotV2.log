@@ -1,293 +1,106 @@
-[2023-12-03 04:43:56] [main] [INFO ] com.kirito5572.App -                                                                                                                                                                        
-[2023-12-03 04:43:56] [main] [INFO ] com.kirito5572.App -                                                                  bbbbbbbb                                                                                              
-[2023-12-03 04:43:56] [main] [INFO ] com.kirito5572.App -                      iiii          tttt                          b::::::b                                      tttt     VVVVVVVV           VVVVVVVV 222222222222222    
-[2023-12-03 04:43:56] [main] [INFO ] com.kirito5572.App -                     i::::i      ttt:::t                          b::::::b                                   ttt:::t     V::::::V           V::::::V2:::::::::::::::22  
-[2023-12-03 04:43:56] [main] [INFO ] com.kirito5572.App -                      iiii       t:::::t                          b::::::b                                   t:::::t     V::::::V           V::::::V2::::::222222:::::2 
-[2023-12-03 04:43:56] [main] [INFO ] com.kirito5572.App -                                 t:::::t                           b:::::b                                   t:::::t     V::::::V           V::::::V2222222     2:::::2 
-[2023-12-03 04:43:56] [main] [INFO ] com.kirito5572.App - rrrrr   rrrrrrrrr  iiiiiiittttttt:::::ttttttt       ooooooooooo   b:::::bbbbbbbbb       ooooooooooo   ttttttt:::::tttttttV:::::V           V:::::V             2:::::2 
-[2023-12-03 04:43:56] [main] [INFO ] com.kirito5572.App - r::::rrr:::::::::r i:::::it:::::::::::::::::t     oo:::::::::::oo b::::::::::::::bb   oo:::::::::::oo t:::::::::::::::::t V:::::V         V:::::V              2:::::2 
-[2023-12-03 04:43:56] [main] [INFO ] com.kirito5572.App - r:::::::::::::::::r i::::it:::::::::::::::::t    o:::::::::::::::ob::::::::::::::::b o:::::::::::::::ot:::::::::::::::::t  V:::::V       V:::::V            2222::::2  
-[2023-12-03 04:43:56] [main] [INFO ] com.kirito5572.App - rr::::::rrrrr::::::ri::::itttttt:::::::tttttt    o:::::ooooo:::::ob:::::bbbbb:::::::bo:::::ooooo:::::otttttt:::::::tttttt   V:::::V     V:::::V        22222::::::22   
-[2023-12-03 04:43:56] [main] [INFO ] com.kirito5572.App -  r:::::r     r:::::ri::::i      t:::::t          o::::o     o::::ob:::::b    b::::::bo::::o     o::::o      t:::::t          V:::::V   V:::::V       22::::::::222     
-[2023-12-03 04:43:56] [main] [INFO ] com.kirito5572.App -  r:::::r     rrrrrrri::::i      t:::::t          o::::o     o::::ob:::::b     b:::::bo::::o     o::::o      t:::::t           V:::::V V:::::V       2:::::22222        
-[2023-12-03 04:43:56] [main] [INFO ] com.kirito5572.App -  r:::::r            i::::i      t:::::t          o::::o     o::::ob:::::b     b:::::bo::::o     o::::o      t:::::t            V:::::V:::::V       2:::::2             
-[2023-12-03 04:43:56] [main] [INFO ] com.kirito5572.App -  r:::::r            i::::i      t:::::t    tttttto::::o     o::::ob:::::b     b:::::bo::::o     o::::o      t:::::t    tttttt   V:::::::::V        2:::::2             
-[2023-12-03 04:43:56] [main] [INFO ] com.kirito5572.App -  r:::::r           i::::::i     t::::::tttt:::::to:::::ooooo:::::ob:::::bbbbbb::::::bo:::::ooooo:::::o      t::::::tttt:::::t    V:::::::V         2:::::2       222222
-[2023-12-03 04:43:56] [main] [INFO ] com.kirito5572.App -  r:::::r           i::::::i     tt::::::::::::::to:::::::::::::::ob::::::::::::::::b o:::::::::::::::o      tt::::::::::::::t     V:::::V          2::::::2222222:::::2
-[2023-12-03 04:43:56] [main] [INFO ] com.kirito5572.App -  r:::::r           i::::::i       tt:::::::::::tt oo:::::::::::oo b:::::::::::::::b   oo:::::::::::oo         tt:::::::::::tt      V:::V           2::::::::::::::::::2
-[2023-12-03 04:43:56] [main] [INFO ] com.kirito5572.App -  rrrrrrr           iiiiiiii         ttttttttttt     ooooooooooo   bbbbbbbbbbbbbbbb      ooooooooooo             ttttttttttt         VVV            22222222222222222222
-[2023-12-03 04:43:56] [main] [INFO ] com.kirito5572.App - OS: windows 11
-[2023-12-03 04:43:56] [main] [WARN ] com.kirito5572.App - BBBBBBBBBBBBBBBBB   EEEEEEEEEEEEEEEEEEEEEETTTTTTTTTTTTTTTTTTTTTTT         AAA               !!! 
-[2023-12-03 04:43:56] [main] [WARN ] com.kirito5572.App - B::::::::::::::::B  E::::::::::::::::::::ET:::::::::::::::::::::T        A:::A             !!:!!
-[2023-12-03 04:43:56] [main] [WARN ] com.kirito5572.App - B::::::BBBBBB:::::B E::::::::::::::::::::ET:::::::::::::::::::::T       A:::::A            !:::!
-[2023-12-03 04:43:56] [main] [WARN ] com.kirito5572.App - BB:::::B     B:::::BEE::::::EEEEEEEEE::::ET:::::TT:::::::TT:::::T      A:::::::A           !:::!
-[2023-12-03 04:43:56] [main] [WARN ] com.kirito5572.App - B::::B     B:::::B  E:::::E       EEEEEETTTTTT  T:::::T  TTTTTT     A:::::::::A          !:::!
-[2023-12-03 04:43:56] [main] [WARN ] com.kirito5572.App -   B::::B     B:::::B  E:::::E                     T:::::T            A:::::A:::::A         !:::!
-[2023-12-03 04:43:56] [main] [WARN ] com.kirito5572.App -   B::::BBBBBB:::::B   E::::::EEEEEEEEEE           T:::::T           A:::::A A:::::A        !:::!
-[2023-12-03 04:43:56] [main] [WARN ] com.kirito5572.App -   B:::::::::::::BB    E:::::::::::::::E           T:::::T          A:::::A   A:::::A       !:::!
-[2023-12-03 04:43:56] [main] [WARN ] com.kirito5572.App -   B::::BBBBBB:::::B   E:::::::::::::::E           T:::::T         A:::::A     A:::::A      !:::!
-[2023-12-03 04:43:56] [main] [WARN ] com.kirito5572.App -   B::::B     B:::::B  E::::::EEEEEEEEEE           T:::::T        A:::::AAAAAAAAA:::::A     !:::!
-[2023-12-03 04:43:56] [main] [WARN ] com.kirito5572.App -   B::::B     B:::::B  E:::::E                     T:::::T       A:::::::::::::::::::::A    !!:!!
-[2023-12-03 04:43:56] [main] [WARN ] com.kirito5572.App -   B::::B     B:::::B  E:::::E       EEEEEE        T:::::T      A:::::AAAAAAAAAAAAA:::::A    !!! 
-[2023-12-03 04:43:56] [main] [WARN ] com.kirito5572.App - BB:::::BBBBBB::::::BEE::::::EEEEEEEE:::::E      TT:::::::TT   A:::::A             A:::::A       
-[2023-12-03 04:43:56] [main] [WARN ] com.kirito5572.App - B:::::::::::::::::B E::::::::::::::::::::E      T:::::::::T  A:::::A               A:::::A  !!! 
-[2023-12-03 04:43:56] [main] [WARN ] com.kirito5572.App - B::::::::::::::::B  E::::::::::::::::::::E      T:::::::::T A:::::A                 A:::::A!!:!!
-[2023-12-03 04:43:56] [main] [WARN ] com.kirito5572.App - BBBBBBBBBBBBBBBBB   EEEEEEEEEEEEEEEEEEEEEE      TTTTTTTTTTTAAAAAAA                   AAAAAAA!!! 
-[2023-12-03 04:43:56] [main] [WARN ] com.kirito5572.App - beta program version: beta version
-[2023-12-03 04:43:57] [main] [INFO ] com.kirito5572.App - SQL 서버/파일 접속중
-[2023-12-03 04:43:57] [main] [INFO ] com.kirito5572.App - 접속 완료...
-[2023-12-03 04:43:57] [main] [INFO ] c.k.objects.logger.ConfigPackage - 모든 설정 로딩 완료!
-[2023-12-03 04:43:57] [main] [INFO ] com.kirito5572.App - 봇 시작중... 디스코드로 부터의 응답 대기중
-[2023-12-03 04:43:58] [main] [INFO ] net.dv8tion.jda.api.JDA - Login Successful!
-[2023-12-03 04:43:58] [main] [INFO ] com.kirito5572.App - 서버 연결 성공, 개별 기능부 실행
-[2023-12-03 04:43:58] [main] [INFO ] c.k.objects.main.CommandManager - 명령어 로딩중
-[2023-12-03 04:43:58] [JDA MainWS-ReadThread] [INFO ] n.d.j.i.requests.WebSocketClient - Connected to WebSocket
-[2023-12-03 04:43:58] [JDA RateLimit-Elastic-Worker 1] [WARN ] n.d.j.api.requests.RestRateLimiter - Encountered 429 on route PUT/applications/{application_id}/commands with bucket 3e32a240d3716487d7d8f6dae6c54f6b:n/a Retry-After: 64000 ms Scope: user
-[2023-12-03 04:43:58] [JDA MainWS-ReadThread] [INFO ] net.dv8tion.jda.api.JDA - Finished Loading!
-[2023-12-03 04:44:18] [main] [INFO ] com.kirito5572.App -                                                                                                                                                                        
-[2023-12-03 04:44:18] [main] [INFO ] com.kirito5572.App -                                                                  bbbbbbbb                                                                                              
-[2023-12-03 04:44:18] [main] [INFO ] com.kirito5572.App -                      iiii          tttt                          b::::::b                                      tttt     VVVVVVVV           VVVVVVVV 222222222222222    
-[2023-12-03 04:44:18] [main] [INFO ] com.kirito5572.App -                     i::::i      ttt:::t                          b::::::b                                   ttt:::t     V::::::V           V::::::V2:::::::::::::::22  
-[2023-12-03 04:44:18] [main] [INFO ] com.kirito5572.App -                      iiii       t:::::t                          b::::::b                                   t:::::t     V::::::V           V::::::V2::::::222222:::::2 
-[2023-12-03 04:44:18] [main] [INFO ] com.kirito5572.App -                                 t:::::t                           b:::::b                                   t:::::t     V::::::V           V::::::V2222222     2:::::2 
-[2023-12-03 04:44:18] [main] [INFO ] com.kirito5572.App - rrrrr   rrrrrrrrr  iiiiiiittttttt:::::ttttttt       ooooooooooo   b:::::bbbbbbbbb       ooooooooooo   ttttttt:::::tttttttV:::::V           V:::::V             2:::::2 
-[2023-12-03 04:44:18] [main] [INFO ] com.kirito5572.App - r::::rrr:::::::::r i:::::it:::::::::::::::::t     oo:::::::::::oo b::::::::::::::bb   oo:::::::::::oo t:::::::::::::::::t V:::::V         V:::::V              2:::::2 
-[2023-12-03 04:44:18] [main] [INFO ] com.kirito5572.App - r:::::::::::::::::r i::::it:::::::::::::::::t    o:::::::::::::::ob::::::::::::::::b o:::::::::::::::ot:::::::::::::::::t  V:::::V       V:::::V            2222::::2  
-[2023-12-03 04:44:18] [main] [INFO ] com.kirito5572.App - rr::::::rrrrr::::::ri::::itttttt:::::::tttttt    o:::::ooooo:::::ob:::::bbbbb:::::::bo:::::ooooo:::::otttttt:::::::tttttt   V:::::V     V:::::V        22222::::::22   
-[2023-12-03 04:44:18] [main] [INFO ] com.kirito5572.App -  r:::::r     r:::::ri::::i      t:::::t          o::::o     o::::ob:::::b    b::::::bo::::o     o::::o      t:::::t          V:::::V   V:::::V       22::::::::222     
-[2023-12-03 04:44:18] [main] [INFO ] com.kirito5572.App -  r:::::r     rrrrrrri::::i      t:::::t          o::::o     o::::ob:::::b     b:::::bo::::o     o::::o      t:::::t           V:::::V V:::::V       2:::::22222        
-[2023-12-03 04:44:18] [main] [INFO ] com.kirito5572.App -  r:::::r            i::::i      t:::::t          o::::o     o::::ob:::::b     b:::::bo::::o     o::::o      t:::::t            V:::::V:::::V       2:::::2             
-[2023-12-03 04:44:18] [main] [INFO ] com.kirito5572.App -  r:::::r            i::::i      t:::::t    tttttto::::o     o::::ob:::::b     b:::::bo::::o     o::::o      t:::::t    tttttt   V:::::::::V        2:::::2             
-[2023-12-03 04:44:18] [main] [INFO ] com.kirito5572.App -  r:::::r           i::::::i     t::::::tttt:::::to:::::ooooo:::::ob:::::bbbbbb::::::bo:::::ooooo:::::o      t::::::tttt:::::t    V:::::::V         2:::::2       222222
-[2023-12-03 04:44:18] [main] [INFO ] com.kirito5572.App -  r:::::r           i::::::i     tt::::::::::::::to:::::::::::::::ob::::::::::::::::b o:::::::::::::::o      tt::::::::::::::t     V:::::V          2::::::2222222:::::2
-[2023-12-03 04:44:18] [main] [INFO ] com.kirito5572.App -  r:::::r           i::::::i       tt:::::::::::tt oo:::::::::::oo b:::::::::::::::b   oo:::::::::::oo         tt:::::::::::tt      V:::V           2::::::::::::::::::2
-[2023-12-03 04:44:18] [main] [INFO ] com.kirito5572.App -  rrrrrrr           iiiiiiii         ttttttttttt     ooooooooooo   bbbbbbbbbbbbbbbb      ooooooooooo             ttttttttttt         VVV            22222222222222222222
-[2023-12-03 04:44:18] [main] [INFO ] com.kirito5572.App - OS: windows 11
-[2023-12-03 04:44:18] [main] [WARN ] com.kirito5572.App - BBBBBBBBBBBBBBBBB   EEEEEEEEEEEEEEEEEEEEEETTTTTTTTTTTTTTTTTTTTTTT         AAA               !!! 
-[2023-12-03 04:44:18] [main] [WARN ] com.kirito5572.App - B::::::::::::::::B  E::::::::::::::::::::ET:::::::::::::::::::::T        A:::A             !!:!!
-[2023-12-03 04:44:18] [main] [WARN ] com.kirito5572.App - B::::::BBBBBB:::::B E::::::::::::::::::::ET:::::::::::::::::::::T       A:::::A            !:::!
-[2023-12-03 04:44:18] [main] [WARN ] com.kirito5572.App - BB:::::B     B:::::BEE::::::EEEEEEEEE::::ET:::::TT:::::::TT:::::T      A:::::::A           !:::!
-[2023-12-03 04:44:18] [main] [WARN ] com.kirito5572.App - B::::B     B:::::B  E:::::E       EEEEEETTTTTT  T:::::T  TTTTTT     A:::::::::A          !:::!
-[2023-12-03 04:44:18] [main] [WARN ] com.kirito5572.App -   B::::B     B:::::B  E:::::E                     T:::::T            A:::::A:::::A         !:::!
-[2023-12-03 04:44:18] [main] [WARN ] com.kirito5572.App -   B::::BBBBBB:::::B   E::::::EEEEEEEEEE           T:::::T           A:::::A A:::::A        !:::!
-[2023-12-03 04:44:18] [main] [WARN ] com.kirito5572.App -   B:::::::::::::BB    E:::::::::::::::E           T:::::T          A:::::A   A:::::A       !:::!
-[2023-12-03 04:44:18] [main] [WARN ] com.kirito5572.App -   B::::BBBBBB:::::B   E:::::::::::::::E           T:::::T         A:::::A     A:::::A      !:::!
-[2023-12-03 04:44:18] [main] [WARN ] com.kirito5572.App -   B::::B     B:::::B  E::::::EEEEEEEEEE           T:::::T        A:::::AAAAAAAAA:::::A     !:::!
-[2023-12-03 04:44:18] [main] [WARN ] com.kirito5572.App -   B::::B     B:::::B  E:::::E                     T:::::T       A:::::::::::::::::::::A    !!:!!
-[2023-12-03 04:44:18] [main] [WARN ] com.kirito5572.App -   B::::B     B:::::B  E:::::E       EEEEEE        T:::::T      A:::::AAAAAAAAAAAAA:::::A    !!! 
-[2023-12-03 04:44:18] [main] [WARN ] com.kirito5572.App - BB:::::BBBBBB::::::BEE::::::EEEEEEEE:::::E      TT:::::::TT   A:::::A             A:::::A       
-[2023-12-03 04:44:18] [main] [WARN ] com.kirito5572.App - B:::::::::::::::::B E::::::::::::::::::::E      T:::::::::T  A:::::A               A:::::A  !!! 
-[2023-12-03 04:44:18] [main] [WARN ] com.kirito5572.App - B::::::::::::::::B  E::::::::::::::::::::E      T:::::::::T A:::::A                 A:::::A!!:!!
-[2023-12-03 04:44:18] [main] [WARN ] com.kirito5572.App - BBBBBBBBBBBBBBBBB   EEEEEEEEEEEEEEEEEEEEEE      TTTTTTTTTTTAAAAAAA                   AAAAAAA!!! 
-[2023-12-03 04:44:18] [main] [WARN ] com.kirito5572.App - beta program version: beta version
-[2023-12-03 04:44:19] [main] [INFO ] com.kirito5572.App - SQL 서버/파일 접속중
-[2023-12-03 04:44:19] [main] [INFO ] com.kirito5572.App - 접속 완료...
-[2023-12-03 04:44:19] [main] [INFO ] c.k.objects.logger.ConfigPackage - 모든 설정 로딩 완료!
-[2023-12-03 04:44:19] [main] [INFO ] com.kirito5572.App - 봇 시작중... 디스코드로 부터의 응답 대기중
-[2023-12-03 04:44:20] [main] [INFO ] net.dv8tion.jda.api.JDA - Login Successful!
-[2023-12-03 04:44:20] [main] [INFO ] com.kirito5572.App - 서버 연결 성공, 개별 기능부 실행
-[2023-12-03 04:44:20] [main] [INFO ] c.k.objects.main.CommandManager - 명령어 로딩중
-[2023-12-03 04:44:20] [JDA MainWS-WriteThread] [INFO ] n.d.j.i.requests.WebSocketClient - Connected to WebSocket
-[2023-12-03 04:44:20] [main] [INFO ] c.k.objects.main.CommandManager - 명령어 셋팅 완료
-[2023-12-03 04:44:20] [main] [INFO ] com.kirito5572.App - 기능 정상 시작, 연결 대기중....
-[2023-12-03 04:44:21] [JDA MainWS-ReadThread] [INFO ] net.dv8tion.jda.api.JDA - Finished Loading!
-[2023-12-03 04:44:21] [JDA MainWS-ReadThread] [INFO ] c.k.listeners.main.onReadyListener - 상태 변경 기능부 준비 완료
-[2023-12-03 04:44:21] [JDA MainWS-ReadThread] [INFO ] c.k.listeners.main.CommandListener - 명령어 처리 기능부 준비 완료
-[2023-12-03 04:44:21] [JDA MainWS-ReadThread] [INFO ] c.k.l.main.MemberCountListener - 멤버 카운트 기능부 준비 완료
-[2023-12-03 04:44:21] [JDA MainWS-ReadThread] [INFO ] c.k.l.main.MessagePinListener - 메세지 핀 기능부 준비 완료
-[2023-12-03 04:44:21] [JDA MainWS-ReadThread] [INFO ] c.k.l.main.AirCommandListener - 지역별 공기질 측정 명령어 기능부 준비 완료
-[2023-12-03 04:44:21] [JDA MainWS-ReadThread] [INFO ] c.k.l.main.WeatherCommandListener - 날씨 명령어 기능부 준비 완료
-[2023-12-03 04:44:21] [JDA MainWS-ReadThread] [INFO ] c.k.listeners.logger.LoggerListener - 로거 기능부 준비 완료
-[2023-12-03 04:44:21] [JDA MainWS-ReadThread] [INFO ] c.k.listeners.logger.ConfigListener - 설정 명령어 기능부 준비 완료
-[2023-12-03 04:44:21] [JDA MainWS-ReadThread] [INFO ] c.k.l.m.NekoDiscordMemberListener - 네코샘플 디스코드 특별 기능부 준비 완료
-[2023-12-03 04:44:21] [main] [INFO ] com.kirito5572.App - 각 기능 연결 완료, 부팅 완료
-[2023-12-03 19:15:45] [main] [INFO ] com.kirito5572.App -                                                                                                                                                                        
-[2023-12-03 19:15:45] [main] [INFO ] com.kirito5572.App -                                                                  bbbbbbbb                                                                                              
-[2023-12-03 19:15:45] [main] [INFO ] com.kirito5572.App -                      iiii          tttt                          b::::::b                                      tttt     VVVVVVVV           VVVVVVVV 222222222222222    
-[2023-12-03 19:15:45] [main] [INFO ] com.kirito5572.App -                     i::::i      ttt:::t                          b::::::b                                   ttt:::t     V::::::V           V::::::V2:::::::::::::::22  
-[2023-12-03 19:15:45] [main] [INFO ] com.kirito5572.App -                      iiii       t:::::t                          b::::::b                                   t:::::t     V::::::V           V::::::V2::::::222222:::::2 
-[2023-12-03 19:15:45] [main] [INFO ] com.kirito5572.App -                                 t:::::t                           b:::::b                                   t:::::t     V::::::V           V::::::V2222222     2:::::2 
-[2023-12-03 19:15:45] [main] [INFO ] com.kirito5572.App - rrrrr   rrrrrrrrr  iiiiiiittttttt:::::ttttttt       ooooooooooo   b:::::bbbbbbbbb       ooooooooooo   ttttttt:::::tttttttV:::::V           V:::::V             2:::::2 
-[2023-12-03 19:15:45] [main] [INFO ] com.kirito5572.App - r::::rrr:::::::::r i:::::it:::::::::::::::::t     oo:::::::::::oo b::::::::::::::bb   oo:::::::::::oo t:::::::::::::::::t V:::::V         V:::::V              2:::::2 
-[2023-12-03 19:15:45] [main] [INFO ] com.kirito5572.App - r:::::::::::::::::r i::::it:::::::::::::::::t    o:::::::::::::::ob::::::::::::::::b o:::::::::::::::ot:::::::::::::::::t  V:::::V       V:::::V            2222::::2  
-[2023-12-03 19:15:45] [main] [INFO ] com.kirito5572.App - rr::::::rrrrr::::::ri::::itttttt:::::::tttttt    o:::::ooooo:::::ob:::::bbbbb:::::::bo:::::ooooo:::::otttttt:::::::tttttt   V:::::V     V:::::V        22222::::::22   
-[2023-12-03 19:15:45] [main] [INFO ] com.kirito5572.App -  r:::::r     r:::::ri::::i      t:::::t          o::::o     o::::ob:::::b    b::::::bo::::o     o::::o      t:::::t          V:::::V   V:::::V       22::::::::222     
-[2023-12-03 19:15:45] [main] [INFO ] com.kirito5572.App -  r:::::r     rrrrrrri::::i      t:::::t          o::::o     o::::ob:::::b     b:::::bo::::o     o::::o      t:::::t           V:::::V V:::::V       2:::::22222        
-[2023-12-03 19:15:45] [main] [INFO ] com.kirito5572.App -  r:::::r            i::::i      t:::::t          o::::o     o::::ob:::::b     b:::::bo::::o     o::::o      t:::::t            V:::::V:::::V       2:::::2             
-[2023-12-03 19:15:45] [main] [INFO ] com.kirito5572.App -  r:::::r            i::::i      t:::::t    tttttto::::o     o::::ob:::::b     b:::::bo::::o     o::::o      t:::::t    tttttt   V:::::::::V        2:::::2             
-[2023-12-03 19:15:45] [main] [INFO ] com.kirito5572.App -  r:::::r           i::::::i     t::::::tttt:::::to:::::ooooo:::::ob:::::bbbbbb::::::bo:::::ooooo:::::o      t::::::tttt:::::t    V:::::::V         2:::::2       222222
-[2023-12-03 19:15:45] [main] [INFO ] com.kirito5572.App -  r:::::r           i::::::i     tt::::::::::::::to:::::::::::::::ob::::::::::::::::b o:::::::::::::::o      tt::::::::::::::t     V:::::V          2::::::2222222:::::2
-[2023-12-03 19:15:45] [main] [INFO ] com.kirito5572.App -  r:::::r           i::::::i       tt:::::::::::tt oo:::::::::::oo b:::::::::::::::b   oo:::::::::::oo         tt:::::::::::tt      V:::V           2::::::::::::::::::2
-[2023-12-03 19:15:45] [main] [INFO ] com.kirito5572.App -  rrrrrrr           iiiiiiii         ttttttttttt     ooooooooooo   bbbbbbbbbbbbbbbb      ooooooooooo             ttttttttttt         VVV            22222222222222222222
-[2023-12-03 19:15:45] [main] [INFO ] com.kirito5572.App - OS: windows 11
-[2023-12-03 19:16:04] [main] [INFO ] com.kirito5572.App -                                                                                                                                                                        
-[2023-12-03 19:16:04] [main] [INFO ] com.kirito5572.App -                                                                  bbbbbbbb                                                                                              
-[2023-12-03 19:16:04] [main] [INFO ] com.kirito5572.App -                      iiii          tttt                          b::::::b                                      tttt     VVVVVVVV           VVVVVVVV 222222222222222    
-[2023-12-03 19:16:04] [main] [INFO ] com.kirito5572.App -                     i::::i      ttt:::t                          b::::::b                                   ttt:::t     V::::::V           V::::::V2:::::::::::::::22  
-[2023-12-03 19:16:04] [main] [INFO ] com.kirito5572.App -                      iiii       t:::::t                          b::::::b                                   t:::::t     V::::::V           V::::::V2::::::222222:::::2 
-[2023-12-03 19:16:04] [main] [INFO ] com.kirito5572.App -                                 t:::::t                           b:::::b                                   t:::::t     V::::::V           V::::::V2222222     2:::::2 
-[2023-12-03 19:16:04] [main] [INFO ] com.kirito5572.App - rrrrr   rrrrrrrrr  iiiiiiittttttt:::::ttttttt       ooooooooooo   b:::::bbbbbbbbb       ooooooooooo   ttttttt:::::tttttttV:::::V           V:::::V             2:::::2 
-[2023-12-03 19:16:04] [main] [INFO ] com.kirito5572.App - r::::rrr:::::::::r i:::::it:::::::::::::::::t     oo:::::::::::oo b::::::::::::::bb   oo:::::::::::oo t:::::::::::::::::t V:::::V         V:::::V              2:::::2 
-[2023-12-03 19:16:04] [main] [INFO ] com.kirito5572.App - r:::::::::::::::::r i::::it:::::::::::::::::t    o:::::::::::::::ob::::::::::::::::b o:::::::::::::::ot:::::::::::::::::t  V:::::V       V:::::V            2222::::2  
-[2023-12-03 19:16:04] [main] [INFO ] com.kirito5572.App - rr::::::rrrrr::::::ri::::itttttt:::::::tttttt    o:::::ooooo:::::ob:::::bbbbb:::::::bo:::::ooooo:::::otttttt:::::::tttttt   V:::::V     V:::::V        22222::::::22   
-[2023-12-03 19:16:04] [main] [INFO ] com.kirito5572.App -  r:::::r     r:::::ri::::i      t:::::t          o::::o     o::::ob:::::b    b::::::bo::::o     o::::o      t:::::t          V:::::V   V:::::V       22::::::::222     
-[2023-12-03 19:16:04] [main] [INFO ] com.kirito5572.App -  r:::::r     rrrrrrri::::i      t:::::t          o::::o     o::::ob:::::b     b:::::bo::::o     o::::o      t:::::t           V:::::V V:::::V       2:::::22222        
-[2023-12-03 19:16:04] [main] [INFO ] com.kirito5572.App -  r:::::r            i::::i      t:::::t          o::::o     o::::ob:::::b     b:::::bo::::o     o::::o      t:::::t            V:::::V:::::V       2:::::2             
-[2023-12-03 19:16:04] [main] [INFO ] com.kirito5572.App -  r:::::r            i::::i      t:::::t    tttttto::::o     o::::ob:::::b     b:::::bo::::o     o::::o      t:::::t    tttttt   V:::::::::V        2:::::2             
-[2023-12-03 19:16:04] [main] [INFO ] com.kirito5572.App -  r:::::r           i::::::i     t::::::tttt:::::to:::::ooooo:::::ob:::::bbbbbb::::::bo:::::ooooo:::::o      t::::::tttt:::::t    V:::::::V         2:::::2       222222
-[2023-12-03 19:16:04] [main] [INFO ] com.kirito5572.App -  r:::::r           i::::::i     tt::::::::::::::to:::::::::::::::ob::::::::::::::::b o:::::::::::::::o      tt::::::::::::::t     V:::::V          2::::::2222222:::::2
-[2023-12-03 19:16:04] [main] [INFO ] com.kirito5572.App -  r:::::r           i::::::i       tt:::::::::::tt oo:::::::::::oo b:::::::::::::::b   oo:::::::::::oo         tt:::::::::::tt      V:::V           2::::::::::::::::::2
-[2023-12-03 19:16:04] [main] [INFO ] com.kirito5572.App -  rrrrrrr           iiiiiiii         ttttttttttt     ooooooooooo   bbbbbbbbbbbbbbbb      ooooooooooo             ttttttttttt         VVV            22222222222222222222
-[2023-12-03 19:16:04] [main] [INFO ] com.kirito5572.App - OS: windows 11
-[2023-12-03 19:16:07] [main] [INFO ] com.kirito5572.App -                                                                                                                                                                        
-[2023-12-03 19:16:07] [main] [INFO ] com.kirito5572.App -                                                                  bbbbbbbb                                                                                              
-[2023-12-03 19:16:07] [main] [INFO ] com.kirito5572.App -                      iiii          tttt                          b::::::b                                      tttt     VVVVVVVV           VVVVVVVV 222222222222222    
-[2023-12-03 19:16:07] [main] [INFO ] com.kirito5572.App -                     i::::i      ttt:::t                          b::::::b                                   ttt:::t     V::::::V           V::::::V2:::::::::::::::22  
-[2023-12-03 19:16:07] [main] [INFO ] com.kirito5572.App -                      iiii       t:::::t                          b::::::b                                   t:::::t     V::::::V           V::::::V2::::::222222:::::2 
-[2023-12-03 19:16:07] [main] [INFO ] com.kirito5572.App -                                 t:::::t                           b:::::b                                   t:::::t     V::::::V           V::::::V2222222     2:::::2 
-[2023-12-03 19:16:07] [main] [INFO ] com.kirito5572.App - rrrrr   rrrrrrrrr  iiiiiiittttttt:::::ttttttt       ooooooooooo   b:::::bbbbbbbbb       ooooooooooo   ttttttt:::::tttttttV:::::V           V:::::V             2:::::2 
-[2023-12-03 19:16:07] [main] [INFO ] com.kirito5572.App - r::::rrr:::::::::r i:::::it:::::::::::::::::t     oo:::::::::::oo b::::::::::::::bb   oo:::::::::::oo t:::::::::::::::::t V:::::V         V:::::V              2:::::2 
-[2023-12-03 19:16:07] [main] [INFO ] com.kirito5572.App - r:::::::::::::::::r i::::it:::::::::::::::::t    o:::::::::::::::ob::::::::::::::::b o:::::::::::::::ot:::::::::::::::::t  V:::::V       V:::::V            2222::::2  
-[2023-12-03 19:16:07] [main] [INFO ] com.kirito5572.App - rr::::::rrrrr::::::ri::::itttttt:::::::tttttt    o:::::ooooo:::::ob:::::bbbbb:::::::bo:::::ooooo:::::otttttt:::::::tttttt   V:::::V     V:::::V        22222::::::22   
-[2023-12-03 19:16:07] [main] [INFO ] com.kirito5572.App -  r:::::r     r:::::ri::::i      t:::::t          o::::o     o::::ob:::::b    b::::::bo::::o     o::::o      t:::::t          V:::::V   V:::::V       22::::::::222     
-[2023-12-03 19:16:07] [main] [INFO ] com.kirito5572.App -  r:::::r     rrrrrrri::::i      t:::::t          o::::o     o::::ob:::::b     b:::::bo::::o     o::::o      t:::::t           V:::::V V:::::V       2:::::22222        
-[2023-12-03 19:16:07] [main] [INFO ] com.kirito5572.App -  r:::::r            i::::i      t:::::t          o::::o     o::::ob:::::b     b:::::bo::::o     o::::o      t:::::t            V:::::V:::::V       2:::::2             
-[2023-12-03 19:16:07] [main] [INFO ] com.kirito5572.App -  r:::::r            i::::i      t:::::t    tttttto::::o     o::::ob:::::b     b:::::bo::::o     o::::o      t:::::t    tttttt   V:::::::::V        2:::::2             
-[2023-12-03 19:16:07] [main] [INFO ] com.kirito5572.App -  r:::::r           i::::::i     t::::::tttt:::::to:::::ooooo:::::ob:::::bbbbbb::::::bo:::::ooooo:::::o      t::::::tttt:::::t    V:::::::V         2:::::2       222222
-[2023-12-03 19:16:07] [main] [INFO ] com.kirito5572.App -  r:::::r           i::::::i     tt::::::::::::::to:::::::::::::::ob::::::::::::::::b o:::::::::::::::o      tt::::::::::::::t     V:::::V          2::::::2222222:::::2
-[2023-12-03 19:16:07] [main] [INFO ] com.kirito5572.App -  r:::::r           i::::::i       tt:::::::::::tt oo:::::::::::oo b:::::::::::::::b   oo:::::::::::oo         tt:::::::::::tt      V:::V           2::::::::::::::::::2
-[2023-12-03 19:16:07] [main] [INFO ] com.kirito5572.App -  rrrrrrr           iiiiiiii         ttttttttttt     ooooooooooo   bbbbbbbbbbbbbbbb      ooooooooooo             ttttttttttt         VVV            22222222222222222222
-[2023-12-03 19:16:07] [main] [INFO ] com.kirito5572.App - OS: windows 11
-[2023-12-03 19:16:14] [main] [INFO ] com.kirito5572.App -                                                                                                                                                                        
-[2023-12-03 19:16:14] [main] [INFO ] com.kirito5572.App -                                                                  bbbbbbbb                                                                                              
-[2023-12-03 19:16:14] [main] [INFO ] com.kirito5572.App -                      iiii          tttt                          b::::::b                                      tttt     VVVVVVVV           VVVVVVVV 222222222222222    
-[2023-12-03 19:16:14] [main] [INFO ] com.kirito5572.App -                     i::::i      ttt:::t                          b::::::b                                   ttt:::t     V::::::V           V::::::V2:::::::::::::::22  
-[2023-12-03 19:16:14] [main] [INFO ] com.kirito5572.App -                      iiii       t:::::t                          b::::::b                                   t:::::t     V::::::V           V::::::V2::::::222222:::::2 
-[2023-12-03 19:16:14] [main] [INFO ] com.kirito5572.App -                                 t:::::t                           b:::::b                                   t:::::t     V::::::V           V::::::V2222222     2:::::2 
-[2023-12-03 19:16:14] [main] [INFO ] com.kirito5572.App - rrrrr   rrrrrrrrr  iiiiiiittttttt:::::ttttttt       ooooooooooo   b:::::bbbbbbbbb       ooooooooooo   ttttttt:::::tttttttV:::::V           V:::::V             2:::::2 
-[2023-12-03 19:16:14] [main] [INFO ] com.kirito5572.App - r::::rrr:::::::::r i:::::it:::::::::::::::::t     oo:::::::::::oo b::::::::::::::bb   oo:::::::::::oo t:::::::::::::::::t V:::::V         V:::::V              2:::::2 
-[2023-12-03 19:16:14] [main] [INFO ] com.kirito5572.App - r:::::::::::::::::r i::::it:::::::::::::::::t    o:::::::::::::::ob::::::::::::::::b o:::::::::::::::ot:::::::::::::::::t  V:::::V       V:::::V            2222::::2  
-[2023-12-03 19:16:14] [main] [INFO ] com.kirito5572.App - rr::::::rrrrr::::::ri::::itttttt:::::::tttttt    o:::::ooooo:::::ob:::::bbbbb:::::::bo:::::ooooo:::::otttttt:::::::tttttt   V:::::V     V:::::V        22222::::::22   
-[2023-12-03 19:16:14] [main] [INFO ] com.kirito5572.App -  r:::::r     r:::::ri::::i      t:::::t          o::::o     o::::ob:::::b    b::::::bo::::o     o::::o      t:::::t          V:::::V   V:::::V       22::::::::222     
-[2023-12-03 19:16:14] [main] [INFO ] com.kirito5572.App -  r:::::r     rrrrrrri::::i      t:::::t          o::::o     o::::ob:::::b     b:::::bo::::o     o::::o      t:::::t           V:::::V V:::::V       2:::::22222        
-[2023-12-03 19:16:14] [main] [INFO ] com.kirito5572.App -  r:::::r            i::::i      t:::::t          o::::o     o::::ob:::::b     b:::::bo::::o     o::::o      t:::::t            V:::::V:::::V       2:::::2             
-[2023-12-03 19:16:14] [main] [INFO ] com.kirito5572.App -  r:::::r            i::::i      t:::::t    tttttto::::o     o::::ob:::::b     b:::::bo::::o     o::::o      t:::::t    tttttt   V:::::::::V        2:::::2             
-[2023-12-03 19:16:14] [main] [INFO ] com.kirito5572.App -  r:::::r           i::::::i     t::::::tttt:::::to:::::ooooo:::::ob:::::bbbbbb::::::bo:::::ooooo:::::o      t::::::tttt:::::t    V:::::::V         2:::::2       222222
-[2023-12-03 19:16:14] [main] [INFO ] com.kirito5572.App -  r:::::r           i::::::i     tt::::::::::::::to:::::::::::::::ob::::::::::::::::b o:::::::::::::::o      tt::::::::::::::t     V:::::V          2::::::2222222:::::2
-[2023-12-03 19:16:14] [main] [INFO ] com.kirito5572.App -  r:::::r           i::::::i       tt:::::::::::tt oo:::::::::::oo b:::::::::::::::b   oo:::::::::::oo         tt:::::::::::tt      V:::V           2::::::::::::::::::2
-[2023-12-03 19:16:14] [main] [INFO ] com.kirito5572.App -  rrrrrrr           iiiiiiii         ttttttttttt     ooooooooooo   bbbbbbbbbbbbbbbb      ooooooooooo             ttttttttttt         VVV            22222222222222222222
-[2023-12-03 19:16:14] [main] [INFO ] com.kirito5572.App - OS: windows 11
-[2023-12-03 19:18:08] [main] [INFO ] com.kirito5572.App -                                                                                                                                                                        
-[2023-12-03 19:18:08] [main] [INFO ] com.kirito5572.App -                                                                  bbbbbbbb                                                                                              
-[2023-12-03 19:18:08] [main] [INFO ] com.kirito5572.App -                      iiii          tttt                          b::::::b                                      tttt     VVVVVVVV           VVVVVVVV 222222222222222    
-[2023-12-03 19:18:08] [main] [INFO ] com.kirito5572.App -                     i::::i      ttt:::t                          b::::::b                                   ttt:::t     V::::::V           V::::::V2:::::::::::::::22  
-[2023-12-03 19:18:08] [main] [INFO ] com.kirito5572.App -                      iiii       t:::::t                          b::::::b                                   t:::::t     V::::::V           V::::::V2::::::222222:::::2 
-[2023-12-03 19:18:08] [main] [INFO ] com.kirito5572.App -                                 t:::::t                           b:::::b                                   t:::::t     V::::::V           V::::::V2222222     2:::::2 
-[2023-12-03 19:18:08] [main] [INFO ] com.kirito5572.App - rrrrr   rrrrrrrrr  iiiiiiittttttt:::::ttttttt       ooooooooooo   b:::::bbbbbbbbb       ooooooooooo   ttttttt:::::tttttttV:::::V           V:::::V             2:::::2 
-[2023-12-03 19:18:08] [main] [INFO ] com.kirito5572.App - r::::rrr:::::::::r i:::::it:::::::::::::::::t     oo:::::::::::oo b::::::::::::::bb   oo:::::::::::oo t:::::::::::::::::t V:::::V         V:::::V              2:::::2 
-[2023-12-03 19:18:08] [main] [INFO ] com.kirito5572.App - r:::::::::::::::::r i::::it:::::::::::::::::t    o:::::::::::::::ob::::::::::::::::b o:::::::::::::::ot:::::::::::::::::t  V:::::V       V:::::V            2222::::2  
-[2023-12-03 19:18:08] [main] [INFO ] com.kirito5572.App - rr::::::rrrrr::::::ri::::itttttt:::::::tttttt    o:::::ooooo:::::ob:::::bbbbb:::::::bo:::::ooooo:::::otttttt:::::::tttttt   V:::::V     V:::::V        22222::::::22   
-[2023-12-03 19:18:08] [main] [INFO ] com.kirito5572.App -  r:::::r     r:::::ri::::i      t:::::t          o::::o     o::::ob:::::b    b::::::bo::::o     o::::o      t:::::t          V:::::V   V:::::V       22::::::::222     
-[2023-12-03 19:18:08] [main] [INFO ] com.kirito5572.App -  r:::::r     rrrrrrri::::i      t:::::t          o::::o     o::::ob:::::b     b:::::bo::::o     o::::o      t:::::t           V:::::V V:::::V       2:::::22222        
-[2023-12-03 19:18:08] [main] [INFO ] com.kirito5572.App -  r:::::r            i::::i      t:::::t          o::::o     o::::ob:::::b     b:::::bo::::o     o::::o      t:::::t            V:::::V:::::V       2:::::2             
-[2023-12-03 19:18:08] [main] [INFO ] com.kirito5572.App -  r:::::r            i::::i      t:::::t    tttttto::::o     o::::ob:::::b     b:::::bo::::o     o::::o      t:::::t    tttttt   V:::::::::V        2:::::2             
-[2023-12-03 19:18:08] [main] [INFO ] com.kirito5572.App -  r:::::r           i::::::i     t::::::tttt:::::to:::::ooooo:::::ob:::::bbbbbb::::::bo:::::ooooo:::::o      t::::::tttt:::::t    V:::::::V         2:::::2       222222
-[2023-12-03 19:18:08] [main] [INFO ] com.kirito5572.App -  r:::::r           i::::::i     tt::::::::::::::to:::::::::::::::ob::::::::::::::::b o:::::::::::::::o      tt::::::::::::::t     V:::::V          2::::::2222222:::::2
-[2023-12-03 19:18:08] [main] [INFO ] com.kirito5572.App -  r:::::r           i::::::i       tt:::::::::::tt oo:::::::::::oo b:::::::::::::::b   oo:::::::::::oo         tt:::::::::::tt      V:::V           2::::::::::::::::::2
-[2023-12-03 19:18:08] [main] [INFO ] com.kirito5572.App -  rrrrrrr           iiiiiiii         ttttttttttt     ooooooooooo   bbbbbbbbbbbbbbbb      ooooooooooo             ttttttttttt         VVV            22222222222222222222
-[2023-12-03 19:18:08] [main] [INFO ] com.kirito5572.App - OS: windows 11
-[2023-12-03 19:19:05] [main] [INFO ] com.kirito5572.App -                                                                                                                                                                        
-[2023-12-03 19:19:05] [main] [INFO ] com.kirito5572.App -                                                                  bbbbbbbb                                                                                              
-[2023-12-03 19:19:05] [main] [INFO ] com.kirito5572.App -                      iiii          tttt                          b::::::b                                      tttt     VVVVVVVV           VVVVVVVV 222222222222222    
-[2023-12-03 19:19:05] [main] [INFO ] com.kirito5572.App -                     i::::i      ttt:::t                          b::::::b                                   ttt:::t     V::::::V           V::::::V2:::::::::::::::22  
-[2023-12-03 19:19:05] [main] [INFO ] com.kirito5572.App -                      iiii       t:::::t                          b::::::b                                   t:::::t     V::::::V           V::::::V2::::::222222:::::2 
-[2023-12-03 19:19:05] [main] [INFO ] com.kirito5572.App -                                 t:::::t                           b:::::b                                   t:::::t     V::::::V           V::::::V2222222     2:::::2 
-[2023-12-03 19:19:05] [main] [INFO ] com.kirito5572.App - rrrrr   rrrrrrrrr  iiiiiiittttttt:::::ttttttt       ooooooooooo   b:::::bbbbbbbbb       ooooooooooo   ttttttt:::::tttttttV:::::V           V:::::V             2:::::2 
-[2023-12-03 19:19:05] [main] [INFO ] com.kirito5572.App - r::::rrr:::::::::r i:::::it:::::::::::::::::t     oo:::::::::::oo b::::::::::::::bb   oo:::::::::::oo t:::::::::::::::::t V:::::V         V:::::V              2:::::2 
-[2023-12-03 19:19:05] [main] [INFO ] com.kirito5572.App - r:::::::::::::::::r i::::it:::::::::::::::::t    o:::::::::::::::ob::::::::::::::::b o:::::::::::::::ot:::::::::::::::::t  V:::::V       V:::::V            2222::::2  
-[2023-12-03 19:19:05] [main] [INFO ] com.kirito5572.App - rr::::::rrrrr::::::ri::::itttttt:::::::tttttt    o:::::ooooo:::::ob:::::bbbbb:::::::bo:::::ooooo:::::otttttt:::::::tttttt   V:::::V     V:::::V        22222::::::22   
-[2023-12-03 19:19:05] [main] [INFO ] com.kirito5572.App -  r:::::r     r:::::ri::::i      t:::::t          o::::o     o::::ob:::::b    b::::::bo::::o     o::::o      t:::::t          V:::::V   V:::::V       22::::::::222     
-[2023-12-03 19:19:05] [main] [INFO ] com.kirito5572.App -  r:::::r     rrrrrrri::::i      t:::::t          o::::o     o::::ob:::::b     b:::::bo::::o     o::::o      t:::::t           V:::::V V:::::V       2:::::22222        
-[2023-12-03 19:19:05] [main] [INFO ] com.kirito5572.App -  r:::::r            i::::i      t:::::t          o::::o     o::::ob:::::b     b:::::bo::::o     o::::o      t:::::t            V:::::V:::::V       2:::::2             
-[2023-12-03 19:19:05] [main] [INFO ] com.kirito5572.App -  r:::::r            i::::i      t:::::t    tttttto::::o     o::::ob:::::b     b:::::bo::::o     o::::o      t:::::t    tttttt   V:::::::::V        2:::::2             
-[2023-12-03 19:19:05] [main] [INFO ] com.kirito5572.App -  r:::::r           i::::::i     t::::::tttt:::::to:::::ooooo:::::ob:::::bbbbbb::::::bo:::::ooooo:::::o      t::::::tttt:::::t    V:::::::V         2:::::2       222222
-[2023-12-03 19:19:05] [main] [INFO ] com.kirito5572.App -  r:::::r           i::::::i     tt::::::::::::::to:::::::::::::::ob::::::::::::::::b o:::::::::::::::o      tt::::::::::::::t     V:::::V          2::::::2222222:::::2
-[2023-12-03 19:19:05] [main] [INFO ] com.kirito5572.App -  r:::::r           i::::::i       tt:::::::::::tt oo:::::::::::oo b:::::::::::::::b   oo:::::::::::oo         tt:::::::::::tt      V:::V           2::::::::::::::::::2
-[2023-12-03 19:19:05] [main] [INFO ] com.kirito5572.App -  rrrrrrr           iiiiiiii         ttttttttttt     ooooooooooo   bbbbbbbbbbbbbbbb      ooooooooooo             ttttttttttt         VVV            22222222222222222222
-[2023-12-03 19:19:05] [main] [INFO ] com.kirito5572.App - OS: windows 11
-[2023-12-03 19:19:13] [main] [INFO ] com.kirito5572.App -                                                                                                                                                                        
-[2023-12-03 19:19:13] [main] [INFO ] com.kirito5572.App -                                                                  bbbbbbbb                                                                                              
-[2023-12-03 19:19:13] [main] [INFO ] com.kirito5572.App -                      iiii          tttt                          b::::::b                                      tttt     VVVVVVVV           VVVVVVVV 222222222222222    
-[2023-12-03 19:19:13] [main] [INFO ] com.kirito5572.App -                     i::::i      ttt:::t                          b::::::b                                   ttt:::t     V::::::V           V::::::V2:::::::::::::::22  
-[2023-12-03 19:19:13] [main] [INFO ] com.kirito5572.App -                      iiii       t:::::t                          b::::::b                                   t:::::t     V::::::V           V::::::V2::::::222222:::::2 
-[2023-12-03 19:19:13] [main] [INFO ] com.kirito5572.App -                                 t:::::t                           b:::::b                                   t:::::t     V::::::V           V::::::V2222222     2:::::2 
-[2023-12-03 19:19:13] [main] [INFO ] com.kirito5572.App - rrrrr   rrrrrrrrr  iiiiiiittttttt:::::ttttttt       ooooooooooo   b:::::bbbbbbbbb       ooooooooooo   ttttttt:::::tttttttV:::::V           V:::::V             2:::::2 
-[2023-12-03 19:19:13] [main] [INFO ] com.kirito5572.App - r::::rrr:::::::::r i:::::it:::::::::::::::::t     oo:::::::::::oo b::::::::::::::bb   oo:::::::::::oo t:::::::::::::::::t V:::::V         V:::::V              2:::::2 
-[2023-12-03 19:19:13] [main] [INFO ] com.kirito5572.App - r:::::::::::::::::r i::::it:::::::::::::::::t    o:::::::::::::::ob::::::::::::::::b o:::::::::::::::ot:::::::::::::::::t  V:::::V       V:::::V            2222::::2  
-[2023-12-03 19:19:13] [main] [INFO ] com.kirito5572.App - rr::::::rrrrr::::::ri::::itttttt:::::::tttttt    o:::::ooooo:::::ob:::::bbbbb:::::::bo:::::ooooo:::::otttttt:::::::tttttt   V:::::V     V:::::V        22222::::::22   
-[2023-12-03 19:19:13] [main] [INFO ] com.kirito5572.App -  r:::::r     r:::::ri::::i      t:::::t          o::::o     o::::ob:::::b    b::::::bo::::o     o::::o      t:::::t          V:::::V   V:::::V       22::::::::222     
-[2023-12-03 19:19:13] [main] [INFO ] com.kirito5572.App -  r:::::r     rrrrrrri::::i      t:::::t          o::::o     o::::ob:::::b     b:::::bo::::o     o::::o      t:::::t           V:::::V V:::::V       2:::::22222        
-[2023-12-03 19:19:13] [main] [INFO ] com.kirito5572.App -  r:::::r            i::::i      t:::::t          o::::o     o::::ob:::::b     b:::::bo::::o     o::::o      t:::::t            V:::::V:::::V       2:::::2             
-[2023-12-03 19:19:13] [main] [INFO ] com.kirito5572.App -  r:::::r            i::::i      t:::::t    tttttto::::o     o::::ob:::::b     b:::::bo::::o     o::::o      t:::::t    tttttt   V:::::::::V        2:::::2             
-[2023-12-03 19:19:13] [main] [INFO ] com.kirito5572.App -  r:::::r           i::::::i     t::::::tttt:::::to:::::ooooo:::::ob:::::bbbbbb::::::bo:::::ooooo:::::o      t::::::tttt:::::t    V:::::::V         2:::::2       222222
-[2023-12-03 19:19:13] [main] [INFO ] com.kirito5572.App -  r:::::r           i::::::i     tt::::::::::::::to:::::::::::::::ob::::::::::::::::b o:::::::::::::::o      tt::::::::::::::t     V:::::V          2::::::2222222:::::2
-[2023-12-03 19:19:13] [main] [INFO ] com.kirito5572.App -  r:::::r           i::::::i       tt:::::::::::tt oo:::::::::::oo b:::::::::::::::b   oo:::::::::::oo         tt:::::::::::tt      V:::V           2::::::::::::::::::2
-[2023-12-03 19:19:13] [main] [INFO ] com.kirito5572.App -  rrrrrrr           iiiiiiii         ttttttttttt     ooooooooooo   bbbbbbbbbbbbbbbb      ooooooooooo             ttttttttttt         VVV            22222222222222222222
-[2023-12-03 19:19:13] [main] [INFO ] com.kirito5572.App - OS: windows 11
-[2023-12-03 19:23:36] [main] [INFO ] com.kirito5572.App -                                                                                                                                                                        
-[2023-12-03 19:23:36] [main] [INFO ] com.kirito5572.App -                                                                  bbbbbbbb                                                                                              
-[2023-12-03 19:23:36] [main] [INFO ] com.kirito5572.App -                      iiii          tttt                          b::::::b                                      tttt     VVVVVVVV           VVVVVVVV 222222222222222    
-[2023-12-03 19:23:36] [main] [INFO ] com.kirito5572.App -                     i::::i      ttt:::t                          b::::::b                                   ttt:::t     V::::::V           V::::::V2:::::::::::::::22  
-[2023-12-03 19:23:36] [main] [INFO ] com.kirito5572.App -                      iiii       t:::::t                          b::::::b                                   t:::::t     V::::::V           V::::::V2::::::222222:::::2 
-[2023-12-03 19:23:36] [main] [INFO ] com.kirito5572.App -                                 t:::::t                           b:::::b                                   t:::::t     V::::::V           V::::::V2222222     2:::::2 
-[2023-12-03 19:23:36] [main] [INFO ] com.kirito5572.App - rrrrr   rrrrrrrrr  iiiiiiittttttt:::::ttttttt       ooooooooooo   b:::::bbbbbbbbb       ooooooooooo   ttttttt:::::tttttttV:::::V           V:::::V             2:::::2 
-[2023-12-03 19:23:36] [main] [INFO ] com.kirito5572.App - r::::rrr:::::::::r i:::::it:::::::::::::::::t     oo:::::::::::oo b::::::::::::::bb   oo:::::::::::oo t:::::::::::::::::t V:::::V         V:::::V              2:::::2 
-[2023-12-03 19:23:36] [main] [INFO ] com.kirito5572.App - r:::::::::::::::::r i::::it:::::::::::::::::t    o:::::::::::::::ob::::::::::::::::b o:::::::::::::::ot:::::::::::::::::t  V:::::V       V:::::V            2222::::2  
-[2023-12-03 19:23:36] [main] [INFO ] com.kirito5572.App - rr::::::rrrrr::::::ri::::itttttt:::::::tttttt    o:::::ooooo:::::ob:::::bbbbb:::::::bo:::::ooooo:::::otttttt:::::::tttttt   V:::::V     V:::::V        22222::::::22   
-[2023-12-03 19:23:36] [main] [INFO ] com.kirito5572.App -  r:::::r     r:::::ri::::i      t:::::t          o::::o     o::::ob:::::b    b::::::bo::::o     o::::o      t:::::t          V:::::V   V:::::V       22::::::::222     
-[2023-12-03 19:23:36] [main] [INFO ] com.kirito5572.App -  r:::::r     rrrrrrri::::i      t:::::t          o::::o     o::::ob:::::b     b:::::bo::::o     o::::o      t:::::t           V:::::V V:::::V       2:::::22222        
-[2023-12-03 19:23:36] [main] [INFO ] com.kirito5572.App -  r:::::r            i::::i      t:::::t          o::::o     o::::ob:::::b     b:::::bo::::o     o::::o      t:::::t            V:::::V:::::V       2:::::2             
-[2023-12-03 19:23:36] [main] [INFO ] com.kirito5572.App -  r:::::r            i::::i      t:::::t    tttttto::::o     o::::ob:::::b     b:::::bo::::o     o::::o      t:::::t    tttttt   V:::::::::V        2:::::2             
-[2023-12-03 19:23:36] [main] [INFO ] com.kirito5572.App -  r:::::r           i::::::i     t::::::tttt:::::to:::::ooooo:::::ob:::::bbbbbb::::::bo:::::ooooo:::::o      t::::::tttt:::::t    V:::::::V         2:::::2       222222
-[2023-12-03 19:23:36] [main] [INFO ] com.kirito5572.App -  r:::::r           i::::::i     tt::::::::::::::to:::::::::::::::ob::::::::::::::::b o:::::::::::::::o      tt::::::::::::::t     V:::::V          2::::::2222222:::::2
-[2023-12-03 19:23:36] [main] [INFO ] com.kirito5572.App -  r:::::r           i::::::i       tt:::::::::::tt oo:::::::::::oo b:::::::::::::::b   oo:::::::::::oo         tt:::::::::::tt      V:::V           2::::::::::::::::::2
-[2023-12-03 19:23:36] [main] [INFO ] com.kirito5572.App -  rrrrrrr           iiiiiiii         ttttttttttt     ooooooooooo   bbbbbbbbbbbbbbbb      ooooooooooo             ttttttttttt         VVV            22222222222222222222
-[2023-12-03 19:23:36] [main] [INFO ] com.kirito5572.App - OS: windows 11
-[2023-12-03 19:23:36] [main] [WARN ] com.kirito5572.App - BBBBBBBBBBBBBBBBB   EEEEEEEEEEEEEEEEEEEEEETTTTTTTTTTTTTTTTTTTTTTT         AAA               !!! 
-[2023-12-03 19:23:36] [main] [WARN ] com.kirito5572.App - B::::::::::::::::B  E::::::::::::::::::::ET:::::::::::::::::::::T        A:::A             !!:!!
-[2023-12-03 19:23:36] [main] [WARN ] com.kirito5572.App - B::::::BBBBBB:::::B E::::::::::::::::::::ET:::::::::::::::::::::T       A:::::A            !:::!
-[2023-12-03 19:23:36] [main] [WARN ] com.kirito5572.App - BB:::::B     B:::::BEE::::::EEEEEEEEE::::ET:::::TT:::::::TT:::::T      A:::::::A           !:::!
-[2023-12-03 19:23:36] [main] [WARN ] com.kirito5572.App - B::::B     B:::::B  E:::::E       EEEEEETTTTTT  T:::::T  TTTTTT     A:::::::::A          !:::!
-[2023-12-03 19:23:36] [main] [WARN ] com.kirito5572.App -   B::::B     B:::::B  E:::::E                     T:::::T            A:::::A:::::A         !:::!
-[2023-12-03 19:23:36] [main] [WARN ] com.kirito5572.App -   B::::BBBBBB:::::B   E::::::EEEEEEEEEE           T:::::T           A:::::A A:::::A        !:::!
-[2023-12-03 19:23:36] [main] [WARN ] com.kirito5572.App -   B:::::::::::::BB    E:::::::::::::::E           T:::::T          A:::::A   A:::::A       !:::!
-[2023-12-03 19:23:36] [main] [WARN ] com.kirito5572.App -   B::::BBBBBB:::::B   E:::::::::::::::E           T:::::T         A:::::A     A:::::A      !:::!
-[2023-12-03 19:23:36] [main] [WARN ] com.kirito5572.App -   B::::B     B:::::B  E::::::EEEEEEEEEE           T:::::T        A:::::AAAAAAAAA:::::A     !:::!
-[2023-12-03 19:23:36] [main] [WARN ] com.kirito5572.App -   B::::B     B:::::B  E:::::E                     T:::::T       A:::::::::::::::::::::A    !!:!!
-[2023-12-03 19:23:36] [main] [WARN ] com.kirito5572.App -   B::::B     B:::::B  E:::::E       EEEEEE        T:::::T      A:::::AAAAAAAAAAAAA:::::A    !!! 
-[2023-12-03 19:23:36] [main] [WARN ] com.kirito5572.App - BB:::::BBBBBB::::::BEE::::::EEEEEEEE:::::E      TT:::::::TT   A:::::A             A:::::A       
-[2023-12-03 19:23:36] [main] [WARN ] com.kirito5572.App - B:::::::::::::::::B E::::::::::::::::::::E      T:::::::::T  A:::::A               A:::::A  !!! 
-[2023-12-03 19:23:36] [main] [WARN ] com.kirito5572.App - B::::::::::::::::B  E::::::::::::::::::::E      T:::::::::T A:::::A                 A:::::A!!:!!
-[2023-12-03 19:23:36] [main] [WARN ] com.kirito5572.App - BBBBBBBBBBBBBBBBB   EEEEEEEEEEEEEEEEEEEEEE      TTTTTTTTTTTAAAAAAA                   AAAAAAA!!! 
-[2023-12-03 19:23:36] [main] [WARN ] com.kirito5572.App - beta program version: 2.0-beta1
-[2023-12-03 19:23:37] [main] [INFO ] com.kirito5572.App - SQL 서버/파일 접속중
-[2023-12-03 19:23:38] [main] [INFO ] com.kirito5572.App - 접속 완료...
-[2023-12-03 19:23:38] [main] [INFO ] c.k.objects.logger.ConfigPackage - 모든 설정 로딩 완료!
-[2023-12-03 19:23:38] [main] [INFO ] com.kirito5572.App - 봇 시작중... 디스코드로 부터의 응답 대기중
-[2023-12-03 19:23:38] [main] [INFO ] net.dv8tion.jda.api.JDA - Login Successful!
-[2023-12-03 19:23:38] [main] [INFO ] com.kirito5572.App - 서버 연결 성공, 개별 기능부 실행
-[2023-12-03 19:23:38] [main] [INFO ] c.k.objects.main.CommandManager - 명령어 로딩중
-[2023-12-03 19:23:39] [JDA MainWS-ReadThread] [INFO ] n.d.j.i.requests.WebSocketClient - Connected to WebSocket
-[2023-12-03 19:23:39] [main] [INFO ] c.k.objects.main.CommandManager - 명령어 셋팅 완료
-[2023-12-03 19:23:39] [main] [INFO ] com.kirito5572.App - 기능 정상 시작, 연결 대기중....
-[2023-12-03 19:23:39] [JDA MainWS-ReadThread] [INFO ] net.dv8tion.jda.api.JDA - Finished Loading!
-[2023-12-03 19:23:39] [JDA MainWS-ReadThread] [INFO ] c.k.listeners.main.onReadyListener - 상태 변경 기능부 준비 완료
-[2023-12-03 19:23:39] [JDA MainWS-ReadThread] [INFO ] c.k.listeners.main.CommandListener - 명령어 처리 기능부 준비 완료
-[2023-12-03 19:23:39] [JDA MainWS-ReadThread] [INFO ] c.k.l.main.MemberCountListener - 멤버 카운트 기능부 준비 완료
-[2023-12-03 19:23:39] [JDA MainWS-ReadThread] [INFO ] c.k.l.main.MessagePinListener - 메세지 핀 기능부 준비 완료
-[2023-12-03 19:23:39] [JDA MainWS-ReadThread] [INFO ] c.k.l.main.AirCommandListener - 지역별 공기질 측정 명령어 기능부 준비 완료
-[2023-12-03 19:23:39] [JDA MainWS-ReadThread] [INFO ] c.k.l.main.WeatherCommandListener - 날씨 명령어 기능부 준비 완료
-[2023-12-03 19:23:39] [JDA MainWS-ReadThread] [INFO ] c.k.listeners.logger.LoggerListener - 로거 기능부 준비 완료
-[2023-12-03 19:23:39] [JDA MainWS-ReadThread] [INFO ] c.k.listeners.logger.ConfigListener - 설정 명령어 기능부 준비 완료
-[2023-12-03 19:23:39] [JDA MainWS-ReadThread] [INFO ] c.k.l.m.NekoDiscordMemberListener - 네코샘플 디스코드 특별 기능부 준비 완료
-[2023-12-03 19:23:39] [main] [INFO ] com.kirito5572.App - 각 기능 연결 완료, 부팅 완료
+[2023-12-25 17:03:13.522] [main] [INFO ] com.kirito5572.App -                                                                                                                                                                        
+[2023-12-25 17:03:13.534] [main] [INFO ] com.kirito5572.App -                                                                  bbbbbbbb                                                                                              
+[2023-12-25 17:03:13.535] [main] [INFO ] com.kirito5572.App -                      iiii          tttt                          b::::::b                                      tttt     VVVVVVVV           VVVVVVVV 222222222222222    
+[2023-12-25 17:03:13.536] [main] [INFO ] com.kirito5572.App -                     i::::i      ttt:::t                          b::::::b                                   ttt:::t     V::::::V           V::::::V2:::::::::::::::22  
+[2023-12-25 17:03:13.537] [main] [INFO ] com.kirito5572.App -                      iiii       t:::::t                          b::::::b                                   t:::::t     V::::::V           V::::::V2::::::222222:::::2 
+[2023-12-25 17:03:13.538] [main] [INFO ] com.kirito5572.App -                                 t:::::t                           b:::::b                                   t:::::t     V::::::V           V::::::V2222222     2:::::2 
+[2023-12-25 17:03:13.538] [main] [INFO ] com.kirito5572.App - rrrrr   rrrrrrrrr  iiiiiiittttttt:::::ttttttt       ooooooooooo   b:::::bbbbbbbbb       ooooooooooo   ttttttt:::::tttttttV:::::V           V:::::V             2:::::2 
+[2023-12-25 17:03:13.538] [main] [INFO ] com.kirito5572.App - r::::rrr:::::::::r i:::::it:::::::::::::::::t     oo:::::::::::oo b::::::::::::::bb   oo:::::::::::oo t:::::::::::::::::t V:::::V         V:::::V              2:::::2 
+[2023-12-25 17:03:13.538] [main] [INFO ] com.kirito5572.App - r:::::::::::::::::r i::::it:::::::::::::::::t    o:::::::::::::::ob::::::::::::::::b o:::::::::::::::ot:::::::::::::::::t  V:::::V       V:::::V            2222::::2  
+[2023-12-25 17:03:13.539] [main] [INFO ] com.kirito5572.App - rr::::::rrrrr::::::ri::::itttttt:::::::tttttt    o:::::ooooo:::::ob:::::bbbbb:::::::bo:::::ooooo:::::otttttt:::::::tttttt   V:::::V     V:::::V        22222::::::22   
+[2023-12-25 17:03:13.540] [main] [INFO ] com.kirito5572.App -  r:::::r     r:::::ri::::i      t:::::t          o::::o     o::::ob:::::b    b::::::bo::::o     o::::o      t:::::t          V:::::V   V:::::V       22::::::::222     
+[2023-12-25 17:03:13.540] [main] [INFO ] com.kirito5572.App -  r:::::r     rrrrrrri::::i      t:::::t          o::::o     o::::ob:::::b     b:::::bo::::o     o::::o      t:::::t           V:::::V V:::::V       2:::::22222        
+[2023-12-25 17:03:13.540] [main] [INFO ] com.kirito5572.App -  r:::::r            i::::i      t:::::t          o::::o     o::::ob:::::b     b:::::bo::::o     o::::o      t:::::t            V:::::V:::::V       2:::::2             
+[2023-12-25 17:03:13.541] [main] [INFO ] com.kirito5572.App -  r:::::r            i::::i      t:::::t    tttttto::::o     o::::ob:::::b     b:::::bo::::o     o::::o      t:::::t    tttttt   V:::::::::V        2:::::2             
+[2023-12-25 17:03:13.541] [main] [INFO ] com.kirito5572.App -  r:::::r           i::::::i     t::::::tttt:::::to:::::ooooo:::::ob:::::bbbbbb::::::bo:::::ooooo:::::o      t::::::tttt:::::t    V:::::::V         2:::::2       222222
+[2023-12-25 17:03:13.541] [main] [INFO ] com.kirito5572.App -  r:::::r           i::::::i     tt::::::::::::::to:::::::::::::::ob::::::::::::::::b o:::::::::::::::o      tt::::::::::::::t     V:::::V          2::::::2222222:::::2
+[2023-12-25 17:03:13.542] [main] [INFO ] com.kirito5572.App -  r:::::r           i::::::i       tt:::::::::::tt oo:::::::::::oo b:::::::::::::::b   oo:::::::::::oo         tt:::::::::::tt      V:::V           2::::::::::::::::::2
+[2023-12-25 17:03:13.542] [main] [INFO ] com.kirito5572.App -  rrrrrrr           iiiiiiii         ttttttttttt     ooooooooooo   bbbbbbbbbbbbbbbb      ooooooooooo             ttttttttttt         VVV            22222222222222222222
+[2023-12-25 17:03:13.542] [main] [INFO ] com.kirito5572.App - OS: windows 11
+[2023-12-25 17:03:13.543] [main] [WARN ] com.kirito5572.App - BBBBBBBBBBBBBBBBB   EEEEEEEEEEEEEEEEEEEEEETTTTTTTTTTTTTTTTTTTTTTT         AAA               !!! 
+[2023-12-25 17:03:13.544] [main] [WARN ] com.kirito5572.App - B::::::::::::::::B  E::::::::::::::::::::ET:::::::::::::::::::::T        A:::A             !!:!!
+[2023-12-25 17:03:13.544] [main] [WARN ] com.kirito5572.App - B::::::BBBBBB:::::B E::::::::::::::::::::ET:::::::::::::::::::::T       A:::::A            !:::!
+[2023-12-25 17:03:13.545] [main] [WARN ] com.kirito5572.App - BB:::::B     B:::::BEE::::::EEEEEEEEE::::ET:::::TT:::::::TT:::::T      A:::::::A           !:::!
+[2023-12-25 17:03:13.545] [main] [WARN ] com.kirito5572.App - B::::B     B:::::B  E:::::E       EEEEEETTTTTT  T:::::T  TTTTTT     A:::::::::A          !:::!
+[2023-12-25 17:03:13.545] [main] [WARN ] com.kirito5572.App -   B::::B     B:::::B  E:::::E                     T:::::T            A:::::A:::::A         !:::!
+[2023-12-25 17:03:13.545] [main] [WARN ] com.kirito5572.App -   B::::BBBBBB:::::B   E::::::EEEEEEEEEE           T:::::T           A:::::A A:::::A        !:::!
+[2023-12-25 17:03:13.546] [main] [WARN ] com.kirito5572.App -   B:::::::::::::BB    E:::::::::::::::E           T:::::T          A:::::A   A:::::A       !:::!
+[2023-12-25 17:03:13.546] [main] [WARN ] com.kirito5572.App -   B::::BBBBBB:::::B   E:::::::::::::::E           T:::::T         A:::::A     A:::::A      !:::!
+[2023-12-25 17:03:13.547] [main] [WARN ] com.kirito5572.App -   B::::B     B:::::B  E::::::EEEEEEEEEE           T:::::T        A:::::AAAAAAAAA:::::A     !:::!
+[2023-12-25 17:03:13.547] [main] [WARN ] com.kirito5572.App -   B::::B     B:::::B  E:::::E                     T:::::T       A:::::::::::::::::::::A    !!:!!
+[2023-12-25 17:03:13.547] [main] [WARN ] com.kirito5572.App -   B::::B     B:::::B  E:::::E       EEEEEE        T:::::T      A:::::AAAAAAAAAAAAA:::::A    !!! 
+[2023-12-25 17:03:13.547] [main] [WARN ] com.kirito5572.App - BB:::::BBBBBB::::::BEE::::::EEEEEEEE:::::E      TT:::::::TT   A:::::A             A:::::A       
+[2023-12-25 17:03:13.548] [main] [WARN ] com.kirito5572.App - B:::::::::::::::::B E::::::::::::::::::::E      T:::::::::T  A:::::A               A:::::A  !!! 
+[2023-12-25 17:03:13.548] [main] [WARN ] com.kirito5572.App - B::::::::::::::::B  E::::::::::::::::::::E      T:::::::::T A:::::A                 A:::::A!!:!!
+[2023-12-25 17:03:13.548] [main] [WARN ] com.kirito5572.App - BBBBBBBBBBBBBBBBB   EEEEEEEEEEEEEEEEEEEEEE      TTTTTTTTTTTAAAAAAA                   AAAAAAA!!! 
+[2023-12-25 17:03:13.549] [main] [WARN ] com.kirito5572.App - beta program version: beta version
+[2023-12-25 17:03:13.928] [main] [INFO ] com.kirito5572.App - SQL 서버/파일 접속중
+[2023-12-25 17:03:14.409] [main] [INFO ] com.kirito5572.App - 접속 완료...
+[2023-12-25 17:03:14.448] [main] [INFO ] c.k.objects.logger.ConfigPackage - 모든 설정 로딩 완료!
+[2023-12-25 17:03:14.462] [main] [INFO ] com.kirito5572.App - 봇 시작중... 디스코드로 부터의 응답 대기중
+[2023-12-25 17:03:15.003] [main] [INFO ] net.dv8tion.jda.api.JDA - Login Successful!
+[2023-12-25 17:03:15.034] [main] [INFO ] com.kirito5572.App - 서버 연결 성공, 개별 기능부 실행
+[2023-12-25 17:03:15.404] [JDA MainWS-WriteThread] [INFO ] n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+[2023-12-25 17:03:15.520] [main] [INFO ] c.k.objects.main.CommandManager - 명령어 로딩중
+[2023-12-25 17:03:15.832] [JDA MainWS-ReadThread] [INFO ] net.dv8tion.jda.api.JDA - Finished Loading!
+[2023-12-25 17:03:15.962] [main] [INFO ] c.k.objects.main.CommandManager - 명령어 셋팅 완료
+[2023-12-25 17:03:16.024] [main] [INFO ] com.kirito5572.App - 기능 정상 시작, 연결 대기중....
+[2023-12-25 17:03:16.024] [main] [INFO ] com.kirito5572.App - 각 기능 연결 완료, 부팅 완료
+[2023-12-25 17:04:06.584] [main] [INFO ] com.kirito5572.App -                                                                                                                                                                        
+[2023-12-25 17:04:06.585] [main] [INFO ] com.kirito5572.App -                                                                  bbbbbbbb                                                                                              
+[2023-12-25 17:04:06.586] [main] [INFO ] com.kirito5572.App -                      iiii          tttt                          b::::::b                                      tttt     VVVVVVVV           VVVVVVVV 222222222222222    
+[2023-12-25 17:04:06.586] [main] [INFO ] com.kirito5572.App -                     i::::i      ttt:::t                          b::::::b                                   ttt:::t     V::::::V           V::::::V2:::::::::::::::22  
+[2023-12-25 17:04:06.586] [main] [INFO ] com.kirito5572.App -                      iiii       t:::::t                          b::::::b                                   t:::::t     V::::::V           V::::::V2::::::222222:::::2 
+[2023-12-25 17:04:06.586] [main] [INFO ] com.kirito5572.App -                                 t:::::t                           b:::::b                                   t:::::t     V::::::V           V::::::V2222222     2:::::2 
+[2023-12-25 17:04:06.586] [main] [INFO ] com.kirito5572.App - rrrrr   rrrrrrrrr  iiiiiiittttttt:::::ttttttt       ooooooooooo   b:::::bbbbbbbbb       ooooooooooo   ttttttt:::::tttttttV:::::V           V:::::V             2:::::2 
+[2023-12-25 17:04:06.587] [main] [INFO ] com.kirito5572.App - r::::rrr:::::::::r i:::::it:::::::::::::::::t     oo:::::::::::oo b::::::::::::::bb   oo:::::::::::oo t:::::::::::::::::t V:::::V         V:::::V              2:::::2 
+[2023-12-25 17:04:06.587] [main] [INFO ] com.kirito5572.App - r:::::::::::::::::r i::::it:::::::::::::::::t    o:::::::::::::::ob::::::::::::::::b o:::::::::::::::ot:::::::::::::::::t  V:::::V       V:::::V            2222::::2  
+[2023-12-25 17:04:06.587] [main] [INFO ] com.kirito5572.App - rr::::::rrrrr::::::ri::::itttttt:::::::tttttt    o:::::ooooo:::::ob:::::bbbbb:::::::bo:::::ooooo:::::otttttt:::::::tttttt   V:::::V     V:::::V        22222::::::22   
+[2023-12-25 17:04:06.587] [main] [INFO ] com.kirito5572.App -  r:::::r     r:::::ri::::i      t:::::t          o::::o     o::::ob:::::b    b::::::bo::::o     o::::o      t:::::t          V:::::V   V:::::V       22::::::::222     
+[2023-12-25 17:04:06.587] [main] [INFO ] com.kirito5572.App -  r:::::r     rrrrrrri::::i      t:::::t          o::::o     o::::ob:::::b     b:::::bo::::o     o::::o      t:::::t           V:::::V V:::::V       2:::::22222        
+[2023-12-25 17:04:06.588] [main] [INFO ] com.kirito5572.App -  r:::::r            i::::i      t:::::t          o::::o     o::::ob:::::b     b:::::bo::::o     o::::o      t:::::t            V:::::V:::::V       2:::::2             
+[2023-12-25 17:04:06.588] [main] [INFO ] com.kirito5572.App -  r:::::r            i::::i      t:::::t    tttttto::::o     o::::ob:::::b     b:::::bo::::o     o::::o      t:::::t    tttttt   V:::::::::V        2:::::2             
+[2023-12-25 17:04:06.588] [main] [INFO ] com.kirito5572.App -  r:::::r           i::::::i     t::::::tttt:::::to:::::ooooo:::::ob:::::bbbbbb::::::bo:::::ooooo:::::o      t::::::tttt:::::t    V:::::::V         2:::::2       222222
+[2023-12-25 17:04:06.589] [main] [INFO ] com.kirito5572.App -  r:::::r           i::::::i     tt::::::::::::::to:::::::::::::::ob::::::::::::::::b o:::::::::::::::o      tt::::::::::::::t     V:::::V          2::::::2222222:::::2
+[2023-12-25 17:04:06.589] [main] [INFO ] com.kirito5572.App -  r:::::r           i::::::i       tt:::::::::::tt oo:::::::::::oo b:::::::::::::::b   oo:::::::::::oo         tt:::::::::::tt      V:::V           2::::::::::::::::::2
+[2023-12-25 17:04:06.589] [main] [INFO ] com.kirito5572.App -  rrrrrrr           iiiiiiii         ttttttttttt     ooooooooooo   bbbbbbbbbbbbbbbb      ooooooooooo             ttttttttttt         VVV            22222222222222222222
+[2023-12-25 17:04:06.589] [main] [INFO ] com.kirito5572.App - OS: windows 11
+[2023-12-25 17:04:06.590] [main] [WARN ] com.kirito5572.App - BBBBBBBBBBBBBBBBB   EEEEEEEEEEEEEEEEEEEEEETTTTTTTTTTTTTTTTTTTTTTT         AAA               !!! 
+[2023-12-25 17:04:06.590] [main] [WARN ] com.kirito5572.App - B::::::::::::::::B  E::::::::::::::::::::ET:::::::::::::::::::::T        A:::A             !!:!!
+[2023-12-25 17:04:06.591] [main] [WARN ] com.kirito5572.App - B::::::BBBBBB:::::B E::::::::::::::::::::ET:::::::::::::::::::::T       A:::::A            !:::!
+[2023-12-25 17:04:06.591] [main] [WARN ] com.kirito5572.App - BB:::::B     B:::::BEE::::::EEEEEEEEE::::ET:::::TT:::::::TT:::::T      A:::::::A           !:::!
+[2023-12-25 17:04:06.591] [main] [WARN ] com.kirito5572.App - B::::B     B:::::B  E:::::E       EEEEEETTTTTT  T:::::T  TTTTTT     A:::::::::A          !:::!
+[2023-12-25 17:04:06.591] [main] [WARN ] com.kirito5572.App -   B::::B     B:::::B  E:::::E                     T:::::T            A:::::A:::::A         !:::!
+[2023-12-25 17:04:06.591] [main] [WARN ] com.kirito5572.App -   B::::BBBBBB:::::B   E::::::EEEEEEEEEE           T:::::T           A:::::A A:::::A        !:::!
+[2023-12-25 17:04:06.591] [main] [WARN ] com.kirito5572.App -   B:::::::::::::BB    E:::::::::::::::E           T:::::T          A:::::A   A:::::A       !:::!
+[2023-12-25 17:04:06.591] [main] [WARN ] com.kirito5572.App -   B::::BBBBBB:::::B   E:::::::::::::::E           T:::::T         A:::::A     A:::::A      !:::!
+[2023-12-25 17:04:06.592] [main] [WARN ] com.kirito5572.App -   B::::B     B:::::B  E::::::EEEEEEEEEE           T:::::T        A:::::AAAAAAAAA:::::A     !:::!
+[2023-12-25 17:04:06.592] [main] [WARN ] com.kirito5572.App -   B::::B     B:::::B  E:::::E                     T:::::T       A:::::::::::::::::::::A    !!:!!
+[2023-12-25 17:04:06.592] [main] [WARN ] com.kirito5572.App -   B::::B     B:::::B  E:::::E       EEEEEE        T:::::T      A:::::AAAAAAAAAAAAA:::::A    !!! 
+[2023-12-25 17:04:06.592] [main] [WARN ] com.kirito5572.App - BB:::::BBBBBB::::::BEE::::::EEEEEEEE:::::E      TT:::::::TT   A:::::A             A:::::A       
+[2023-12-25 17:04:06.592] [main] [WARN ] com.kirito5572.App - B:::::::::::::::::B E::::::::::::::::::::E      T:::::::::T  A:::::A               A:::::A  !!! 
+[2023-12-25 17:04:06.592] [main] [WARN ] com.kirito5572.App - B::::::::::::::::B  E::::::::::::::::::::E      T:::::::::T A:::::A                 A:::::A!!:!!
+[2023-12-25 17:04:06.592] [main] [WARN ] com.kirito5572.App - BBBBBBBBBBBBBBBBB   EEEEEEEEEEEEEEEEEEEEEE      TTTTTTTTTTTAAAAAAA                   AAAAAAA!!! 
+[2023-12-25 17:04:06.592] [main] [WARN ] com.kirito5572.App - beta program version: beta version
+[2023-12-25 17:04:06.869] [main] [INFO ] com.kirito5572.App - SQL 서버/파일 접속중
+[2023-12-25 17:04:07.267] [main] [INFO ] com.kirito5572.App - 접속 완료...
+[2023-12-25 17:04:07.296] [main] [INFO ] c.k.objects.logger.ConfigPackage - 모든 설정 로딩 완료!
+[2023-12-25 17:04:07.300] [main] [INFO ] com.kirito5572.App - 봇 시작중... 디스코드로 부터의 응답 대기중
+[2023-12-25 17:04:07.807] [main] [INFO ] net.dv8tion.jda.api.JDA - Login Successful!
+[2023-12-25 17:04:07.833] [main] [INFO ] com.kirito5572.App - 서버 연결 성공, 개별 기능부 실행
+[2023-12-25 17:04:08.090] [main] [INFO ] c.k.objects.main.CommandManager - 명령어 로딩중
+[2023-12-25 17:04:08.210] [JDA MainWS-ReadThread] [INFO ] n.d.j.i.requests.WebSocketClient - Connected to WebSocket
+[2023-12-25 17:04:08.482] [main] [INFO ] c.k.objects.main.CommandManager - 명령어 셋팅 완료
+[2023-12-25 17:04:08.492] [main] [INFO ] com.kirito5572.App - 기능 정상 시작, 연결 대기중....
+[2023-12-25 17:04:08.671] [JDA MainWS-ReadThread] [INFO ] net.dv8tion.jda.api.JDA - Finished Loading!
+[2023-12-25 17:04:08.672] [JDA MainWS-ReadThread] [INFO ] c.k.listeners.main.onReadyListener - 상태 변경 기능부 준비 완료
+[2023-12-25 17:04:08.673] [JDA MainWS-ReadThread] [INFO ] c.k.listeners.main.CommandListener - 명령어 처리 기능부 준비 완료
+[2023-12-25 17:04:08.673] [JDA MainWS-ReadThread] [INFO ] c.k.l.main.MemberCountListener - 멤버 카운트 기능부 준비 완료
+[2023-12-25 17:04:08.673] [JDA MainWS-ReadThread] [INFO ] c.k.l.main.MessagePinListener - 메세지 핀 기능부 준비 완료
+[2023-12-25 17:04:08.673] [JDA MainWS-ReadThread] [INFO ] c.k.l.main.AirCommandListener - 지역별 공기질 측정 명령어 기능부 준비 완료
+[2023-12-25 17:04:08.675] [JDA MainWS-ReadThread] [INFO ] c.k.l.main.WeatherCommandListener - 날씨 명령어 기능부 준비 완료
+[2023-12-25 17:04:08.675] [JDA MainWS-ReadThread] [INFO ] c.k.listeners.logger.LoggerListener - 로거 기능부 준비 완료
+[2023-12-25 17:04:08.675] [JDA MainWS-ReadThread] [INFO ] c.k.listeners.logger.ConfigListener - 설정 명령어 기능부 준비 완료
+[2023-12-25 17:04:08.676] [JDA MainWS-ReadThread] [INFO ] c.k.l.m.NekoDiscordMemberListener - 네코샘플 디스코드 특별 기능부 준비 완료
+[2023-12-25 17:04:08.676] [JDA MainWS-ReadThread] [INFO ] c.k.l.main.LinkFilterListener - 링크 차단 기능부 준비 완료
+[2023-12-25 17:04:08.676] [main] [INFO ] com.kirito5572.App - 각 기능 연결 완료, 부팅 완료
