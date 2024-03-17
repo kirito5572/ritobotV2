@@ -13,6 +13,8 @@ import com.kirito5572.commands.main.owneronly.BotOwnerNoticeCommand;
 import com.kirito5572.commands.main.owneronly.EvalCommand;
 import com.kirito5572.commands.main.owneronly.GetGuildInfoCommand;
 import com.kirito5572.commands.music.*;
+import com.kirito5572.commands.chzzk.ChzzkConfig;
+import com.kirito5572.objects.logger.AWSConnector;
 import com.kirito5572.objects.logger.ConfigPackage;
 import com.kirito5572.objects.logger.LoggerPackage;
 import net.dv8tion.jda.api.JDA;
@@ -34,6 +36,7 @@ public class CommandManager {
     private final MySqlConnector mySqlConnector;
     private final ConfigPackage configPackage;
     private final SqliteConnector sqliteConnector;
+    private final AWSConnector awsConnector;
     private final LoggerPackage loggerPackage;
     private final GoogleAPI googleAPI;
     private final JDA jda;
@@ -43,13 +46,14 @@ public class CommandManager {
     private final Logger logger = LoggerFactory.getLogger(CommandManager.class);
 
 
-    public CommandManager(JDA jda, MySqlConnector mySqlConnector, SqliteConnector sqliteConnector, GoogleAPI googleAPI, ConfigPackage configPackage, LoggerPackage loggerPackage) {
+    public CommandManager(JDA jda, MySqlConnector mySqlConnector, SqliteConnector sqliteConnector, GoogleAPI googleAPI, ConfigPackage configPackage, LoggerPackage loggerPackage, AWSConnector awsConnector) {
         this.jda = jda;
         this.mySqlConnector = mySqlConnector;
         this.sqliteConnector = sqliteConnector;
         this.googleAPI = googleAPI;
         this.configPackage = configPackage;
         this.loggerPackage = loggerPackage;
+        this.awsConnector = awsConnector;
         addCommand();
         updateCommand();
 
@@ -119,7 +123,7 @@ public class CommandManager {
                 .setGuildOnly(true));
         this.commandHandle.put(command.getInvoke(), command);
 
-        command = new MessagePinCommand(this.mySqlConnector);
+        command = new MessagePinCommand(this.mySqlConnector, this.awsConnector);
         this.commands.put(command.getInvoke(), Commands.slash(command.getInvoke(), command.getHelp())
                 .setDefaultPermissions(DefaultMemberPermissions.enabledFor(Permission.MESSAGE_MANAGE))
                 .addOption(OptionType.STRING, "내용", "고정할 내용을 입력해주세요(없는 경우 기존 핀이 해제됩니다)")
@@ -277,6 +281,13 @@ public class CommandManager {
                 .addOption(OptionType.USER, "main", "공지 내용", true)
                 .addOption(OptionType.USER, "footer", "주석", false));
         this.commandHandle.put(command.getInvoke(), command);
+        command = new ChzzkConfig();
+        this.commands.put(command.getInvoke(), Commands.slash(command.getInvoke(), command.getHelp())
+                .setDefaultPermissions(DefaultMemberPermissions.enabledFor(Permission.MANAGE_SERVER,
+                        Permission.MANAGE_CHANNEL, Permission.MANAGE_ROLES,
+                        Permission.MESSAGE_MANAGE,  Permission.ADMINISTRATOR)));
+        this.commandHandle.put(command.getInvoke(), command);
+
     }
 
     private void updateCommand() {

@@ -24,12 +24,13 @@ public class WeatherCommand implements ICommand {
         if(!selfMember.hasPermission(Permission.MESSAGE_SEND)) {
             return;
         }
-        StringSelectMenu.Builder builder= StringSelectMenu.create("아래_광역시도중_하나를_선택해주세요");
+        StringSelectMenu.Builder builder = StringSelectMenu.create("아래_광역시도중_하나를_선택해주세요");
         for(String city : cityList) {
             builder.addOption(city, city, city);
+            //TODO 시발.... 이거 지역 세분화 되서 이부분 코드 재작성 필요함
         }
         event.reply("지역을 선택해주세요.")
-                .addActionRow();
+                .addActionRow(builder.build()).setEphemeral(true).queue();
     }
     @Override
     public String getHelp() {

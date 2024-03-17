@@ -1,6 +1,6 @@
 package com.kirito5572.listeners.main;
 
-import com.kirito5572.objects.main.getWeather;
+import com.kirito5572.objects.main.GetWeather;
 import me.duncte123.botcommons.messaging.EmbedUtils;
 import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.entities.MessageEmbed;
@@ -10,6 +10,10 @@ import net.dv8tion.jda.api.hooks.ListenerAdapter;
 import org.jetbrains.annotations.NotNull;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.io.IOException;
+import java.net.URISyntaxException;
+import java.util.concurrent.TimeUnit;
 
 public class WeatherCommandListener extends ListenerAdapter {
 
@@ -37,42 +41,51 @@ public class WeatherCommandListener extends ListenerAdapter {
     public void onStringSelectInteraction(@NotNull StringSelectInteractionEvent event) {
         if(event.getComponentId().equals("아래_광역시도중_하나를_선택해주세요")) {
             for (String city : cityList) {
-                if (event.getValues().get(0).equals(city)) {
-                    event.replyEmbeds(LocalCityInfor(city)).setEphemeral(true).queue();
-                    break;
+                if (event.getValues().getFirst().equals(city)) {
+                    try {
+                        event.getMessage().delete().queue();
+                        event.replyEmbeds(LocalCityInfor(city)).setEphemeral(true).queue();
+                        break;
+                    } catch (NullPointerException | URISyntaxException | IOException e) {
+                        event.reply("처리중 에러가 발생했습니다.").setEphemeral(true).queue(m -> m.deleteOriginal().queueAfter(10, TimeUnit.SECONDS));
+                    }
                 }
             }
         }
     }
-    private MessageEmbed LocalCityInfor(String location) {
-        String[] list = getWeather.getWeather_list();
 
+    @NotNull
+    private MessageEmbed LocalCityInfor(String location) throws NullPointerException, URISyntaxException, IOException {
+        String locationEng = null;
         for (String[] s : local) {
             if(s[0].equals(location)) {
-                location = s[1];
+                locationEng = s[1];
                 break;
             }
         }
-        getWeather.get_api(location);
-        String[] data = getWeather.getWeather_information();
-
+        if(locationEng == null) {
+            throw new NullPointerException();
+        }
+        GetWeather getWeather = new GetWeather();
+        GetWeather.WeatherInfor weatherInfor = getWeather.get_api(locationEng);
         EmbedBuilder builder = EmbedUtils.getDefaultEmbed()
                 .setTitle(location + "의 날씨 정보")
                 .setFooter("Information from openweathermap.org", "https://openweathermap.org/");
-        int j = 0;
-        for(int i = 0; i < 10; i++) {
-
-            if(!data[i].equals("null")) {
-                builder.addField(
-                        (i - j + 1)+ ". " + list[i] + "\n",
-                        data[i],
-                        false
-                );
-            } else {
-                j++;
-            }
+        builder.addField("현재 날씨", weatherInfor.weatherCord, true)
+                .addField("현재 온도", weatherInfor.temp + "Cº", true)
+                .addField("체감 온도", weatherInfor.tempFeels + "Cº", true)
+                .addField("대기압", weatherInfor.pressure + "hPa", true)
+                .addField("습도", weatherInfor.humidity + "%", true)
+                .addField("풍속", weatherInfor.windSpeed + "m/s", true)
+                .addField("풍향", weatherInfor.windDeg + "º", true)
+                .addField("체감 온도", getWeather.formatDate(weatherInfor.sunRise), false)
+                .addField("체감 온도", getWeather.formatDate(weatherInfor.sunSet), false);
+        if(weatherInfor.rain_3hr != 0) {
+            builder.addField("3시간 강수량", weatherInfor.rain_3hr + "mm", true);
         }
-
+        if(weatherInfor.snow_3hr != 0) {
+            builder.addField("3시간 적설량", weatherInfor.snow_3hr + "cm", true);
+        }
         return builder.build();
     }
 }

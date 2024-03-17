@@ -7,10 +7,7 @@ import com.amazonaws.services.s3.AmazonS3;
 import com.amazonaws.services.s3.AmazonS3ClientBuilder;
 import com.amazonaws.services.s3.model.*;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
+import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
@@ -42,23 +39,14 @@ public class AWSConnector {
             InputStream inputStream = object.getObjectContent();
             Path path = Files.createTempFile(messageId, "." + metadata.getContentType().split("/")[1]);
 
-            try (FileOutputStream out = new FileOutputStream(path.toFile())){
-                try {
-                    byte[] buffer = new byte[1024];
+            try (FileOutputStream out = new FileOutputStream(path.toFile())) {
+                byte[] buffer = new byte[1024];
 
-                    int len;
-                    while((len = inputStream.read(buffer)) != -1) {
-                        out.write(buffer, 0, len);
-                    }
-                } catch (Throwable e) {
-                    try {
-                        out.close();
-                    } catch (Throwable e1) {
-                        e.addSuppressed(e1);
-                    }
-                    throw e;
+                int len;
+                while((len = inputStream.read(buffer)) != -1) {
+                    out.write(buffer, 0, len);
                 }
-            } catch (Exception ignored) {
+            } catch (FileNotFoundException ignored) {
                 return null;
             }
             return path.toFile();

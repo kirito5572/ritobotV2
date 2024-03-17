@@ -69,23 +69,24 @@ public class JoinCommand implements ICommand {
         if (voiceChannel.getMembers().size() < 2) {
             musicManager.player.isPaused();
             musicManager.player.setPaused(true);
-
-            //TODO 이거 https://fruitdev.tistory.com/135 참고해서 작업하기
             int sleep = 750;
-            final ScheduledThreadPoolExecutor executor = new ScheduledThreadPoolExecutor(1);
-            AtomicInteger i = new AtomicInteger();
+            try(final ScheduledThreadPoolExecutor executor = new ScheduledThreadPoolExecutor(1)) {
+                AtomicInteger i = new AtomicInteger();
 
-            executor.scheduleAtFixedRate(() -> {
-                if (voiceChannel.getMembers().size() < 2) {
-                    i.getAndIncrement();
-                } else {
-                    executor.shutdown();
-                }
-                if(i.get() > 120) {
-                    audioManager.closeAudioConnection();
-                    executor.shutdown();
-                }
-            }, 0, sleep, TimeUnit.MILLISECONDS);
+                executor.scheduleAtFixedRate(() -> {
+                    if (voiceChannel.getMembers().size() < 2) {
+                        i.getAndIncrement();
+                    } else {
+                        executor.shutdown();
+                    }
+                    if (i.get() > 120) {
+                        audioManager.closeAudioConnection();
+                        executor.shutdown();
+                    }
+                }, 0, sleep, TimeUnit.MILLISECONDS);
+            } catch (IllegalArgumentException e) {
+                e.printStackTrace();
+            }
         }
     }
 

@@ -71,7 +71,6 @@ public class LinkFilterListener extends ListenerAdapter {
                     return;
                 }
                 channel.sendMessageEmbeds(builder.build()).queue();
-                //TODO 이후 필터 기능 만들기
             }
         }
     }

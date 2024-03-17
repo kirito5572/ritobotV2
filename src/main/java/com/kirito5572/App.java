@@ -182,36 +182,33 @@ public class App {
         AWSConnector awsConnector = new AWSConnector();
         GoogleAPI googleAPI = new GoogleAPI(openFileData("YOUTUBE_DATA_API_KEY"));
 
-        logger.info("봇 시작중... 디스코드로 부터의 응답 대기중");
+        logger.info("봇 시작중... 디스코드로 부터의 응답 대기중, 개별 기능부 실행");
+        //Listeners
+        onReadyListener onReadyListener = new onReadyListener();
+        MemberCountListener memberCountListener = new MemberCountListener();
+        MessagePinListener messagePinListener = new MessagePinListener(mySqlConnector, awsConnector);
+        AirCommandListener airCommandListener = new AirCommandListener();
+        WeatherCommandListener weatherCommandListener = new WeatherCommandListener();
+        LoggerListener loggerListener = new LoggerListener(loggerPackage, configPackage, mySqlConnector, awsConnector);
+        NekoDiscordMemberListener nekoDiscordMemberListener = new NekoDiscordMemberListener();
+        LinkFilterListener linkFilterListener = new LinkFilterListener(configPackage);
+        ChzzkListener chzzkListener = new ChzzkListener(configPackage);
 
         JDA jda = JDABuilder.createDefault(TOKEN)
                 .setAutoReconnect(true)
                 .setEnabledIntents(GatewayIntent.getIntents(GatewayIntent.ALL_INTENTS))
+                .addEventListeners(memberCountListener, messagePinListener, airCommandListener, weatherCommandListener,
+                        loggerListener, onReadyListener, nekoDiscordMemberListener, linkFilterListener, chzzkListener)
                 .setChunkingFilter(ChunkingFilter.ALL)
-                .build();
+                .build().awaitReady();;
 
-        logger.info("서버 연결 성공, 개별 기능부 실행");
-        //CommandManager
-        CommandManager manager = new CommandManager(jda, mySqlConnector, sqliteConnector, googleAPI, configPackage, loggerPackage);
-        //Listeners
-        onReadyListener onReadyListener = new onReadyListener();
+        logger.info("서버 연결 성공, 명령어 처리부 시작");
+        //Command
+        CommandManager manager = new CommandManager(jda, mySqlConnector, sqliteConnector, googleAPI, configPackage, loggerPackage, awsConnector);
         CommandListener listener = new CommandListener(manager);
-        MemberCountListener memberCountListener = new MemberCountListener();
-        MessagePinListener messagePinListener = new MessagePinListener(mySqlConnector);
-        AirCommandListener airCommandListener = new AirCommandListener();
-        WeatherCommandListener weatherCommandListener = new WeatherCommandListener();
-        LoggerListener loggerListener = new LoggerListener(loggerPackage, configPackage, mySqlConnector, awsConnector);
         ConfigListener configListener = new ConfigListener(loggerPackage, configPackage, mySqlConnector, manager);
-        NekoDiscordMemberListener nekoDiscordMemberListener = new NekoDiscordMemberListener();
-        LinkFilterListener linkFilterListener = new LinkFilterListener(configPackage);
-        logger.info("개별 기능부 정상 시작, 연결 대기중....");
-
-        jda.addEventListener(onReadyListener, listener, memberCountListener, messagePinListener,
-                airCommandListener, weatherCommandListener, loggerListener, configListener,
-                nekoDiscordMemberListener, linkFilterListener);
-
-        jda.awaitReady();
-
+        logger.info("명령어 처리부 정상 시작, 연결 대기중....");
+        jda.addEventListener(listener, configListener);
         logger.info("연결 완료, 부팅 완료");
     }
 

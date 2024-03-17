@@ -255,14 +255,12 @@ public class LoggerListener extends ListenerAdapter {
             try {
                 builder.addField("수정전 내용", beforeMessage, false);
             } catch (Exception e) {
-                e.printStackTrace();
                 builder.addField("수정전 내용", "1024자 이상이라서 표현할 수 없습니다.", false);
             }
 
             try {
                 builder.addField("수정후 내용", messagePackage.contentRaw, false);
             } catch (Exception e) {
-                e.printStackTrace();
                 builder.addField("수정후 내용", "1024자 이상이라서 표현할 수 없습니다.", false);
             }
             builder.addField("수정 시간", time, false);
@@ -295,10 +293,12 @@ public class LoggerListener extends ListenerAdapter {
             if(messagePackage.isAttachment) {
                 for(int i = 0; i < messagePackage.attachmentCount;) {
                     i++;
-                    attachment.add(this.awsConnector.S3DownloadObject(messagePackage.MessageId + "_" + i));
+                    File temp = this.awsConnector.S3DownloadObject(messagePackage.MessageId + "_" + i);
+                    if(temp != null) {
+                        attachment.add(temp);
+                    }
                 }
             }
-
             try {
                 if (messagePackage.contentRaw.isEmpty() && attachment.isEmpty()) {
                     return;
@@ -306,24 +306,38 @@ public class LoggerListener extends ListenerAdapter {
             } catch (NullPointerException ignored) {
                 return;
             }
-
             Member member = event.getGuild().getMemberById(messagePackage.authorId);
             Date date = new Date();
             String time = format.format(date);
             if (messagePackage.contentRaw.isEmpty()) {
                 messagePackage.contentRaw = "사진 파일만 있는 메세지";
             }
-
-            if (messagePackage.contentRaw.length() > 1024) {
-                messagePackage.contentRaw = "1024자 초과로 인한 처리 불가";
-            }
-
             EmbedBuilder builder = EmbedUtils.getDefaultEmbed().setTitle("삭제된 메세지")
                     .setColor(Color.RED)
-                    .setDescription("메세지 삭제: " + event.getChannel().getAsMention())
-                    .addField("내용", messagePackage.contentRaw, false)
-                    .addField("메세지 ID", messagePackage.MessageId, false)
+                    .setDescription("메세지 삭제: " + event.getChannel().getAsMention());
+            if (messagePackage.contentRaw.length() > 1000) {
+                builder.addField("내용", messagePackage.contentRaw.substring(0, 1000), false);
+                if(messagePackage.contentRaw.length() > 2000) {
+                    builder.addField("내용", messagePackage.contentRaw.substring(1000, 2000), false);
+                    if(messagePackage.contentRaw.length() > 3000) {
+                        builder.addField("내용", messagePackage.contentRaw.substring(2000, 3000), false);
+                        if(messagePackage.contentRaw.length() > 4000) {
+                            builder.addField("내용", messagePackage.contentRaw.substring(3000), false);
+                        }
+                    } else {
+                        builder.addField("내용", messagePackage.contentRaw.substring(2000), false);
+                    }
+                } else {
+                    builder.addField("내용", messagePackage.contentRaw.substring(1000), false);
+                }
+            } else {
+                builder.addField("내용", messagePackage.contentRaw, false);
+            }
+            builder.addField("메세지 ID", messagePackage.MessageId, false)
                     .addField("삭제 시간", time, false);
+            if(attachment.isEmpty() && messagePackage.isAttachment) {
+                builder.setDescription("파일이 존재하는 메세지였으나, 보관기간 초과로 조회할 수 없습니다.");
+            }
 
             if(member != null) {
                 builder.setFooter(member.getEffectiveName() + "(" + member.getEffectiveName() + ")", member.getUser().getAvatarUrl());

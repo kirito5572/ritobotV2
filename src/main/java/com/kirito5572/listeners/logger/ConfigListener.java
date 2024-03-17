@@ -43,7 +43,7 @@ public class ConfigListener extends ListenerAdapter {
         if(event.getComponentId().equals("설정")) {
             event.getMessage().delete().queue();
             List<String> values = event.getValues();
-            switch (values.get(0)) {
+            switch (values.getFirst()) {
                 case "config1" -> //음악 기능
                         event.reply("음악 기능 옵션입니다. 아래 버튼을 눌러주세요.")
                                 .addActionRow(
