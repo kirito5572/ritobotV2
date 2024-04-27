@@ -25,7 +25,7 @@ public class Chzzk {
         this.configPackage = configPackage;
     }
     public static void main(String[] args) {
-        String channelURL = "https://chzzk.naver.com/live/86a9d2fe2121ef80c350a533852e4c3a/profile";
+        String channelURL = "https://chzzk.naver.com/live/23c5086912be8ce4acccda57813067ea";
         String channelId = channelURL.substring(channelURL.indexOf("chzzk.naver.com/") + 16);
         if(channelId.startsWith("live")) {
             channelId = channelId.substring(5);
@@ -37,6 +37,9 @@ public class Chzzk {
 
     public boolean isChzzkLiveAlive(String streamerId) throws URISyntaxException, IOException {
         ChzzkData data = getData(streamerId);
+        if(data.content == null) {
+            return false;
+        }
         return data.content.status.equals("OPEN");
     }
 
@@ -72,8 +75,7 @@ public class Chzzk {
             response.append(inputLine);
         }
         br.close();
-        ChzzkData data = new Gson().fromJson(response.toString(), ChzzkData.class);
-        return data;
+        return new Gson().fromJson(response.toString(), ChzzkData.class);
     }
 
     static class ChzzkData {

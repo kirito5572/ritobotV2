@@ -51,13 +51,13 @@ shadowJar {
 
 dependencies {
     //https://mvnrepository.com/artifact/org.xerial/sqlite-jdbc
-    implementation group: 'org.xerial', name: 'sqlite-jdbc', version: '3.45.1.0'
+    implementation group: 'org.xerial', name: 'sqlite-jdbc', version: '3.45.3.0'
     //https://central.sonatype.com/artifact/com.github.oshi/oshi-core?smo=true
-    implementation group: 'com.github.oshi', name: 'oshi-core', version: '6.5.0'
+    implementation group: 'com.github.oshi', name: 'oshi-core', version: '6.6.0'
     //https://github.com/discord-jda/JDA
-    implementation group: 'net.dv8tion', name: 'JDA', version: '5.0.0-beta.21'
+    implementation group: 'net.dv8tion', name: 'JDA', version: '5.0.0-beta.23'
     //https://search.maven.org/artifact/ch.qos.logback/logback-classic
-    implementation group: 'ch.qos.logback', name: 'logback-classic', version: '1.5.3'
+    implementation group: 'ch.qos.logback', name: 'logback-classic', version: '1.5.6'
     //https://search.maven.org/artifact/org.fusesource.jansi/jansi
     //DO NOT UPDATE, if update jansi error in logback occur
     implementation group: 'org.fusesource.jansi', name: 'jansi', version: '1.17.1'
@@ -69,20 +69,20 @@ dependencies {
     //https://central.sonatype.com/artifact/com.mysql/mysql-connector-j
     implementation group: 'com.mysql', name: 'mysql-connector-j', version: '8.3.0'
     //https://m2.duncte123.dev/#/releases/me/duncte123/botCommons
-    implementation group: 'me.duncte123', name: 'botCommons', version: '3.1.17'
+    implementation group: 'me.duncte123', name: 'botCommons', version: '3.1.18'
     //https://github.com/google/gson/releases
     implementation group: 'com.google.code.gson', name: 'gson', version: '2.10.1'
     //https://central.sonatype.com/artifact/org.apache.groovy/groovy-all?smo=true
-    implementation group: 'org.apache.groovy', name: 'groovy-all', version: '4.0.20'
-    //https://search.maven.org/artifact/javax.xml.bind/jaxb-api
+    implementation group: 'org.apache.groovy', name: 'groovy-all', version: '4.0.21'
+    //https://central.sonatype.com/artifact/javax.xml.bind/jaxb-api
     implementation group: 'javax.xml.bind', name: 'jaxb-api', version: '2.3.1'
     // https://mvnrepository.com/artifact/commons-io/commons-io
-    implementation group: 'commons-io', name: 'commons-io', version: '2.15.1'
+    implementation group: 'commons-io', name: 'commons-io', version: '2.16.1'
     //https://central.sonatype.com/artifact/com.amazonaws/aws-java-sdk-bom?smo=true
-    implementation platform('com.amazonaws:aws-java-sdk-bom:1.12.679')
+    implementation platform('com.amazonaws:aws-java-sdk-bom:1.12.710')
     implementation 'com.amazonaws:aws-java-sdk-s3'
     //https://mvnrepository.com/artifact/com.google.cloud/libraries-bom
-    implementation platform('com.google.cloud:libraries-bom:26.34.0')
+    implementation platform('com.google.cloud:libraries-bom:26.37.0')
     implementation 'com.google.cloud:google-cloud-translate'
     //https://search.maven.org/artifact/commons-validator/commons-validator
     implementation group: 'commons-validator', name: 'commons-validator', version: '1.8.0'
