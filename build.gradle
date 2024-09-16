@@ -3,21 +3,20 @@ import java.text.SimpleDateFormat
 plugins {
     id("java")
     id("application")
-    id'com.github.johnrengelman.shadow' version '7.1.2'
+    id'com.gradleup.shadow' version '8.3.1'
 }
 
-mainClassName = "com.kirito5572.App"
-group = "com.kirito5572"
-version = "2.0-beta3"
+mainClassName = "me.kirito5572.App"
+group = "me.kirito5572"
+version = "2.0-stable"
 
-repositories {
+repositories ({
     mavenCentral()
     google()
-    maven { url 'https://jitpack.io' }
     maven {
-        name 'duncte123-jfrog'
-        url 'https://duncte123.jfrog.io/artifactory/maven'
+        url "https://plugins.gradle.org/m2/"
     }
+    maven { url 'https://jitpack.io' }
     maven {
         name 'm2-duncte123'
         url 'https://m2.duncte123.dev/releases'
@@ -30,7 +29,7 @@ repositories {
         name 'm2-chew'
         url "https://m2.chew.pro/releases"
     }
-}
+})
 
 shadowJar {
     zip64 true
@@ -51,41 +50,42 @@ shadowJar {
 
 dependencies {
     //https://mvnrepository.com/artifact/org.xerial/sqlite-jdbc
-    implementation group: 'org.xerial', name: 'sqlite-jdbc', version: '3.45.3.0'
+    implementation group: 'org.xerial', name: 'sqlite-jdbc', version: '3.46.1.0'
     //https://central.sonatype.com/artifact/com.github.oshi/oshi-core?smo=true
-    implementation group: 'com.github.oshi', name: 'oshi-core', version: '6.6.0'
+    implementation group: 'com.github.oshi', name: 'oshi-core', version: '6.6.4'
     //https://github.com/discord-jda/JDA
-    implementation group: 'net.dv8tion', name: 'JDA', version: '5.0.0-beta.23'
+    implementation group: 'net.dv8tion', name: 'JDA', version: '5.1.0'
     //https://search.maven.org/artifact/ch.qos.logback/logback-classic
-    implementation group: 'ch.qos.logback', name: 'logback-classic', version: '1.5.6'
+    implementation group: 'ch.qos.logback', name: 'logback-classic', version: '1.5.8'
     //https://search.maven.org/artifact/org.fusesource.jansi/jansi
     //DO NOT UPDATE, if update jansi error in logback occur
     implementation group: 'org.fusesource.jansi', name: 'jansi', version: '1.17.1'
     //https://jsoup.org/download
-    implementation group: 'org.jsoup', name:'jsoup', version: '1.17.2'
+    implementation group: 'org.jsoup', name:'jsoup', version: '1.18.1'
     //legacy
     //https://github.com/sedmelluq/lavaplayer
-    implementation group: 'com.sedmelluq', name: 'lavaplayer', version: '1.3.77'
+    implementation group: 'com.sedmelluq', name: 'lavaplayer', version: '1.3.78'
     //https://central.sonatype.com/artifact/com.mysql/mysql-connector-j
-    implementation group: 'com.mysql', name: 'mysql-connector-j', version: '8.3.0'
+    implementation group: 'com.mysql', name: 'mysql-connector-j', version: '9.0.0'
     //https://m2.duncte123.dev/#/releases/me/duncte123/botCommons
     implementation group: 'me.duncte123', name: 'botCommons', version: '3.1.18'
     //https://github.com/google/gson/releases
-    implementation group: 'com.google.code.gson', name: 'gson', version: '2.10.1'
+    implementation group: 'com.google.code.gson', name: 'gson', version: '2.11.0'
     //https://central.sonatype.com/artifact/org.apache.groovy/groovy-all?smo=true
-    implementation group: 'org.apache.groovy', name: 'groovy-all', version: '4.0.21'
+    implementation group: 'org.apache.groovy', name: 'groovy-all', version: '4.0.23'
     //https://central.sonatype.com/artifact/javax.xml.bind/jaxb-api
     implementation group: 'javax.xml.bind', name: 'jaxb-api', version: '2.3.1'
     // https://mvnrepository.com/artifact/commons-io/commons-io
     implementation group: 'commons-io', name: 'commons-io', version: '2.16.1'
-    //https://central.sonatype.com/artifact/com.amazonaws/aws-java-sdk-bom?smo=true
-    implementation platform('com.amazonaws:aws-java-sdk-bom:1.12.710')
-    implementation 'com.amazonaws:aws-java-sdk-s3'
+    //https://central.sonatype.com/artifact/software.amazon.awssdk/bom
+    implementation(platform("software.amazon.awssdk:bom:2.28.1"))
+    implementation 'software.amazon.awssdk:s3'
+    implementation 'software.amazon.awssdk:sso'
     //https://mvnrepository.com/artifact/com.google.cloud/libraries-bom
-    implementation platform('com.google.cloud:libraries-bom:26.37.0')
+    implementation platform('com.google.cloud:libraries-bom:26.45.0')
     implementation 'com.google.cloud:google-cloud-translate'
     //https://search.maven.org/artifact/commons-validator/commons-validator
-    implementation group: 'commons-validator', name: 'commons-validator', version: '1.8.0'
+    implementation group: 'commons-validator', name: 'commons-validator', version: '1.9.0'
 }
 
 tasks.test {
@@ -93,7 +93,7 @@ tasks.test {
 }
 
 wrapper {
-    gradleVersion = '8.5'
+    gradleVersion = '8.8'
 }
 
 compileJava.options.encoding = 'UTF-8'
