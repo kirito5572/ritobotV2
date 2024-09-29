@@ -1,14 +1,14 @@
 import java.text.SimpleDateFormat
 
 plugins {
-    id("java")
-    id("application")
+    id'java'
+    id'application'
     id'com.gradleup.shadow' version '8.3.1'
 }
 
 mainClassName = "me.kirito5572.App"
 group = "me.kirito5572"
-version = "2.0-stable"
+version = "2.0.1-stable"
 
 repositories ({
     mavenCentral()
@@ -48,13 +48,14 @@ shadowJar {
     }
 }
 
+
 dependencies {
     //https://mvnrepository.com/artifact/org.xerial/sqlite-jdbc
-    implementation group: 'org.xerial', name: 'sqlite-jdbc', version: '3.46.1.0'
+    implementation group: 'org.xerial', name: 'sqlite-jdbc', version: '3.46.1.3'
     //https://central.sonatype.com/artifact/com.github.oshi/oshi-core?smo=true
-    implementation group: 'com.github.oshi', name: 'oshi-core', version: '6.6.4'
+    implementation group: 'com.github.oshi', name: 'oshi-core', version: '6.6.5'
     //https://github.com/discord-jda/JDA
-    implementation group: 'net.dv8tion', name: 'JDA', version: '5.1.0'
+    implementation group: 'net.dv8tion', name: 'JDA', version: '5.1.1'
     //https://search.maven.org/artifact/ch.qos.logback/logback-classic
     implementation group: 'ch.qos.logback', name: 'logback-classic', version: '1.5.8'
     //https://search.maven.org/artifact/org.fusesource.jansi/jansi
@@ -76,13 +77,13 @@ dependencies {
     //https://central.sonatype.com/artifact/javax.xml.bind/jaxb-api
     implementation group: 'javax.xml.bind', name: 'jaxb-api', version: '2.3.1'
     // https://mvnrepository.com/artifact/commons-io/commons-io
-    implementation group: 'commons-io', name: 'commons-io', version: '2.16.1'
+    implementation group: 'commons-io', name: 'commons-io', version: '2.17.0'
     //https://central.sonatype.com/artifact/software.amazon.awssdk/bom
-    implementation(platform("software.amazon.awssdk:bom:2.28.1"))
+    implementation(platform("software.amazon.awssdk:bom:2.28.11"))
     implementation 'software.amazon.awssdk:s3'
     implementation 'software.amazon.awssdk:sso'
     //https://mvnrepository.com/artifact/com.google.cloud/libraries-bom
-    implementation platform('com.google.cloud:libraries-bom:26.45.0')
+    implementation platform('com.google.cloud:libraries-bom:26.47.0')
     implementation 'com.google.cloud:google-cloud-translate'
     //https://search.maven.org/artifact/commons-validator/commons-validator
     implementation group: 'commons-validator', name: 'commons-validator', version: '1.9.0'
