@@ -163,7 +163,7 @@ public class ChzzkListener extends ListenerAdapter {
     @Override
     public void onReady(@NotNull ReadyEvent event) {
         Timer timer = new Timer();
-        TimerTask startTask = new TimerTask() {
+        /*TimerTask startTask = new TimerTask() {
             @Override
             public void run() {
                 List<Guild> list = event.getJDA().getGuilds();
@@ -204,6 +204,7 @@ public class ChzzkListener extends ListenerAdapter {
             }
         };
         timer.scheduleAtFixedRate(startTask, 0, 5000);
+         */
         logger.info("치지직 기능 처리부 준비 완료");
     }
 }

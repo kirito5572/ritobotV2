@@ -8,7 +8,7 @@ plugins {
 
 mainClassName = "me.kirito5572.App"
 group = "me.kirito5572"
-version = "2.0.1-stable"
+version = "2.0.3-stable"
 
 repositories ({
     mavenCentral()
@@ -51,23 +51,23 @@ shadowJar {
 
 dependencies {
     //https://mvnrepository.com/artifact/org.xerial/sqlite-jdbc
-    implementation group: 'org.xerial', name: 'sqlite-jdbc', version: '3.46.1.3'
+    implementation group: 'org.xerial', name: 'sqlite-jdbc', version: '3.48.0.0'
     //https://central.sonatype.com/artifact/com.github.oshi/oshi-core?smo=true
     implementation group: 'com.github.oshi', name: 'oshi-core', version: '6.6.5'
     //https://github.com/discord-jda/JDA
-    implementation group: 'net.dv8tion', name: 'JDA', version: '5.1.1'
+    implementation group: 'net.dv8tion', name: 'JDA', version: '5.2.2'
     //https://search.maven.org/artifact/ch.qos.logback/logback-classic
-    implementation group: 'ch.qos.logback', name: 'logback-classic', version: '1.5.8'
+    implementation group: 'ch.qos.logback', name: 'logback-classic', version: '1.5.16'
     //https://search.maven.org/artifact/org.fusesource.jansi/jansi
     //DO NOT UPDATE, if update jansi error in logback occur
     implementation group: 'org.fusesource.jansi', name: 'jansi', version: '1.17.1'
     //https://jsoup.org/download
-    implementation group: 'org.jsoup', name:'jsoup', version: '1.18.1'
+    implementation group: 'org.jsoup', name:'jsoup', version: '1.18.3'
     //legacy
     //https://github.com/sedmelluq/lavaplayer
     implementation group: 'com.sedmelluq', name: 'lavaplayer', version: '1.3.78'
     //https://central.sonatype.com/artifact/com.mysql/mysql-connector-j
-    implementation group: 'com.mysql', name: 'mysql-connector-j', version: '9.0.0'
+    implementation group: 'com.mysql', name: 'mysql-connector-j', version: '9.2.0'
     //https://m2.duncte123.dev/#/releases/me/duncte123/botCommons
     implementation group: 'me.duncte123', name: 'botCommons', version: '3.1.18'
     //https://github.com/google/gson/releases
@@ -77,13 +77,13 @@ dependencies {
     //https://central.sonatype.com/artifact/javax.xml.bind/jaxb-api
     implementation group: 'javax.xml.bind', name: 'jaxb-api', version: '2.3.1'
     // https://mvnrepository.com/artifact/commons-io/commons-io
-    implementation group: 'commons-io', name: 'commons-io', version: '2.17.0'
+    implementation group: 'commons-io', name: 'commons-io', version: '2.18.0'
     //https://central.sonatype.com/artifact/software.amazon.awssdk/bom
-    implementation(platform("software.amazon.awssdk:bom:2.28.11"))
+    implementation(platform("software.amazon.awssdk:bom:2.30.5"))
     implementation 'software.amazon.awssdk:s3'
     implementation 'software.amazon.awssdk:sso'
     //https://mvnrepository.com/artifact/com.google.cloud/libraries-bom
-    implementation platform('com.google.cloud:libraries-bom:26.47.0')
+    implementation platform('com.google.cloud:libraries-bom:26.53.0')
     implementation 'com.google.cloud:google-cloud-translate'
     //https://search.maven.org/artifact/commons-validator/commons-validator
     implementation group: 'commons-validator', name: 'commons-validator', version: '1.9.0'
