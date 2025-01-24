@@ -20,7 +20,7 @@ public class UserInfoCommand implements ICommand {
         Guild guildA = null;
         User targetUser = event.getOption("유저", OptionMapping::getAsUser);
         Member targetMember = event.getOption("유저", OptionMapping::getAsMember);
-        if(targetUser == null) {
+        if(targetUser != null) {
             user = Objects.requireNonNull(event.getMember()).getUser();
             member = event.getMember();
             guildA = event.getGuild();
