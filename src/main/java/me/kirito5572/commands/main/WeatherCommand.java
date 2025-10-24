@@ -3,9 +3,10 @@ package me.kirito5572.commands.main;
 
 import me.kirito5572.objects.main.ICommand;
 import net.dv8tion.jda.api.Permission;
+import net.dv8tion.jda.api.components.actionrow.ActionRow;
+import net.dv8tion.jda.api.components.selections.StringSelectMenu;
 import net.dv8tion.jda.api.entities.Member;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
-import net.dv8tion.jda.api.interactions.components.selections.StringSelectMenu;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.Objects;
@@ -30,7 +31,11 @@ public class WeatherCommand implements ICommand {
             //TODO 시발.... 이거 지역 세분화 되서 이부분 코드 재작성 필요함
         }
         event.reply("지역을 선택해주세요.")
-                .addActionRow(builder.build()).setEphemeral(true).queue();
+                .addComponents(
+                        ActionRow.of(
+                                builder.build()
+                        )
+                ).setEphemeral(true).queue();
     }
     @Override
     public String getHelp() {

@@ -2,9 +2,10 @@ package me.kirito5572.commands.main;
 
 import me.kirito5572.objects.main.ICommand;
 import net.dv8tion.jda.api.Permission;
+import net.dv8tion.jda.api.components.actionrow.ActionRow;
+import net.dv8tion.jda.api.components.selections.StringSelectMenu;
 import net.dv8tion.jda.api.entities.Member;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
-import net.dv8tion.jda.api.interactions.components.selections.StringSelectMenu;
 import org.jetbrains.annotations.NotNull;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -27,7 +28,11 @@ public class AirCityInfoCommand implements ICommand {
             builder.addOption(city, city, city);
         }
         event.reply("지역을 선택해주세요.")
-                .addActionRow(builder.build()).setEphemeral(true).queue();
+                .addComponents(
+                        ActionRow.of(
+                                builder.build()
+                        )
+                ).setEphemeral(true).queue();
     }
 
     @Override

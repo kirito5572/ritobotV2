@@ -82,7 +82,7 @@ public class App {
         } else {
             OS = UNSUPPORTED;
         }
-        logger.info("OS: " + OSStringData);
+        logger.info("OS: {}", OSStringData);
 
         try {
             String location = new File(getClass().getProtectionDomain().getCodeSource().getLocation()
@@ -119,7 +119,7 @@ public class App {
             logger.info("S::::::SSSSSS:::::S      T:::::::::T  A:::::A               A:::::A  B:::::::::::::::::B L::::::::::::::::::::::LE::::::::::::::::::::E");
             logger.info("S:::::::::::::::SS       T:::::::::T A:::::A                 A:::::A B::::::::::::::::B  L::::::::::::::::::::::LE::::::::::::::::::::E");
             logger.info(" SSSSSSSSSSSSSSS         TTTTTTTTTTTAAAAAAA                   AAAAAAABBBBBBBBBBBBBBBBB   LLLLLLLLLLLLLLLLLLLLLLLLEEEEEEEEEEEEEEEEEEEEEE");
-            logger.info("program version: " + getVersion());
+            logger.info("program version: {}", getVersion());
         } else if (getVersion().contains("BETA") || getVersion().contains("beta")) {
             appMode = APP_BETA;
             logger.warn("BBBBBBBBBBBBBBBBB   EEEEEEEEEEEEEEEEEEEEEETTTTTTTTTTTTTTTTTTTTTTT         AAA               !!! ");
@@ -138,7 +138,7 @@ public class App {
             logger.warn("B:::::::::::::::::B E::::::::::::::::::::E      T:::::::::T  A:::::A               A:::::A  !!! ");
             logger.warn("B::::::::::::::::B  E::::::::::::::::::::E      T:::::::::T A:::::A                 A:::::A!!:!!");
             logger.warn("BBBBBBBBBBBBBBBBB   EEEEEEEEEEEEEEEEEEEEEE      TTTTTTTTTTTAAAAAAA                   AAAAAAA!!! ");
-            logger.warn("beta program version: " + getVersion());
+            logger.warn("beta program version: {}", getVersion());
         } else if (getVersion().contains("ALPHA") || getVersion().contains("alpha")) {
             appMode = APP_ALPHA;
             logger.error("               AAA               LLLLLLLLLLL             PPPPPPPPPPPPPPPPP   HHHHHHHHH     HHHHHHHHH               AAA               !!! ");
@@ -202,7 +202,7 @@ public class App {
                 .addEventListeners(memberCountListener, messagePinListener, airCommandListener, weatherCommandListener,
                         loggerListener, onReadyListener, nekoDiscordMemberListener, linkFilterListener, chzzkListener)
                 .setChunkingFilter(ChunkingFilter.ALL)
-                .build().awaitReady();;
+                .build().awaitReady();
 
         logger.info("서버 연결 성공, 명령어 처리부 시작");
         //Command
@@ -225,7 +225,7 @@ public class App {
                 }
             }
         } catch (Exception e) {
-            logger.error("예외 발생:\n" + e);
+            logger.error("예외 발생:\n{}", String.valueOf(e));
             System.exit(-1);
         }
         return reader.toString();

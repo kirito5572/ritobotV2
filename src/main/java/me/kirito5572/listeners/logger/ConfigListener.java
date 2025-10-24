@@ -4,12 +4,13 @@ import me.kirito5572.objects.logger.ConfigPackage;
 import me.kirito5572.objects.logger.LoggerPackage;
 import me.kirito5572.objects.main.CommandManager;
 import me.kirito5572.objects.main.MySqlConnector;
+import net.dv8tion.jda.api.components.actionrow.ActionRow;
+import net.dv8tion.jda.api.components.buttons.Button;
 import net.dv8tion.jda.api.entities.Guild;
 import net.dv8tion.jda.api.events.interaction.component.ButtonInteractionEvent;
 import net.dv8tion.jda.api.events.interaction.component.StringSelectInteractionEvent;
 import net.dv8tion.jda.api.events.session.ReadyEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
-import net.dv8tion.jda.api.interactions.components.buttons.Button;
 import org.jetbrains.annotations.NotNull;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -46,76 +47,96 @@ public class ConfigListener extends ListenerAdapter {
             switch (values.getFirst()) {
                 case "config1" -> //음악 기능
                         event.reply("음악 기능 옵션입니다. 아래 버튼을 눌러주세요.")
-                                .addActionRow(
-                                        Button.primary("MusicCommandEnable", "활성화"),
-                                        Button.danger("MusicCommandDisable", "비활성화"),
-                                        Button.success("CommandReload","새로고침")
+                                .addComponents(
+                                        ActionRow.of(
+                                                Button.primary("MusicCommandEnable", "활성화"),
+                                                Button.danger("MusicCommandDisable", "비활성화"),
+                                                Button.success("CommandReload","새로고침")
+                                        )
                                 ).setEphemeral(true).queue();
                 case "config2" -> //메세지 필터링
                         event.reply("메세지 필터링 옵션입니다. 아래 버튼을 눌러주세요.")
-                                .addActionRow(
-                                        Button.primary("MessageFilterEnable", "활성화"),
-                                        Button.danger("MessageFilterDisable", "비활성화"),
-                                        Button.success("MessageFilterWordAddRemove","단어 등록/삭제"),
-                                        Button.success("MessageFilterLoggingChannelChange", "필터링 결과 채널 설정")
+                                .addComponents(
+                                        ActionRow.of(
+                                                Button.primary("MessageFilterEnable", "활성화"),
+                                                Button.danger("MessageFilterDisable", "비활성화"),
+                                                Button.success("MessageFilterWordAddRemove","단어 등록/삭제"),
+                                                Button.success("MessageFilterLoggingChannelChange", "필터링 결과 채널 설정")
+                                        )
                                 ).setEphemeral(true).queue();
                 case "config3" -> //로깅(메세지 관련)
                         event.reply("메세지 관련 로깅 옵션입니다. 아래 버튼을 눌러주세요.")
-                                .addActionRow(
-                                        Button.primary("MessageLoggerEnable", "활성화"),
-                                        Button.danger("MessageLoggerDisable", "비활성화"),
-                                        Button.success("MessageLoggerChannelChange","로그 출력 채널 변경")
+                                .addComponents(
+                                        ActionRow.of(
+                                                Button.primary("MessageLoggerEnable", "활성화"),
+                                                Button.danger("MessageLoggerDisable", "비활성화"),
+                                                Button.success("MessageLoggerChannelChange","로그 출력 채널 변경")
+                                        )
                                 ).setEphemeral(true).queue();
                 case "config4" -> //로깅(채널 관련)
                         event.reply("채널 관련 로깅 옵션입니다. 아래 버튼을 눌러주세요.")
-                                .addActionRow(
-                                        Button.primary("ChannelLoggerEnable", "활성화"),
-                                        Button.danger("ChannelLoggerDisable", "비활성화"),
-                                        Button.success("ChannelLoggerChannelChange","로그 출력 채널 변경")
+                                .addComponents(
+                                        ActionRow.of(
+                                                Button.primary("ChannelLoggerEnable", "활성화"),
+                                                Button.danger("ChannelLoggerDisable", "비활성화"),
+                                                Button.success("ChannelLoggerChannelChange","로그 출력 채널 변경")
+                                        )
                                 ).setEphemeral(true).queue();
                 case "config5" -> //로깅(유저 관련)
                         event.reply("유저 관련 로깅 옵션입니다. 아래 버튼을 눌러주세요.")
-                                .addActionRow(
-                                        Button.primary("MemberLoggerEnable", "활성화"),
-                                        Button.danger("MemberLoggerDisable", "비활성화"),
-                                        Button.success("MemberLoggerChannelChange","로그 출력 채널 변경")
+                                .addComponents(
+                                        ActionRow.of(
+                                                Button.primary("MemberLoggerEnable", "활성화"),
+                                                Button.danger("MemberLoggerDisable", "비활성화"),
+                                                Button.success("MemberLoggerChannelChange","로그 출력 채널 변경")
+                                        )
                                 ).setEphemeral(true).queue();
                 case "config6" -> //로깅(서버 관련)
                         event.reply("서버 관련 로깅 옵션입니다. 아래 버튼을 눌러주세요.")
-                                .addActionRow(
-                                        Button.primary("GuildLoggerEnable", "활성화"),
-                                        Button.danger("GuildLoggerDisable", "비활성화"),
-                                        Button.success("GuildLoggerChannelChange","로그 출력 채널 변경")
+                                .addComponents(
+                                        ActionRow.of(
+                                                Button.primary("GuildLoggerEnable", "활성화"),
+                                                Button.danger("GuildLoggerDisable", "비활성화"),
+                                                Button.success("GuildLoggerChannelChange","로그 출력 채널 변경")
+                                        )
                                 ).setEphemeral(true).queue();
                 case "config7" -> //LEWD 명령어
                         event.reply("성인용 명령어 옵션입니다. 아래 버튼을 눌러주세요.")
-                                .addActionRow(
-                                        Button.primary("LewdCommandEnable", "활성화"),
-                                        Button.danger("LewdCommandDisable", "비활성화"),
-                                        Button.success("CommandReload","새로고침"),
-                                        Button.success("LewdLoggerChannelChange","로그 출력 채널 변경")
+                                .addComponents(
+                                        ActionRow.of(
+                                                Button.primary("LewdCommandEnable", "활성화"),
+                                                Button.danger("LewdCommandDisable", "비활성화"),
+                                                Button.success("CommandReload","새로고침"),
+                                                Button.success("LewdLoggerChannelChange","로그 출력 채널 변경")
+                                        )
                                 ).setEphemeral(true).queue();
                 case "config8" -> //링크 제한
                         event.reply("링크 제한 옵션입니다. 아래 버튼을 눌러주세요.")
-                                .addActionRow(
-                                        Button.primary("LinkFilterEnable", "활성화"),
-                                        Button.danger("LinkFilterDisable", "비활성화"),
-                                        Button.success("LinkFilterChannelChange","로그 출력 채널 변경")
+                                .addComponents(
+                                        ActionRow.of(
+                                                Button.primary("LinkFilterEnable", "활성화"),
+                                                Button.danger("LinkFilterDisable", "비활성화"),
+                                                Button.success("LinkFilterChannelChange","로그 출력 채널 변경")
+                                        )
                                 ).setEphemeral(true).queue();
                 case "config9" -> //전체 공지 수신
                         event.reply("공지 수신 옵션입니다. 아래 버튼을 눌러주세요.")
-                                .addActionRow(
-                                        Button.primary("NoticeEnable", "수신"),
-                                        Button.danger("NoticeDisable", "비수신"),
-                                        Button.success("NoticeChannelChange","수신 채널 변경")
+                                .addComponents(
+                                        ActionRow.of(
+                                                Button.primary("NoticeEnable", "수신"),
+                                                Button.danger("NoticeDisable", "비수신"),
+                                                Button.success("NoticeChannelChange","수신 채널 변경")
+                                        )
                                 ).setEphemeral(true).queue();
                 case "config10" -> //말 명령어
                         event.reply("말 명령어 옵션입니다. 아래 버튼을 눌러주세요.")
-                                .addActionRow(
-                                        Button.primary("SayCommandEnable", "활성화"),
-                                        Button.danger("SayCommandDisable", "비활성화"),
-                                        Button.success("CommandReload","새로고침"),
-                                        Button.success("SayCommandChannelChange","로그 출력 채널 변경")
+                                .addComponents(
+                                        ActionRow.of(
+                                                Button.primary("SayCommandEnable", "활성화"),
+                                                Button.danger("SayCommandDisable", "비활성화"),
+                                                Button.success("CommandReload","새로고침"),
+                                                Button.success("SayCommandChannelChange","로그 출력 채널 변경")
+                                        )
                                 ).setEphemeral(true).queue();
             }
         }

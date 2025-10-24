@@ -18,10 +18,11 @@ public class AWSConnector {
 
     private static final Region clientRegion = Region.AP_NORTHEAST_2;
     private static final String bucketName = "ritobotv2";
+    private static final DefaultCredentialsProvider provider = DefaultCredentialsProvider.builder().build();
 
     public void S3UploadObject(File file, String messageId) {
         try(S3Client s3Client = S3Client.builder()
-                .credentialsProvider(DefaultCredentialsProvider.create())
+                .credentialsProvider(provider)
                 .region(clientRegion)
                 .build()){
             Map<String, String> metadata = new HashMap<>();
@@ -39,7 +40,7 @@ public class AWSConnector {
 
     public File S3DownloadObject(String messageId) {
         try(S3Client s3Client = S3Client.builder()
-                .credentialsProvider(DefaultCredentialsProvider.create())
+                .credentialsProvider(provider)
                 .region(clientRegion)
                 .build()) {
             GetObjectRequest getObjectRequest = GetObjectRequest.builder()

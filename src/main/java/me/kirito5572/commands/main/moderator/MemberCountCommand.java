@@ -2,9 +2,10 @@ package me.kirito5572.commands.main.moderator;
 
 import me.kirito5572.objects.main.ICommand;
 import net.dv8tion.jda.api.Permission;
+import net.dv8tion.jda.api.components.actionrow.ActionRow;
+import net.dv8tion.jda.api.components.buttons.Button;
 import net.dv8tion.jda.api.entities.Member;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
-import net.dv8tion.jda.api.interactions.components.buttons.Button;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.Objects;
@@ -24,10 +25,12 @@ public class MemberCountCommand implements ICommand {
             return;
         }
         event.reply("아래 버튼을 눌러주세요.")
-                .addActionRow(
-                        Button.primary("MemberCountStart", "시작"),
-                        Button.danger("MemberCountStop", "종료"),
-                        Button.success("MemberCountRefresh","새로고침")
+                .addComponents(
+                        ActionRow.of(
+                                Button.primary("MemberCountStart", "시작"),
+                                Button.danger("MemberCountStop", "종료"),
+                                Button.success("MemberCountRefresh","새로고침")
+                        )
                 ).setEphemeral(true).queue();
     }
 

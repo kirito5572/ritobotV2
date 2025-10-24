@@ -3,6 +3,11 @@ package me.kirito5572.listeners.main;
 import me.kirito5572.objects.chzzk.Chzzk;
 import me.kirito5572.objects.logger.ConfigPackage;
 import net.dv8tion.jda.api.EmbedBuilder;
+import net.dv8tion.jda.api.components.actionrow.ActionRow;
+import net.dv8tion.jda.api.components.buttons.Button;
+import net.dv8tion.jda.api.components.label.Label;
+import net.dv8tion.jda.api.components.textinput.TextInput;
+import net.dv8tion.jda.api.components.textinput.TextInputStyle;
 import net.dv8tion.jda.api.entities.Guild;
 import net.dv8tion.jda.api.entities.channel.concrete.TextChannel;
 import net.dv8tion.jda.api.events.interaction.ModalInteractionEvent;
@@ -10,12 +15,8 @@ import net.dv8tion.jda.api.events.interaction.component.ButtonInteractionEvent;
 import net.dv8tion.jda.api.events.interaction.component.StringSelectInteractionEvent;
 import net.dv8tion.jda.api.events.session.ReadyEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
-import net.dv8tion.jda.api.interactions.components.ActionRow;
-import net.dv8tion.jda.api.interactions.components.buttons.Button;
-import net.dv8tion.jda.api.interactions.components.text.TextInput;
-import net.dv8tion.jda.api.interactions.components.text.TextInputStyle;
-import net.dv8tion.jda.api.interactions.modals.Modal;
 import net.dv8tion.jda.api.interactions.modals.ModalMapping;
+import net.dv8tion.jda.api.modals.Modal;
 import org.jetbrains.annotations.NotNull;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -48,26 +49,28 @@ public class ChzzkListener extends ListenerAdapter {
                     //최초 설정과 이후 설정시로 분기
                     //TODO 생방송 시작 설정 만들어야함, 이후 설정 되는지 확인하고 자동 이벤트 생성하면 됨
                     if(configPackage.getConfigData(event.getGuild().getId()).chzzkStreamerId == null) { //최초 설정
-                        TextInput url_sbj = TextInput.create("chzzkChannelIdInput", "치지직 채널 ID(필수)", TextInputStyle.SHORT)
+                        TextInput url_sbj = TextInput.create("chzzkChannelIdInput", TextInputStyle.SHORT)
                                 .setPlaceholder("치치직 채널 URL을 입력해주세요(필수)")
                                 .setRequiredRange(30, 300)
                                 .setRequired(true)
                                 .build();
-                        TextInput message_sbj = TextInput.create("chzzkLiveStartMessage", "라이브 시작시 문구", TextInputStyle.PARAGRAPH)
+                        TextInput message_sbj = TextInput.create("chzzkLiveStartMessage", TextInputStyle.PARAGRAPH)
                                 .setPlaceholder("라이브 시작시 전송될 안내 문구를 적어주세요!(최대 500자)")
                                 .setRequiredRange(0, 500)
                                 .build();
                         Modal modal = Modal.create("chzzkModal", "최초 설정")
-                                .addComponents(ActionRow.of(url_sbj), ActionRow.of(message_sbj))
+                                .addComponents(Label.of("치지직 채널 ID(필수)", url_sbj), Label.of("라이브 시작시 문구", message_sbj))
                                 .build();
                         event.getMessage().delete().queue();
                         event.replyModal(modal).queue();
                     } else { //이후 설정
                         event.reply("치지직 방송 알림 설정 옵션입니다. 아래 버튼을 눌러주세요.")
-                                .addActionRow(
-                                        Button.primary("ChzzkLiveInfoEnable", "활성화"),
-                                        Button.danger("ChzzkLiveInfoDisable", "비활성화"),
-                                        Button.success("DiscordChannelIdChange","알림 채널 변경")
+                                .addComponents(
+                                        ActionRow.of(
+                                                Button.primary("ChzzkLiveInfoEnable", "활성화"),
+                                                Button.danger("ChzzkLiveInfoDisable", "비활성화"),
+                                                Button.success("DiscordChannelIdChange","알림 채널 변경")
+                                        )
                                 ).setEphemeral(true).queue();
                     }
                 }
