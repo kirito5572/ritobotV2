@@ -10,6 +10,7 @@ import net.dv8tion.jda.api.Permission;
 import net.dv8tion.jda.api.Region;
 import net.dv8tion.jda.api.entities.*;
 import net.dv8tion.jda.api.entities.automod.AutoModRule;
+import net.dv8tion.jda.api.entities.channel.ChannelType;
 import net.dv8tion.jda.api.entities.channel.concrete.TextChannel;
 import net.dv8tion.jda.api.entities.channel.concrete.ThreadChannel;
 import net.dv8tion.jda.api.entities.channel.concrete.VoiceChannel;
@@ -40,7 +41,9 @@ import net.dv8tion.jda.api.events.guild.override.PermissionOverrideCreateEvent;
 import net.dv8tion.jda.api.events.guild.override.PermissionOverrideDeleteEvent;
 import net.dv8tion.jda.api.events.guild.override.PermissionOverrideUpdateEvent;
 import net.dv8tion.jda.api.events.guild.update.*;
+import net.dv8tion.jda.api.events.guild.voice.GuildVoiceGuildDeafenEvent;
 import net.dv8tion.jda.api.events.guild.voice.GuildVoiceGuildMuteEvent;
+import net.dv8tion.jda.api.events.guild.voice.GuildVoiceMuteEvent;
 import net.dv8tion.jda.api.events.message.MessageDeleteEvent;
 import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
 import net.dv8tion.jda.api.events.message.MessageUpdateEvent;
@@ -179,6 +182,7 @@ public class LoggerListener extends ListenerAdapter {
             }
         }
     }
+
 
     @Override
     public void onMessageUpdate(@NotNull MessageUpdateEvent event) {
@@ -398,6 +402,207 @@ public class LoggerListener extends ListenerAdapter {
             EmbedBuilder builder = EmbedUtils.getDefaultEmbed().setTitle("채널 이름 변경")
                     .setColor(Color.GREEN).addField("이전 이름", oldName, false)
                     .addField("변경된 이름", newName, false)
+                    .addField("변경 시간", time, false);
+            loggerPackage.channelLoggingSend(builder, guild);
+        }
+    }
+
+    @Override
+    public void onChannelUpdateArchived(@NotNull ChannelUpdateArchivedEvent event) {
+        Guild guild = event.getGuild();
+        if (isConfigEnable(guild.getId(), ConfigPackage.CHANNEL_LOGGING_ENABLE)) {
+            Date date = new Date();
+            String time = format.format(date);
+            ThreadChannel channel = event.getChannel().asThreadChannel();
+            EmbedBuilder builder = EmbedUtils.getDefaultEmbed().setTitle("스레드 채널 상태 변경")
+                    .setColor(Color.GREEN)
+                    .addField("채널명", event.getChannel().getName(), false);
+            if (channel.isArchived()) {
+                builder.addField("변경된 상태", "비활성 상태", false);
+            } else {
+                builder.addField("변경된 상태", "활성 상태", false);
+            }
+            builder.addField("변경 시간", time, false);
+
+            loggerPackage.channelLoggingSend(builder, guild);
+        }
+    }
+
+    @Override
+    public void onChannelUpdateLocked(@NotNull ChannelUpdateLockedEvent event) {
+        Guild guild = event.getGuild();
+        if (isConfigEnable(guild.getId(), ConfigPackage.CHANNEL_LOGGING_ENABLE)) {
+            Date date = new Date();
+            String time = format.format(date);
+            ThreadChannel channel = event.getChannel().asThreadChannel();
+            EmbedBuilder builder = EmbedUtils.getDefaultEmbed().setTitle("스레드 채널 상태 변경")
+                    .setColor(Color.GREEN)
+                    .addField("채널명", event.getChannel().getName(), false);
+            if (channel.isLocked()) {
+                builder.addField("변경된 상태", "잠김", false);
+            } else {
+                builder.addField("변경된 상태", "잠김 해제됨", false);
+            }
+            builder.addField("변경 시간", time, false);
+
+            loggerPackage.channelLoggingSend(builder, guild);
+        }
+    }
+
+    @Override
+    public void onChannelUpdateType(@NotNull ChannelUpdateTypeEvent event) {
+        Guild guild = event.getGuild();
+        if (isConfigEnable(guild.getId(), ConfigPackage.CHANNEL_LOGGING_ENABLE)) {
+            Date date = new Date();
+            String time = format.format(date);
+            ChannelType oldType = event.getOldValue();
+            ChannelType newType = event.getNewValue();
+            String oldName;
+            String newName;
+            if(oldType == null) {
+                oldName = "알 수 없음";
+            } else {
+                oldName = oldType.name();
+            }
+            if(newType == null) {
+                newName = "알 수 없음";
+            } else {
+                newName = newType.name();
+            }
+            EmbedBuilder builder = EmbedUtils.getDefaultEmbed().setTitle("채널 타입 변경")
+                    .setColor(Color.GREEN)
+                    .addField("대상 채널명", event.getChannel().getName(), false)
+                    .addField("이전 채널 타입", oldName, false)
+                    .addField("변경된 채널 타입", newName, false)
+                    .addField("변경 시간", time, false);
+            loggerPackage.channelLoggingSend(builder, guild);
+        }
+    }
+
+    @Override
+    public void onGuildUpdateCommunityUpdatesChannel(@NotNull GuildUpdateCommunityUpdatesChannelEvent event) {
+        Guild guild = event.getGuild();
+        if (isConfigEnable(guild.getId(), ConfigPackage.GUILD_LOGGING_ENABLE)) {
+            Date date = new Date();
+            String time = format.format(date);
+            TextChannel oldType = event.getOldValue();
+            TextChannel newType = event.getNewValue();
+            String oldName;
+            String newName;
+            if(oldType == null) {
+                oldName = "알 수 없음";
+            } else {
+                oldName = oldType.getName();
+            }
+            if(newType == null) {
+                newName = "알 수 없음";
+            } else {
+                newName = newType.getName();
+            }
+            EmbedBuilder builder = EmbedUtils.getDefaultEmbed().setTitle("커뮤니티 업데이트 채널 변경")
+                    .setColor(Color.GREEN)
+                    .addField("이전 채널 타입", oldName, false)
+                    .addField("변경된 채널 타입", newName, false)
+                    .addField("변경 시간", time, false);
+            loggerPackage.guildLoggingSend(builder, guild);
+        }
+    }
+
+    @Override
+    public void onGuildUpdateSafetyAlertsChannel(@NotNull GuildUpdateSafetyAlertsChannelEvent event) {
+        Guild guild = event.getGuild();
+        if (isConfigEnable(guild.getId(), ConfigPackage.GUILD_LOGGING_ENABLE)) {
+            Date date = new Date();
+            String time = format.format(date);
+            TextChannel oldType = event.getOldValue();
+            TextChannel newType = event.getNewValue();
+            String oldName;
+            String newName;
+            if(oldType == null) {
+                oldName = "알 수 없음";
+            } else {
+                oldName = oldType.getName();
+            }
+            if(newType == null) {
+                newName = "알 수 없음";
+            } else {
+                newName = newType.getName();
+            }
+            EmbedBuilder builder = EmbedUtils.getDefaultEmbed().setTitle("보안 알림 경고 채널 변경")
+                    .setColor(Color.GREEN)
+                    .addField("이전 채널 타입", oldName, false)
+                    .addField("변경된 채널 타입", newName, false)
+                    .addField("변경 시간", time, false);
+            loggerPackage.guildLoggingSend(builder, guild);
+        }
+    }
+
+    @Override
+    public void onGuildUpdateBoostCount(@NotNull GuildUpdateBoostCountEvent event) {
+        Guild guild = event.getGuild();
+        if (isConfigEnable(guild.getId(), ConfigPackage.GUILD_LOGGING_ENABLE)) {
+            Date date = new Date();
+            String time = format.format(date);
+            int oldType = event.getOldBoostCount();
+            int newType = event.getNewBoostCount();
+            EmbedBuilder builder = EmbedUtils.getDefaultEmbed().setTitle("서버 부스트 수량 변경")
+                    .setColor(Color.GREEN)
+                    .addField("기존 서버 부스트 수량", String.valueOf(oldType), false)
+                    .addField("현재 서버 부스트 수량", String.valueOf(newType), false)
+                    .addField("변경 시간", time, false);
+            loggerPackage.guildLoggingSend(builder, guild);
+        }
+    }
+
+    @Override
+    public void onGuildUpdateNSFWLevel(@NotNull GuildUpdateNSFWLevelEvent event) {
+        Guild guild = event.getGuild();
+        if (isConfigEnable(guild.getId(), ConfigPackage.GUILD_LOGGING_ENABLE)) {
+            Date date = new Date();
+            String time = format.format(date);
+            Guild.NSFWLevel oldType = event.getOldNSFWLevel();
+            Guild.NSFWLevel newType = event.getNewNSFWLevel();
+            EmbedBuilder builder = EmbedUtils.getDefaultEmbed().setTitle("서버 NSFW 레벨 변경")
+                    .setColor(Color.YELLOW)
+                    .addField("기존 설정값", oldType.name(), false)
+                    .addField("현재 설정값", newType.name(), false)
+                    .addField("변경 시간", time, false);
+            loggerPackage.guildLoggingSend(builder, guild);
+        }
+    }
+
+    @Override
+    public void onGuildUpdateVerificationLevel(@NotNull GuildUpdateVerificationLevelEvent event) {
+        Guild guild = event.getGuild();
+        if (isConfigEnable(guild.getId(), ConfigPackage.GUILD_LOGGING_ENABLE)) {
+            Date date = new Date();
+            String time = format.format(date);
+            Guild.VerificationLevel oldType = event.getOldVerificationLevel();
+            Guild.VerificationLevel newType = event.getNewVerificationLevel();
+            EmbedBuilder builder = EmbedUtils.getDefaultEmbed().setTitle("서버 보안 수준 변경")
+                    .setColor(Color.GREEN)
+                    .addField("변경 전 보안 수준", oldType.name(), false)
+                    .addField("변경 후 보안 수준", newType.name(), false)
+                    .addField("변경 시간", time, false);
+            loggerPackage.guildLoggingSend(builder, guild);
+        }
+    }
+
+    @Override
+    public void onGuildVoiceGuildDeafen(@NotNull GuildVoiceGuildDeafenEvent event) {
+        Guild guild = event.getGuild();
+        if (isConfigEnable(guild.getId(), ConfigPackage.GUILD_LOGGING_ENABLE)) {
+            Date date = new Date();
+            String time = format.format(date);
+            EmbedBuilder builder;
+            if(event.isGuildDeafened()) {
+                builder = EmbedUtils.getDefaultEmbed().setTitle("서버 마이크 뮤트")
+                        .setColor(Color.RED);
+            } else {
+                 builder = EmbedUtils.getDefaultEmbed().setTitle("서버 마이크 뮤트 해제")
+                        .setColor(Color.RED);
+            }
+            builder.addField("대상 유저", event.getMember().getAsMention(), false)
                     .addField("변경 시간", time, false);
             loggerPackage.channelLoggingSend(builder, guild);
         }

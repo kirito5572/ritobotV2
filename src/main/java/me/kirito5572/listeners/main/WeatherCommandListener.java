@@ -67,24 +67,25 @@ public class WeatherCommandListener extends ListenerAdapter {
             throw new NullPointerException();
         }
         GetWeather getWeather = new GetWeather();
-        GetWeather.WeatherInfor weatherInfor = getWeather.get_api(locationEng);
+        GetWeather.WeatherInformation weatherInformation = getWeather.get_api(locationEng);
         EmbedBuilder builder = EmbedUtils.getDefaultEmbed()
                 .setTitle(location + "의 날씨 정보")
                 .setFooter("Information from openweathermap.org", "https://openweathermap.org/");
-        builder.addField("현재 날씨", weatherInfor.weatherCord, true)
-                .addField("현재 온도", weatherInfor.temp + "Cº", true)
-                .addField("체감 온도", weatherInfor.tempFeels + "Cº", true)
-                .addField("대기압", weatherInfor.pressure + "hPa", true)
-                .addField("습도", weatherInfor.humidity + "%", true)
-                .addField("풍속", weatherInfor.windSpeed + "m/s", true)
-                .addField("풍향", weatherInfor.windDeg + "º", true)
-                .addField("체감 온도", getWeather.formatDate(weatherInfor.sunRise), false)
-                .addField("체감 온도", getWeather.formatDate(weatherInfor.sunSet), false);
-        if(weatherInfor.rain_3hr != 0) {
-            builder.addField("3시간 강수량", weatherInfor.rain_3hr + "mm", true);
+        builder.addField("기준 시간", getWeather.formatDate(weatherInformation.ForecastTime),true)
+                .addField("현재 날씨", weatherInformation.weatherCord, true)
+                .addField("현재 온도", weatherInformation.temp + "Cº", true)
+                .addField("체감 온도", weatherInformation.tempFeels + "Cº", true)
+                .addField("대기압", weatherInformation.pressure + "hPa", true)
+                .addField("습도", weatherInformation.humidity + "%", true)
+                .addField("풍속", weatherInformation.windSpeed + "m/s", true)
+                .addField("풍향", weatherInformation.windDeg + "º", true)
+                .addField("일출시간", getWeather.formatDate(weatherInformation.sunRise), false)
+                .addField("일몰시간", getWeather.formatDate(weatherInformation.sunSet), false);
+        if(weatherInformation.rain_3hr != 0) {
+            builder.addField("3시간 강수량", weatherInformation.rain_3hr + "mm", true);
         }
-        if(weatherInfor.snow_3hr != 0) {
-            builder.addField("3시간 적설량", weatherInfor.snow_3hr + "cm", true);
+        if(weatherInformation.snow_3hr != 0) {
+            builder.addField("3시간 적설량", weatherInformation.snow_3hr + "cm", true);
         }
         return builder.build();
     }

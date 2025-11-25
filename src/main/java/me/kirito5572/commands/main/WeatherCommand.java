@@ -24,11 +24,10 @@ public class WeatherCommand implements ICommand {
         Member selfMember = Objects.requireNonNull(event.getGuild()).getSelfMember();
         if(!selfMember.hasPermission(Permission.MESSAGE_SEND)) {
             return;
-        }
+        }//TODO 예보도 확인가능하도록 기능 추가 할 것
         StringSelectMenu.Builder builder = StringSelectMenu.create("아래_광역시도중_하나를_선택해주세요");
         for(String city : cityList) {
             builder.addOption(city, city, city);
-            //TODO 시발.... 이거 지역 세분화 되서 이부분 코드 재작성 필요함
         }
         event.reply("지역을 선택해주세요.")
                 .addComponents(
@@ -39,7 +38,7 @@ public class WeatherCommand implements ICommand {
     }
     @Override
     public String getHelp() {
-        return "지역의 날씨 정보를 불러옵니다. `From openweathermap.org`";
+        return "지역의 현재 날씨 또는 예보를 확인합니다. `From openweathermap.org`";
     }
 
     @Override

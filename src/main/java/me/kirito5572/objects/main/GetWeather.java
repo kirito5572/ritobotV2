@@ -20,8 +20,8 @@ public class GetWeather {
     private final SimpleDateFormat clock_am = new SimpleDateFormat("K시 mm분 ss초(z)");
     private final SimpleDateFormat clock_pm = new SimpleDateFormat("h시 mm분 ss초(z)");
 
-    public WeatherInfor get_api(String city_name) throws URISyntaxException, IOException {
-        WeatherInfor weatherInfor = new WeatherInfor();
+    public WeatherInformation get_api(String city_name) throws URISyntaxException, IOException {
+        WeatherInformation weatherInformation = new WeatherInformation();
         StringBuilder TOKEN = new StringBuilder();
         File file = new File("C:\\DiscordServerBotSecrets\\rito-bot\\weather_key.txt");
         try(FileReader fileReader = new FileReader(file)) {
@@ -39,7 +39,7 @@ public class GetWeather {
             logger.warn(a.toString());
         }
 
-        String url = "https://api.openweathermap.org/data/2.5/weather?q="+ city_name + "&appid=" + TOKEN + "&lang=kr" + "&units=metric";
+        String url = "https://api.openweathermap.org/data/2.5/weather?q="+ city_name + ",kr&appid=" + TOKEN + "&lang=kr" + "&units=metric";
         URL get_url = new URI(url).toURL();
 
         BufferedReader bf;
@@ -115,33 +115,34 @@ public class GetWeather {
         }
         JsonObject parse_sys = element.get("sys").getAsJsonObject();
 
-        weatherInfor.weatherCord = parse_weather.get(0).getAsJsonObject().get("description").getAsString();     //날씨 상태
-        weatherInfor.temp = parse_main.get("temp").getAsFloat();                                                //온도
-        weatherInfor.tempFeels = parse_main.get("feels_like").getAsFloat();                                     //체감 온도
-        weatherInfor.pressure = parse_main.get("pressure").getAsInt();                                          //대기압
-        weatherInfor.humidity = parse_main.get("humidity").getAsInt();                                          //습도
-        weatherInfor.windSpeed = parse_wind.get("speed").getAsInt();                                            //풍속
-        weatherInfor.windDeg = parse_wind.get("deg").getAsInt();                                                //풍향
+        weatherInformation.weatherCord = parse_weather.get(0).getAsJsonObject().get("description").getAsString();     //날씨 상태
+        weatherInformation.temp = parse_main.get("temp").getAsFloat();                                                //온도
+        weatherInformation.tempFeels = parse_main.get("feels_like").getAsFloat();                                     //체감 온도
+        weatherInformation.pressure = parse_main.get("pressure").getAsInt();                                          //대기압
+        weatherInformation.humidity = parse_main.get("humidity").getAsInt();                                          //습도
+        weatherInformation.windSpeed = parse_wind.get("speed").getAsInt();                                            //풍속
+        weatherInformation.windDeg = parse_wind.get("deg").getAsInt();                                                //풍향
 
-        if(weatherInfor.weatherCord.equals("비")) {
+        if(weatherInformation.weatherCord.equals("비")) {
             if(parse_rain == null) {
                 assert false;
-                weatherInfor.rain_3hr = parse_rain.get("3h").getAsInt();                                        //3시간 강수량
+                weatherInformation.rain_3hr = parse_rain.get("3h").getAsInt();                                        //3시간 강수량
             }
         } else {
-            weatherInfor.rain_3hr = 0;
+            weatherInformation.rain_3hr = 0;
         }
-        if(weatherInfor.weatherCord.equals("눈")) {
+        if(weatherInformation.weatherCord.equals("눈")) {
             if(parse_snow == null) {
                 assert false;
-                weatherInfor.snow_3hr = parse_snow.get("3h").getAsInt();                                         //3시간 적설량
+                weatherInformation.snow_3hr = parse_snow.get("3h").getAsInt();                                         //3시간 적설량
             }
         } else {
-            weatherInfor.snow_3hr = 0;
+            weatherInformation.snow_3hr = 0;
         }
-        weatherInfor.sunRise = new Date(parse_sys.get("sunrise").getAsLong() * 1000);                            //일출시간
-        weatherInfor.sunSet = new Date(parse_sys.get("sunset").getAsLong() * 1000);                              // 일몰시간
-        return weatherInfor;
+        weatherInformation.ForecastTime = new Date(element.get("dt").getAsLong() * 1000);
+        weatherInformation.sunRise = new Date(parse_sys.get("sunrise").getAsLong() * 1000);                            //일출시간
+        weatherInformation.sunSet = new Date(parse_sys.get("sunset").getAsLong() * 1000);                              // 일몰시간
+        return weatherInformation;
     }
     @NotNull
     public String formatDate(Date date) {
@@ -153,7 +154,8 @@ public class GetWeather {
         }
     }
 
-    public static class WeatherInfor {
+    public static class WeatherInformation {
+        public Date ForecastTime;   //예보기준시간
         public String weatherCord;  //날씨코드
         public float temp;          //현재온도
         public float tempFeels;     //체감온도
