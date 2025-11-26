@@ -3,6 +3,8 @@ package me.kirito5572.listeners.main;
 import me.kirito5572.objects.main.GetWeather;
 import me.duncte123.botcommons.messaging.EmbedUtils;
 import net.dv8tion.jda.api.EmbedBuilder;
+import net.dv8tion.jda.api.components.actionrow.ActionRow;
+import net.dv8tion.jda.api.components.selections.StringSelectMenu;
 import net.dv8tion.jda.api.entities.MessageEmbed;
 import net.dv8tion.jda.api.events.interaction.component.StringSelectInteractionEvent;
 import net.dv8tion.jda.api.events.session.ReadyEvent;
@@ -44,7 +46,7 @@ public class WeatherCommandListener extends ListenerAdapter {
                 if (event.getValues().getFirst().equals(city)) {
                     try {
                         event.getMessage().delete().queue();
-                        event.replyEmbeds(LocalCityInfor(city)).setEphemeral(true).queue();
+                        event.replyEmbeds(localCityInformation(city)).setEphemeral(true).queue();
                         break;
                     } catch (NullPointerException | URISyntaxException | IOException e) {
                         event.reply("처리중 에러가 발생했습니다.").setEphemeral(true).queue(m -> m.deleteOriginal().queueAfter(10, TimeUnit.SECONDS));
@@ -55,7 +57,7 @@ public class WeatherCommandListener extends ListenerAdapter {
     }
 
     @NotNull
-    private MessageEmbed LocalCityInfor(String location) throws NullPointerException, URISyntaxException, IOException {
+    private MessageEmbed localCityInformation(String location) throws NullPointerException, URISyntaxException, IOException {
         String locationEng = null;
         for (String[] s : local) {
             if(s[0].equals(location)) {
@@ -67,7 +69,7 @@ public class WeatherCommandListener extends ListenerAdapter {
             throw new NullPointerException();
         }
         GetWeather getWeather = new GetWeather();
-        GetWeather.WeatherInformation weatherInformation = getWeather.get_api(locationEng);
+        GetWeather.WeatherInformation weatherInformation = getWeather.getNowWeather(locationEng);
         EmbedBuilder builder = EmbedUtils.getDefaultEmbed()
                 .setTitle(location + "의 날씨 정보")
                 .setFooter("Information from openweathermap.org", "https://openweathermap.org/");

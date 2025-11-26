@@ -8,20 +8,23 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.*;
+import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.URL;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 public class GetWeather {
     private final Logger logger = LoggerFactory.getLogger(GetWeather.class);
     private final SimpleDateFormat clock_aa = new SimpleDateFormat("a");
     private final SimpleDateFormat clock_am = new SimpleDateFormat("K시 mm분 ss초(z)");
     private final SimpleDateFormat clock_pm = new SimpleDateFormat("h시 mm분 ss초(z)");
+    private final String token;
 
-    public WeatherInformation get_api(String city_name) throws URISyntaxException, IOException {
-        WeatherInformation weatherInformation = new WeatherInformation();
+    public GetWeather() {
         StringBuilder TOKEN = new StringBuilder();
         File file = new File("C:\\DiscordServerBotSecrets\\rito-bot\\weather_key.txt");
         try(FileReader fileReader = new FileReader(file)) {
@@ -30,29 +33,22 @@ public class GetWeather {
                 TOKEN.append((char) signalCh);
             }
         } catch (Exception e) {
-
             StackTraceElement[] eStackTrace = e.getStackTrace();
             StringBuilder a = new StringBuilder();
             for (StackTraceElement stackTraceElement : eStackTrace) {
                 a.append(stackTraceElement).append("\n");
             }
             logger.warn(a.toString());
+            this.token = "error";
+            return;
         }
+        this.token = TOKEN.toString();
+    }
 
-        String url = "https://api.openweathermap.org/data/2.5/weather?q="+ city_name + ",kr&appid=" + TOKEN + "&lang=kr" + "&units=metric";
-        URL get_url = new URI(url).toURL();
+    public WeatherInformation getNowWeather(String city_name) throws URISyntaxException, IOException {
+        WeatherInformation weatherInformation = new WeatherInformation();
+        String url = "https://api.openweathermap.org/data/2.5/weather?q="+ city_name + ",kr&appid=" + token + "&lang=kr" + "&units=metric";
 
-        BufferedReader bf;
-        String line;
-        String result = "";
-
-        System.out.println(url);
-
-        bf = new BufferedReader(new InputStreamReader(get_url.openStream()));
-
-        while((line=bf.readLine()) != null) {
-            result = result.concat(line);
-        }
         /*
         {
             "coord":{
@@ -98,8 +94,7 @@ public class GetWeather {
                 "cod":200
         }
         */
-        bf.close();
-        JsonObject element = JsonParser.parseString(result).getAsJsonObject();
+        JsonObject element = JsonParser.parseString(getAPI(url)).getAsJsonObject();
         JsonArray parse_weather = element.get("weather").getAsJsonArray();
         JsonObject parse_main = element.get("main").getAsJsonObject();
         JsonObject parse_wind = element.get("wind").getAsJsonObject();
@@ -123,18 +118,20 @@ public class GetWeather {
         weatherInformation.windSpeed = parse_wind.get("speed").getAsInt();                                            //풍속
         weatherInformation.windDeg = parse_wind.get("deg").getAsInt();                                                //풍향
 
-        if(weatherInformation.weatherCord.equals("비")) {
-            if(parse_rain == null) {
-                assert false;
+        if(weatherInformation.weatherCord.contains("비")) {
+            if(parse_rain != null) {
                 weatherInformation.rain_3hr = parse_rain.get("3h").getAsInt();                                        //3시간 강수량
+            } else {
+                weatherInformation.rain_3hr = 0;
             }
         } else {
             weatherInformation.rain_3hr = 0;
         }
-        if(weatherInformation.weatherCord.equals("눈")) {
-            if(parse_snow == null) {
-                assert false;
+        if(weatherInformation.weatherCord.contains("눈")) {
+            if(parse_snow != null) {
                 weatherInformation.snow_3hr = parse_snow.get("3h").getAsInt();                                         //3시간 적설량
+            } else {
+                weatherInformation.rain_3hr = 0;
             }
         } else {
             weatherInformation.snow_3hr = 0;
@@ -144,6 +141,76 @@ public class GetWeather {
         weatherInformation.sunSet = new Date(parse_sys.get("sunset").getAsLong() * 1000);                              // 일몰시간
         return weatherInformation;
     }
+
+    public List<WeatherInformation> getForecastWeather(String city_name) throws URISyntaxException, IOException {
+        List<WeatherInformation> weatherInformationList = new ArrayList<>();
+        String url = "https://api.openweathermap.org/data/2.5/forecast?q="+ city_name + ",kr&appid=" + token + "&lang=kr" + "&units=metric";
+        JsonObject element = JsonParser.parseString(getAPI(url)).getAsJsonObject();
+        int count = element.get("cnt").getAsInt();
+        JsonArray list_forecast = element.get("list").getAsJsonArray();
+        for(int i = 0; i < count; i++) {
+            WeatherInformation weatherInformation = new WeatherInformation();
+            JsonObject parse_forecast = list_forecast.get(i).getAsJsonObject();
+            JsonObject forecast_main = parse_forecast.get("main").getAsJsonObject();
+            JsonObject forecast_wind = forecast_main.get("wind").getAsJsonObject();
+            JsonObject parse_rain = null;
+            JsonObject parse_snow = null;
+            try {
+                parse_rain = parse_forecast.get("rain").getAsJsonObject();
+            } catch (Exception ignored) {
+            }
+            try {
+                parse_snow = parse_forecast.get("snow").getAsJsonObject();
+            } catch (Exception ignored) {
+            }
+            weatherInformation.ForecastTime = new Date(parse_forecast.get("dt").getAsLong() * 1000);
+            weatherInformation.weatherCord = parse_forecast.get("weather").getAsJsonArray()
+                    .get(0).getAsJsonObject().get("description").getAsString();
+            weatherInformation.temp = forecast_main.get("temp").getAsFloat();
+            weatherInformation.tempFeels = forecast_main.get("feels_like").getAsFloat();
+            weatherInformation.pressure = forecast_main.get("pressure").getAsInt();
+            weatherInformation.humidity = forecast_main.get("humidity").getAsInt();
+            weatherInformation.windSpeed = forecast_wind.get("speed").getAsInt();
+            weatherInformation.windDeg = forecast_wind.get("deg").getAsInt();
+            if(weatherInformation.weatherCord.contains("비")) {
+                if(parse_rain != null) {
+                    weatherInformation.rain_3hr = parse_rain.get("3h").getAsInt();                                        //3시간 강수량
+                } else {
+                    weatherInformation.rain_3hr = 0;
+                }
+            } else {
+                weatherInformation.rain_3hr = 0;
+            }
+            if(weatherInformation.weatherCord.contains("눈")) {
+                if(parse_snow != null) {
+                    weatherInformation.snow_3hr = parse_snow.get("3h").getAsInt();                                         //3시간 적설량
+                } else {
+                    weatherInformation.snow_3hr = 0;
+                }
+            } else {
+                weatherInformation.snow_3hr = 0;
+            }
+        }
+        return weatherInformationList;
+    }
+
+    private String getAPI(String url) throws URISyntaxException, MalformedURLException {
+        String result = "";
+        URL get_url = new URI(url).toURL();
+        String line;
+
+        System.out.println(url);
+
+        try (BufferedReader bf = new BufferedReader(new InputStreamReader(get_url.openStream()))) {
+
+            while ((line = bf.readLine()) != null) {
+                result = result.concat(line);
+            }
+        } catch (IOException ignored) {
+        }
+        return result;
+    }
+
     @NotNull
     public String formatDate(Date date) {
         String flag = clock_aa.format(date);
