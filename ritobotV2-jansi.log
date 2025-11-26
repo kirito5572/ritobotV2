@@ -1,58 +1,267 @@
-[35m[2025-01-27 12:30:00.179][0;39m [32m[main][0;39m [34m[INFO ][0;39m [36mme.kirito5572.App[0;39m - [1;35m                                                                                                                                                                       
-[0;39m[35m[2025-01-27 12:30:00.187][0;39m [32m[main][0;39m [34m[INFO ][0;39m [36mme.kirito5572.App[0;39m - [1;35m                                                                 bbbbbbbb                                                                                              
-[0;39m[35m[2025-01-27 12:30:00.187][0;39m [32m[main][0;39m [34m[INFO ][0;39m [36mme.kirito5572.App[0;39m - [1;35m                     iiii          tttt                          b::::::b                                      tttt     VVVVVVVV           VVVVVVVV 222222222222222    
-[0;39m[35m[2025-01-27 12:30:00.187][0;39m [32m[main][0;39m [34m[INFO ][0;39m [36mme.kirito5572.App[0;39m - [1;35m                    i::::i      ttt:::t                          b::::::b                                   ttt:::t     V::::::V           V::::::V2:::::::::::::::22  
-[0;39m[35m[2025-01-27 12:30:00.188][0;39m [32m[main][0;39m [34m[INFO ][0;39m [36mme.kirito5572.App[0;39m - [1;35m                     iiii       t:::::t                          b::::::b                                   t:::::t     V::::::V           V::::::V2::::::222222:::::2 
-[0;39m[35m[2025-01-27 12:30:00.188][0;39m [32m[main][0;39m [34m[INFO ][0;39m [36mme.kirito5572.App[0;39m - [1;35m                                t:::::t                           b:::::b                                   t:::::t     V::::::V           V::::::V2222222     2:::::2 
-[0;39m[35m[2025-01-27 12:30:00.188][0;39m [32m[main][0;39m [34m[INFO ][0;39m [36mme.kirito5572.App[0;39m - [1;35mrrrrr   rrrrrrrrr  iiiiiiittttttt:::::ttttttt       ooooooooooo   b:::::bbbbbbbbb       ooooooooooo   ttttttt:::::tttttttV:::::V           V:::::V             2:::::2 
-[0;39m[35m[2025-01-27 12:30:00.188][0;39m [32m[main][0;39m [34m[INFO ][0;39m [36mme.kirito5572.App[0;39m - [1;35mr::::rrr:::::::::r i:::::it:::::::::::::::::t     oo:::::::::::oo b::::::::::::::bb   oo:::::::::::oo t:::::::::::::::::t V:::::V         V:::::V              2:::::2 
-[0;39m[35m[2025-01-27 12:30:00.188][0;39m [32m[main][0;39m [34m[INFO ][0;39m [36mme.kirito5572.App[0;39m - [1;35mr:::::::::::::::::r i::::it:::::::::::::::::t    o:::::::::::::::ob::::::::::::::::b o:::::::::::::::ot:::::::::::::::::t  V:::::V       V:::::V            2222::::2  
-[0;39m[35m[2025-01-27 12:30:00.188][0;39m [32m[main][0;39m [34m[INFO ][0;39m [36mme.kirito5572.App[0;39m - [1;35mrr::::::rrrrr::::::ri::::itttttt:::::::tttttt    o:::::ooooo:::::ob:::::bbbbb:::::::bo:::::ooooo:::::otttttt:::::::tttttt   V:::::V     V:::::V        22222::::::22   
-[0;39m[35m[2025-01-27 12:30:00.188][0;39m [32m[main][0;39m [34m[INFO ][0;39m [36mme.kirito5572.App[0;39m - [1;35m r:::::r     r:::::ri::::i      t:::::t          o::::o     o::::ob:::::b    b::::::bo::::o     o::::o      t:::::t          V:::::V   V:::::V       22::::::::222     
-[0;39m[35m[2025-01-27 12:30:00.188][0;39m [32m[main][0;39m [34m[INFO ][0;39m [36mme.kirito5572.App[0;39m - [1;35m r:::::r     rrrrrrri::::i      t:::::t          o::::o     o::::ob:::::b     b:::::bo::::o     o::::o      t:::::t           V:::::V V:::::V       2:::::22222        
-[0;39m[35m[2025-01-27 12:30:00.188][0;39m [32m[main][0;39m [34m[INFO ][0;39m [36mme.kirito5572.App[0;39m - [1;35m r:::::r            i::::i      t:::::t          o::::o     o::::ob:::::b     b:::::bo::::o     o::::o      t:::::t            V:::::V:::::V       2:::::2             
-[0;39m[35m[2025-01-27 12:30:00.189][0;39m [32m[main][0;39m [34m[INFO ][0;39m [36mme.kirito5572.App[0;39m - [1;35m r:::::r            i::::i      t:::::t    tttttto::::o     o::::ob:::::b     b:::::bo::::o     o::::o      t:::::t    tttttt   V:::::::::V        2:::::2             
-[0;39m[35m[2025-01-27 12:30:00.189][0;39m [32m[main][0;39m [34m[INFO ][0;39m [36mme.kirito5572.App[0;39m - [1;35m r:::::r           i::::::i     t::::::tttt:::::to:::::ooooo:::::ob:::::bbbbbb::::::bo:::::ooooo:::::o      t::::::tttt:::::t    V:::::::V         2:::::2       222222
-[0;39m[35m[2025-01-27 12:30:00.189][0;39m [32m[main][0;39m [34m[INFO ][0;39m [36mme.kirito5572.App[0;39m - [1;35m r:::::r           i::::::i     tt::::::::::::::to:::::::::::::::ob::::::::::::::::b o:::::::::::::::o      tt::::::::::::::t     V:::::V          2::::::2222222:::::2
-[0;39m[35m[2025-01-27 12:30:00.189][0;39m [32m[main][0;39m [34m[INFO ][0;39m [36mme.kirito5572.App[0;39m - [1;35m r:::::r           i::::::i       tt:::::::::::tt oo:::::::::::oo b:::::::::::::::b   oo:::::::::::oo         tt:::::::::::tt      V:::V           2::::::::::::::::::2
-[0;39m[35m[2025-01-27 12:30:00.189][0;39m [32m[main][0;39m [34m[INFO ][0;39m [36mme.kirito5572.App[0;39m - [1;35m rrrrrrr           iiiiiiii         ttttttttttt     ooooooooooo   bbbbbbbbbbbbbbbb      ooooooooooo             ttttttttttt         VVV            22222222222222222222
-[0;39m[35m[2025-01-27 12:30:00.190][0;39m [32m[main][0;39m [34m[INFO ][0;39m [36mme.kirito5572.App[0;39m - [1;35mOS: windows 11
-[0;39m[35m[2025-01-27 12:30:00.191][0;39m [32m[main][0;39m [31m[WARN ][0;39m [36mme.kirito5572.App[0;39m - [1;35mBBBBBBBBBBBBBBBBB   EEEEEEEEEEEEEEEEEEEEEETTTTTTTTTTTTTTTTTTTTTTT         AAA               !!! 
-[0;39m[35m[2025-01-27 12:30:00.191][0;39m [32m[main][0;39m [31m[WARN ][0;39m [36mme.kirito5572.App[0;39m - [1;35mB::::::::::::::::B  E::::::::::::::::::::ET:::::::::::::::::::::T        A:::A             !!:!!
-[0;39m[35m[2025-01-27 12:30:00.191][0;39m [32m[main][0;39m [31m[WARN ][0;39m [36mme.kirito5572.App[0;39m - [1;35mB::::::BBBBBB:::::B E::::::::::::::::::::ET:::::::::::::::::::::T       A:::::A            !:::!
-[0;39m[35m[2025-01-27 12:30:00.191][0;39m [32m[main][0;39m [31m[WARN ][0;39m [36mme.kirito5572.App[0;39m - [1;35mBB:::::B     B:::::BEE::::::EEEEEEEEE::::ET:::::TT:::::::TT:::::T      A:::::::A           !:::!
-[0;39m[35m[2025-01-27 12:30:00.191][0;39m [32m[main][0;39m [31m[WARN ][0;39m [36mme.kirito5572.App[0;39m - [1;35mB::::B     B:::::B  E:::::E       EEEEEETTTTTT  T:::::T  TTTTTT     A:::::::::A          !:::!
-[0;39m[35m[2025-01-27 12:30:00.191][0;39m [32m[main][0;39m [31m[WARN ][0;39m [36mme.kirito5572.App[0;39m - [1;35m  B::::B     B:::::B  E:::::E                     T:::::T            A:::::A:::::A         !:::!
-[0;39m[35m[2025-01-27 12:30:00.191][0;39m [32m[main][0;39m [31m[WARN ][0;39m [36mme.kirito5572.App[0;39m - [1;35m  B::::BBBBBB:::::B   E::::::EEEEEEEEEE           T:::::T           A:::::A A:::::A        !:::!
-[0;39m[35m[2025-01-27 12:30:00.192][0;39m [32m[main][0;39m [31m[WARN ][0;39m [36mme.kirito5572.App[0;39m - [1;35m  B:::::::::::::BB    E:::::::::::::::E           T:::::T          A:::::A   A:::::A       !:::!
-[0;39m[35m[2025-01-27 12:30:00.192][0;39m [32m[main][0;39m [31m[WARN ][0;39m [36mme.kirito5572.App[0;39m - [1;35m  B::::BBBBBB:::::B   E:::::::::::::::E           T:::::T         A:::::A     A:::::A      !:::!
-[0;39m[35m[2025-01-27 12:30:00.192][0;39m [32m[main][0;39m [31m[WARN ][0;39m [36mme.kirito5572.App[0;39m - [1;35m  B::::B     B:::::B  E::::::EEEEEEEEEE           T:::::T        A:::::AAAAAAAAA:::::A     !:::!
-[0;39m[35m[2025-01-27 12:30:00.192][0;39m [32m[main][0;39m [31m[WARN ][0;39m [36mme.kirito5572.App[0;39m - [1;35m  B::::B     B:::::B  E:::::E                     T:::::T       A:::::::::::::::::::::A    !!:!!
-[0;39m[35m[2025-01-27 12:30:00.192][0;39m [32m[main][0;39m [31m[WARN ][0;39m [36mme.kirito5572.App[0;39m - [1;35m  B::::B     B:::::B  E:::::E       EEEEEE        T:::::T      A:::::AAAAAAAAAAAAA:::::A    !!! 
-[0;39m[35m[2025-01-27 12:30:00.192][0;39m [32m[main][0;39m [31m[WARN ][0;39m [36mme.kirito5572.App[0;39m - [1;35mBB:::::BBBBBB::::::BEE::::::EEEEEEEE:::::E      TT:::::::TT   A:::::A             A:::::A       
-[0;39m[35m[2025-01-27 12:30:00.193][0;39m [32m[main][0;39m [31m[WARN ][0;39m [36mme.kirito5572.App[0;39m - [1;35mB:::::::::::::::::B E::::::::::::::::::::E      T:::::::::T  A:::::A               A:::::A  !!! 
-[0;39m[35m[2025-01-27 12:30:00.193][0;39m [32m[main][0;39m [31m[WARN ][0;39m [36mme.kirito5572.App[0;39m - [1;35mB::::::::::::::::B  E::::::::::::::::::::E      T:::::::::T A:::::A                 A:::::A!!:!!
-[0;39m[35m[2025-01-27 12:30:00.193][0;39m [32m[main][0;39m [31m[WARN ][0;39m [36mme.kirito5572.App[0;39m - [1;35mBBBBBBBBBBBBBBBBB   EEEEEEEEEEEEEEEEEEEEEE      TTTTTTTTTTTAAAAAAA                   AAAAAAA!!! 
-[0;39m[35m[2025-01-27 12:30:00.193][0;39m [32m[main][0;39m [31m[WARN ][0;39m [36mme.kirito5572.App[0;39m - [1;35mbeta program version: beta version
-[0;39m[35m[2025-01-27 12:30:00.465][0;39m [32m[main][0;39m [34m[INFO ][0;39m [36mme.kirito5572.App[0;39m - [1;35mSQL 서버/파일 접속중
-[0;39m[35m[2025-01-27 12:30:01.179][0;39m [32m[main][0;39m [34m[INFO ][0;39m [36mme.kirito5572.App[0;39m - [1;35m접속 완료...
-[0;39m[35m[2025-01-27 12:30:01.207][0;39m [32m[main][0;39m [34m[INFO ][0;39m [36mm.k.objects.logger.ConfigPackage[0;39m - [1;35m모든 설정 로딩 완료!
-[0;39m[35m[2025-01-27 12:30:01.220][0;39m [32m[main][0;39m [34m[INFO ][0;39m [36mme.kirito5572.App[0;39m - [1;35m봇 시작중... 디스코드로 부터의 응답 대기중, 개별 기능부 실행
-[0;39m[35m[2025-01-27 12:30:01.724][0;39m [32m[main][0;39m [34m[INFO ][0;39m [36mnet.dv8tion.jda.api.JDA[0;39m - [1;35mLogin Successful!
-[0;39m[35m[2025-01-27 12:30:02.044][0;39m [32m[JDA MainWS-WriteThread][0;39m [34m[INFO ][0;39m [36mn.d.j.i.requests.WebSocketClient[0;39m - [1;35mConnected to WebSocket
-[0;39m[35m[2025-01-27 12:30:02.616][0;39m [32m[JDA MainWS-ReadThread][0;39m [34m[INFO ][0;39m [36mnet.dv8tion.jda.api.JDA[0;39m - [1;35mFinished Loading!
-[0;39m[35m[2025-01-27 12:30:02.618][0;39m [32m[JDA MainWS-ReadThread][0;39m [34m[INFO ][0;39m [36mm.k.l.main.MemberCountListener[0;39m - [1;35m멤버 카운트 기능부 준비 완료
-[0;39m[35m[2025-01-27 12:30:02.618][0;39m [32m[JDA MainWS-ReadThread][0;39m [34m[INFO ][0;39m [36mm.k.l.main.MessagePinListener[0;39m - [1;35m메세지 핀 기능부 준비 완료
-[0;39m[35m[2025-01-27 12:30:02.618][0;39m [32m[JDA MainWS-ReadThread][0;39m [34m[INFO ][0;39m [36mm.k.l.main.AirCommandListener[0;39m - [1;35m지역별 공기질 측정 명령어 기능부 준비 완료
-[0;39m[35m[2025-01-27 12:30:02.618][0;39m [32m[JDA MainWS-ReadThread][0;39m [34m[INFO ][0;39m [36mm.k.l.main.WeatherCommandListener[0;39m - [1;35m날씨 명령어 기능부 준비 완료
-[0;39m[35m[2025-01-27 12:30:02.618][0;39m [32m[JDA MainWS-ReadThread][0;39m [34m[INFO ][0;39m [36mm.k.listeners.logger.LoggerListener[0;39m - [1;35m로거 기능부 준비 완료
-[0;39m[35m[2025-01-27 12:30:02.618][0;39m [32m[JDA MainWS-ReadThread][0;39m [34m[INFO ][0;39m [36mm.k.listeners.main.onReadyListener[0;39m - [1;35m상태 변경 기능부 준비 완료
-[0;39m[35m[2025-01-27 12:30:02.618][0;39m [32m[JDA MainWS-ReadThread][0;39m [34m[INFO ][0;39m [36mm.k.l.m.NekoDiscordMemberListener[0;39m - [1;35m네코샘플 디스코드 특별 기능부 준비 완료
-[0;39m[35m[2025-01-27 12:30:02.619][0;39m [32m[JDA MainWS-ReadThread][0;39m [34m[INFO ][0;39m [36mm.k.l.main.LinkFilterListener[0;39m - [1;35m링크 차단 기능부 준비 완료
-[0;39m[35m[2025-01-27 12:30:02.619][0;39m [32m[JDA MainWS-ReadThread][0;39m [34m[INFO ][0;39m [36mm.k.listeners.main.ChzzkListener[0;39m - [1;35m치지직 기능 처리부 준비 완료
-[0;39m[35m[2025-01-27 12:30:02.619][0;39m [32m[main][0;39m [34m[INFO ][0;39m [36mme.kirito5572.App[0;39m - [1;35m서버 연결 성공, 명령어 처리부 시작
-[0;39m[35m[2025-01-27 12:30:02.926][0;39m [32m[main][0;39m [34m[INFO ][0;39m [36mm.k.objects.main.CommandManager[0;39m - [1;35m명령어 로딩중
-[0;39m[35m[2025-01-27 12:30:03.372][0;39m [32m[main][0;39m [34m[INFO ][0;39m [36mm.k.objects.main.CommandManager[0;39m - [1;35m명령어 셋팅 완료
-[0;39m[35m[2025-01-27 12:30:03.379][0;39m [32m[main][0;39m [34m[INFO ][0;39m [36mme.kirito5572.App[0;39m - [1;35m명령어 처리부 정상 시작, 연결 대기중....
-[0;39m[35m[2025-01-27 12:30:03.379][0;39m [32m[main][0;39m [34m[INFO ][0;39m [36mme.kirito5572.App[0;39m - [1;35m연결 완료, 부팅 완료
+[35m[2025-11-27 08:43:37.415][0;39m [32m[main][0;39m [31m[WARN ][0;39m [36mm.k.objects.main.getAirLocalData[0;39m - [1;35mjava.base/java.io.FileInputStream.open0(Native Method)
+java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+java.base/java.io.FileReader.<init>(FileReader.java:75)
+me.kirito5572.objects.main.getAirLocalData.get_API(getAirLocalData.java:41)
+me.kirito5572.objects.main.getAirLocalData.main(getAirLocalData.java:153)
+
+[0;39m[35m[2025-11-27 08:43:37.629][0;39m [32m[main][0;39m [31m[WARN ][0;39m [36mm.k.objects.main.getAirLocalData[0;39m - [1;35mjava.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
+java.base/jdk.internal.math.FloatingDecimal.parseFloat(FloatingDecimal.java:122)
+java.base/java.lang.Float.parseFloat(Float.java:556)
+com.google.gson.JsonPrimitive.getAsFloat(JsonPrimitive.java:205)
+me.kirito5572.objects.main.getAirLocalData.get_API(getAirLocalData.java:108)
+me.kirito5572.objects.main.getAirLocalData.main(getAirLocalData.java:153)
+
+[0;39m[35m[2025-11-27 08:44:05.484][0;39m [32m[main][0;39m [31m[WARN ][0;39m [36mm.k.objects.main.getAirLocalData[0;39m - [1;35mjava.base/java.io.FileInputStream.open0(Native Method)
+java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+java.base/java.io.FileReader.<init>(FileReader.java:75)
+me.kirito5572.objects.main.getAirLocalData.get_API(getAirLocalData.java:41)
+me.kirito5572.objects.main.getAirLocalData.main(getAirLocalData.java:153)
+
+[0;39m[35m[2025-11-27 08:44:06.478][0;39m [32m[main][0;39m [31m[WARN ][0;39m [36mm.k.objects.main.getAirLocalData[0;39m - [1;35mcom.google.gson.JsonElement.getAsString(JsonElement.java:251)
+me.kirito5572.objects.main.getAirLocalData.get_API(getAirLocalData.java:126)
+me.kirito5572.objects.main.getAirLocalData.main(getAirLocalData.java:153)
+
+[0;39m[35m[2025-11-27 08:44:48.559][0;39m [32m[main][0;39m [31m[WARN ][0;39m [36mm.k.objects.main.getAirLocalData[0;39m - [1;35mjava.base/java.io.FileInputStream.open0(Native Method)
+java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+java.base/java.io.FileReader.<init>(FileReader.java:75)
+me.kirito5572.objects.main.getAirLocalData.get_API(getAirLocalData.java:41)
+me.kirito5572.objects.main.getAirLocalData.main(getAirLocalData.java:153)
+
+[0;39m[35m[2025-11-27 08:49:02.301][0;39m [32m[main][0;39m [31m[WARN ][0;39m [36mm.k.objects.main.getAirLocalData[0;39m - [1;35mjava.base/java.io.FileInputStream.open0(Native Method)
+java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+java.base/java.io.FileReader.<init>(FileReader.java:75)
+me.kirito5572.objects.main.getAirLocalData.get_API(getAirLocalData.java:41)
+me.kirito5572.objects.main.getAirLocalData.main(getAirLocalData.java:153)
+
+[0;39m[35m[2025-11-27 09:03:08.727][0;39m [32m[main][0;39m [31m[WARN ][0;39m [36mm.k.objects.main.getAirLocalData[0;39m - [1;35mjava.base/java.io.FileInputStream.open0(Native Method)
+java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+java.base/java.io.FileReader.<init>(FileReader.java:75)
+me.kirito5572.objects.main.getAirLocalData.get_API(getAirLocalData.java:41)
+me.kirito5572.objects.main.getAirLocalData.main(getAirLocalData.java:153)
+
+[0;39m[35m[2025-11-27 09:03:09.542][0;39m [32m[main][0;39m [31m[WARN ][0;39m [36mm.k.objects.main.getAirLocalData[0;39m - [1;35mcom.google.gson.JsonElement.getAsString(JsonElement.java:251)
+me.kirito5572.objects.main.getAirLocalData.get_API(getAirLocalData.java:126)
+me.kirito5572.objects.main.getAirLocalData.main(getAirLocalData.java:153)
+
+[0;39m[35m[2025-11-27 09:05:36.027][0;39m [32m[main][0;39m [31m[WARN ][0;39m [36mm.k.objects.main.getAirLocalData[0;39m - [1;35mjava.base/java.io.FileInputStream.open0(Native Method)
+java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+java.base/java.io.FileReader.<init>(FileReader.java:75)
+me.kirito5572.objects.main.getAirLocalData.get_API(getAirLocalData.java:41)
+me.kirito5572.objects.main.getAirLocalData.main(getAirLocalData.java:154)
+
+[0;39m[35m[2025-11-27 09:05:36.170][0;39m [32m[main][0;39m [31m[WARN ][0;39m [36mm.k.objects.main.getAirLocalData[0;39m - [1;35mcom.google.gson.JsonElement.getAsString(JsonElement.java:251)
+me.kirito5572.objects.main.getAirLocalData.get_API(getAirLocalData.java:127)
+me.kirito5572.objects.main.getAirLocalData.main(getAirLocalData.java:154)
+
+[0;39m[35m[2025-11-27 09:05:52.153][0;39m [32m[main][0;39m [31m[WARN ][0;39m [36mm.k.objects.main.getAirLocalData[0;39m - [1;35mjava.base/java.io.FileInputStream.open0(Native Method)
+java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+java.base/java.io.FileReader.<init>(FileReader.java:75)
+me.kirito5572.objects.main.getAirLocalData.get_API(getAirLocalData.java:41)
+me.kirito5572.objects.main.getAirLocalData.main(getAirLocalData.java:154)
+
+[0;39m[35m[2025-11-27 09:05:52.308][0;39m [32m[main][0;39m [31m[WARN ][0;39m [36mm.k.objects.main.getAirLocalData[0;39m - [1;35mcom.google.gson.JsonElement.getAsString(JsonElement.java:251)
+me.kirito5572.objects.main.getAirLocalData.get_API(getAirLocalData.java:127)
+me.kirito5572.objects.main.getAirLocalData.main(getAirLocalData.java:154)
+
+[0;39m[35m[2025-11-27 09:05:56.011][0;39m [32m[main][0;39m [31m[WARN ][0;39m [36mm.k.objects.main.getAirLocalData[0;39m - [1;35mjava.base/java.io.FileInputStream.open0(Native Method)
+java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+java.base/java.io.FileReader.<init>(FileReader.java:75)
+me.kirito5572.objects.main.getAirLocalData.get_API(getAirLocalData.java:41)
+me.kirito5572.objects.main.getAirLocalData.main(getAirLocalData.java:154)
+
+[0;39m[35m[2025-11-27 09:07:29.695][0;39m [32m[main][0;39m [31m[WARN ][0;39m [36mm.k.objects.main.getAirLocalData[0;39m - [1;35mjava.base/java.io.FileInputStream.open0(Native Method)
+java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+java.base/java.io.FileReader.<init>(FileReader.java:75)
+me.kirito5572.objects.main.getAirLocalData.get_API(getAirLocalData.java:41)
+me.kirito5572.objects.main.getAirLocalData.main(getAirLocalData.java:154)
+
+[0;39m[35m[2025-11-27 09:07:30.379][0;39m [32m[main][0;39m [31m[WARN ][0;39m [36mm.k.objects.main.getAirLocalData[0;39m - [1;35mcom.google.gson.JsonElement.getAsString(JsonElement.java:251)
+me.kirito5572.objects.main.getAirLocalData.get_API(getAirLocalData.java:127)
+me.kirito5572.objects.main.getAirLocalData.main(getAirLocalData.java:154)
+
+[0;39m[35m[2025-11-27 09:07:37.979][0;39m [32m[main][0;39m [31m[WARN ][0;39m [36mm.k.objects.main.getAirLocalData[0;39m - [1;35mjava.base/java.io.FileInputStream.open0(Native Method)
+java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+java.base/java.io.FileReader.<init>(FileReader.java:75)
+me.kirito5572.objects.main.getAirLocalData.get_API(getAirLocalData.java:41)
+me.kirito5572.objects.main.getAirLocalData.main(getAirLocalData.java:154)
+
+[0;39m[35m[2025-11-27 09:07:59.006][0;39m [32m[main][0;39m [31m[WARN ][0;39m [36mm.k.objects.main.getAirLocalData[0;39m - [1;35mjava.base/java.io.FileInputStream.open0(Native Method)
+java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+java.base/java.io.FileReader.<init>(FileReader.java:75)
+me.kirito5572.objects.main.getAirLocalData.get_API(getAirLocalData.java:41)
+me.kirito5572.objects.main.getAirLocalData.main(getAirLocalData.java:154)
+
+[0;39m[35m[2025-11-27 09:07:59.173][0;39m [32m[main][0;39m [31m[WARN ][0;39m [36mm.k.objects.main.getAirLocalData[0;39m - [1;35mcom.google.gson.JsonElement.getAsString(JsonElement.java:251)
+me.kirito5572.objects.main.getAirLocalData.get_API(getAirLocalData.java:126)
+me.kirito5572.objects.main.getAirLocalData.main(getAirLocalData.java:154)
+
+[0;39m[35m[2025-11-27 09:08:05.440][0;39m [32m[main][0;39m [31m[WARN ][0;39m [36mm.k.objects.main.getAirLocalData[0;39m - [1;35mjava.base/java.io.FileInputStream.open0(Native Method)
+java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+java.base/java.io.FileReader.<init>(FileReader.java:75)
+me.kirito5572.objects.main.getAirLocalData.get_API(getAirLocalData.java:41)
+me.kirito5572.objects.main.getAirLocalData.main(getAirLocalData.java:154)
+
+[0;39m[35m[2025-11-27 09:08:05.810][0;39m [32m[main][0;39m [31m[WARN ][0;39m [36mm.k.objects.main.getAirLocalData[0;39m - [1;35mcom.google.gson.JsonElement.getAsString(JsonElement.java:251)
+me.kirito5572.objects.main.getAirLocalData.get_API(getAirLocalData.java:126)
+me.kirito5572.objects.main.getAirLocalData.main(getAirLocalData.java:154)
+
+[0;39m[35m[2025-11-27 09:08:24.952][0;39m [32m[main][0;39m [31m[WARN ][0;39m [36mm.k.objects.main.getAirLocalData[0;39m - [1;35mjava.base/java.io.FileInputStream.open0(Native Method)
+java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+java.base/java.io.FileReader.<init>(FileReader.java:75)
+me.kirito5572.objects.main.getAirLocalData.get_API(getAirLocalData.java:41)
+me.kirito5572.objects.main.getAirLocalData.main(getAirLocalData.java:154)
+
+[0;39m[35m[2025-11-27 09:11:20.211][0;39m [32m[main][0;39m [31m[WARN ][0;39m [36mm.k.objects.main.getAirLocalData[0;39m - [1;35mjava.base/java.io.FileInputStream.open0(Native Method)
+java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+java.base/java.io.FileReader.<init>(FileReader.java:75)
+me.kirito5572.objects.main.getAirLocalData.get_API(getAirLocalData.java:41)
+me.kirito5572.objects.main.getAirLocalData.main(getAirLocalData.java:154)
+
+[0;39m[35m[2025-11-27 09:11:33.836][0;39m [32m[main][0;39m [31m[WARN ][0;39m [36mm.k.objects.main.getAirLocalData[0;39m - [1;35mjava.base/java.io.FileInputStream.open0(Native Method)
+java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+java.base/java.io.FileReader.<init>(FileReader.java:75)
+me.kirito5572.objects.main.getAirLocalData.get_API(getAirLocalData.java:41)
+me.kirito5572.objects.main.getAirLocalData.main(getAirLocalData.java:154)
+
+[0;39m[35m[2025-11-27 09:14:46.288][0;39m [32m[main][0;39m [31m[WARN ][0;39m [36mm.k.objects.main.getAirLocalData[0;39m - [1;35mjava.base/java.io.FileInputStream.open0(Native Method)
+java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+java.base/java.io.FileReader.<init>(FileReader.java:75)
+me.kirito5572.objects.main.getAirLocalData.get_API(getAirLocalData.java:41)
+me.kirito5572.objects.main.getAirLocalData.main(getAirLocalData.java:154)
+
+[0;39m[35m[2025-11-27 09:14:46.627][0;39m [32m[main][0;39m [31m[WARN ][0;39m [36mm.k.objects.main.getAirLocalData[0;39m - [1;35mjava.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
+java.base/jdk.internal.math.FloatingDecimal.parseFloat(FloatingDecimal.java:122)
+java.base/java.lang.Float.parseFloat(Float.java:556)
+com.google.gson.JsonPrimitive.getAsFloat(JsonPrimitive.java:205)
+me.kirito5572.objects.main.getAirLocalData.get_API(getAirLocalData.java:108)
+me.kirito5572.objects.main.getAirLocalData.main(getAirLocalData.java:154)
+
+[0;39m[35m[2025-11-27 09:14:54.397][0;39m [32m[main][0;39m [31m[WARN ][0;39m [36mm.k.objects.main.getAirLocalData[0;39m - [1;35mjava.base/java.io.FileInputStream.open0(Native Method)
+java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+java.base/java.io.FileReader.<init>(FileReader.java:75)
+me.kirito5572.objects.main.getAirLocalData.get_API(getAirLocalData.java:41)
+me.kirito5572.objects.main.getAirLocalData.main(getAirLocalData.java:154)
+
+[0;39m[35m[2025-11-27 09:30:52.252][0;39m [32m[main][0;39m [31m[WARN ][0;39m [36mm.k.objects.main.getAirLocalData[0;39m - [1;35mjava.base/java.io.FileInputStream.open0(Native Method)
+java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+java.base/java.io.FileReader.<init>(FileReader.java:75)
+me.kirito5572.objects.main.getAirLocalData.get_API(getAirLocalData.java:41)
+me.kirito5572.objects.main.getAirLocalData.main(getAirLocalData.java:170)
+
+[0;39m[35m[2025-11-27 09:30:53.041][0;39m [32m[main][0;39m [31m[WARN ][0;39m [36mm.k.objects.main.getAirLocalData[0;39m - [1;35mjava.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+java.base/java.lang.Integer.parseInt(Integer.java:652)
+java.base/java.lang.Integer.parseInt(Integer.java:778)
+com.google.gson.JsonPrimitive.getAsInt(JsonPrimitive.java:232)
+me.kirito5572.objects.main.getAirLocalData.get_API(getAirLocalData.java:148)
+me.kirito5572.objects.main.getAirLocalData.main(getAirLocalData.java:170)
+
+[0;39m[35m[2025-11-27 09:32:58.209][0;39m [32m[main][0;39m [31m[WARN ][0;39m [36mm.k.objects.main.getAirLocalData[0;39m - [1;35mjava.base/java.io.FileInputStream.open0(Native Method)
+java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+java.base/java.io.FileReader.<init>(FileReader.java:75)
+me.kirito5572.objects.main.getAirLocalData.get_API(getAirLocalData.java:41)
+me.kirito5572.objects.main.getAirLocalData.main(getAirLocalData.java:170)
+
+[0;39m[35m[2025-11-27 09:32:59.080][0;39m [32m[main][0;39m [31m[WARN ][0;39m [36mm.k.objects.main.getAirLocalData[0;39m - [1;35mjava.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+java.base/java.lang.Integer.parseInt(Integer.java:652)
+java.base/java.lang.Integer.parseInt(Integer.java:778)
+com.google.gson.JsonPrimitive.getAsInt(JsonPrimitive.java:232)
+me.kirito5572.objects.main.getAirLocalData.get_API(getAirLocalData.java:149)
+me.kirito5572.objects.main.getAirLocalData.main(getAirLocalData.java:170)
+
+[0;39m[35m[2025-11-27 09:33:09.283][0;39m [32m[main][0;39m [31m[WARN ][0;39m [36mm.k.objects.main.getAirLocalData[0;39m - [1;35mjava.base/java.io.FileInputStream.open0(Native Method)
+java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+java.base/java.io.FileReader.<init>(FileReader.java:75)
+me.kirito5572.objects.main.getAirLocalData.get_API(getAirLocalData.java:41)
+me.kirito5572.objects.main.getAirLocalData.main(getAirLocalData.java:170)
+
+[0;39m[35m[2025-11-27 09:33:13.065][0;39m [32m[main][0;39m [31m[WARN ][0;39m [36mm.k.objects.main.getAirLocalData[0;39m - [1;35mjava.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+java.base/java.lang.Integer.parseInt(Integer.java:652)
+java.base/java.lang.Integer.parseInt(Integer.java:778)
+com.google.gson.JsonPrimitive.getAsInt(JsonPrimitive.java:232)
+me.kirito5572.objects.main.getAirLocalData.get_API(getAirLocalData.java:149)
+me.kirito5572.objects.main.getAirLocalData.main(getAirLocalData.java:170)
+
+[0;39m[35m[2025-11-27 09:33:25.087][0;39m [32m[main][0;39m [31m[WARN ][0;39m [36mm.k.objects.main.getAirLocalData[0;39m - [1;35mjava.base/java.io.FileInputStream.open0(Native Method)
+java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+java.base/java.io.FileReader.<init>(FileReader.java:75)
+me.kirito5572.objects.main.getAirLocalData.get_API(getAirLocalData.java:41)
+me.kirito5572.objects.main.getAirLocalData.main(getAirLocalData.java:170)
+
+[0;39m[35m[2025-11-27 09:34:50.836][0;39m [32m[main][0;39m [31m[WARN ][0;39m [36mm.k.objects.main.getAirLocalData[0;39m - [1;35mjava.base/java.io.FileInputStream.open0(Native Method)
+java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+java.base/java.io.FileReader.<init>(FileReader.java:75)
+me.kirito5572.objects.main.getAirLocalData.get_API(getAirLocalData.java:41)
+me.kirito5572.objects.main.getAirLocalData.main(getAirLocalData.java:170)
+
+[0;39m[35m[2025-11-27 09:34:50.979][0;39m [32m[main][0;39m [31m[WARN ][0;39m [36mm.k.objects.main.getAirLocalData[0;39m - [1;35mjava.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+java.base/java.lang.Integer.parseInt(Integer.java:652)
+java.base/java.lang.Integer.parseInt(Integer.java:778)
+com.google.gson.JsonPrimitive.getAsInt(JsonPrimitive.java:232)
+me.kirito5572.objects.main.getAirLocalData.get_API(getAirLocalData.java:149)
+me.kirito5572.objects.main.getAirLocalData.main(getAirLocalData.java:170)
+
+[0;39m[35m[2025-11-27 09:35:23.251][0;39m [32m[main][0;39m [31m[WARN ][0;39m [36mm.k.objects.main.getAirLocalData[0;39m - [1;35mjava.base/java.io.FileInputStream.open0(Native Method)
+java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+java.base/java.io.FileReader.<init>(FileReader.java:75)
+me.kirito5572.objects.main.getAirLocalData.get_API(getAirLocalData.java:41)
+me.kirito5572.objects.main.getAirLocalData.main(getAirLocalData.java:170)
+
+[0;39m[35m[2025-11-27 10:53:07.984][0;39m [32m[main][0;39m [31m[WARN ][0;39m [36mm.k.objects.main.GetAirLocalData[0;39m - [1;35mjava.base/java.io.FileInputStream.open0(Native Method)
+java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+java.base/java.io.FileReader.<init>(FileReader.java:75)
+me.kirito5572.objects.main.GetAirLocalData.get_API(GetAirLocalData.java:41)
+me.kirito5572.objects.main.GetAirLocalData.main(GetAirLocalData.java:165)
+
+[0;39m[35m[2025-11-27 13:18:36.395][0;39m [32m[main][0;39m [31m[WARN ][0;39m [36mm.k.objects.main.GetAirLocalData[0;39m - [1;35mjava.base/java.io.FileInputStream.open0(Native Method)
+java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+java.base/java.io.FileReader.<init>(FileReader.java:75)
+me.kirito5572.objects.main.GetAirLocalData.get_API(GetAirLocalData.java:41)
+me.kirito5572.objects.main.GetAirLocalData.main(GetAirLocalData.java:165)
+
+[0;39m[35m[2025-11-27 13:20:47.415][0;39m [32m[main][0;39m [31m[WARN ][0;39m [36mm.k.objects.main.GetAirLocalData[0;39m - [1;35mjava.base/java.io.FileInputStream.open0(Native Method)
+java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+java.base/java.io.FileReader.<init>(FileReader.java:75)
+me.kirito5572.objects.main.GetAirLocalData.get_API(GetAirLocalData.java:41)
+me.kirito5572.objects.main.GetAirLocalData.main(GetAirLocalData.java:165)
+
+[0;39m[35m[2025-11-27 13:37:24.357][0;39m [32m[main][0;39m [31m[WARN ][0;39m [36mm.k.objects.main.GetAirLocalData[0;39m - [1;35mjava.base/java.io.FileInputStream.open0(Native Method)
+java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+java.base/java.io.FileReader.<init>(FileReader.java:75)
+me.kirito5572.objects.main.GetAirLocalData.get_API(GetAirLocalData.java:41)
+me.kirito5572.objects.main.GetAirLocalData.main(GetAirLocalData.java:165)
+
+[0;39m[35m[2025-11-27 13:37:50.272][0;39m [32m[main][0;39m [31m[WARN ][0;39m [36mm.k.objects.main.GetAirLocalData[0;39m - [1;35mjava.base/java.io.FileInputStream.open0(Native Method)
+java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+java.base/java.io.FileReader.<init>(FileReader.java:75)
+me.kirito5572.objects.main.GetAirLocalData.get_API(GetAirLocalData.java:41)
+me.kirito5572.objects.main.GetAirLocalData.main(GetAirLocalData.java:165)
+
 [0;39m
