@@ -24,7 +24,7 @@ public class WeatherCommand implements ICommand {
         Member selfMember = Objects.requireNonNull(event.getGuild()).getSelfMember();
         if(!selfMember.hasPermission(Permission.MESSAGE_SEND)) {
             return;
-        }//TODO 예보도 확인가능하도록 기능 추가 할 것
+        }//TODO 예보도 확인가능하도록 기능 추가 할 것, API는 구현 완료
         StringSelectMenu.Builder builder = StringSelectMenu.create("아래_광역시도중_하나를_선택해주세요");
         for(String city : cityList) {
             builder.addOption(city, city, city);
